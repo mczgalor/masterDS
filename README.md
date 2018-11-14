@@ -1,5 +1,5 @@
 # master Data Science
-projects from the Data Science Master course 17-18
+Projects from the Data Science Master course 17-18
 
 1) From Distributed system subject: mapper and reducer to read tweeter json file and with a positive and negative word dictionary file, (AFINN-111.txt), explore the "happiness" of USA different states.
 All project with D. Córdoba Ruiz, using a MRjob program and a set of mapper and reducer programs.
