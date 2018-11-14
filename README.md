@@ -34,14 +34,15 @@ s3://practicasd1/AFINN-111.txt#AFINN-111.txt
 Take the default confing of Software that includes Hadoop 2.7.3 with the
  m3xlarge hardware: 1 master and 2 nodes. Execute the Cluster.
 
-2) subject of data anaitics and bussiness inteligence.
- practicaIAN_galvezortiz.Rmd : analysis in R of a bussiness case, candy-data.csv data.
+2) subject of data analytics and business intelligence.
+
+ practicaIAN_galvezortiz.Rmd : analysis in R of a business case, candy-data.csv data.
 
 3) subject of Data Bases. All project with D. Córdoba Ruiz
 MDS_Memoria_CordovaRuizDavidGalvezortizMCruz.pdf is the memory with all information and description of the files, etc... programs included:
  *transform_to_json.py: take the xml file and move it into few json files each of them corresponding to each collection we want to create. 
- *enter_data_in_Mongodb.py: connects the MongoDB data bses, create a data base called dblp and write the json files into the the collections of the data base.
- *queries.py: Makes the queries, 10 questions of part I of the project. 
- *transform_csv.py: transform the json files to csv adapting the structure to use it in Neo4j.
+ *enter_data_in_Mongodb.py: connects to MongoDB database, create a database called "dblp" and write the json files into the the collections of the database.
+ *queries.py: Makes the queries, 10 questions (part I) of the project. 
+ *transform_csv.py: transforms the json files to csv adapting the structure to use it in Neo4j.
  Also a README.tex file with procedure explanation.
 
