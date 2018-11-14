@@ -2,8 +2,7 @@
 projects from the Data Science Master course 17-18
 
 1) From Distributed system subject: mapper and reducer to read tweeter json file and with a positive and negative word dictionary file, (AFINN-111.txt), explore the "happiness" of USA different states.
-
-all project with D. Córdoba Ruiz, using a MRjob program and a set of mapper and reducer programs.
+All project with D. Córdoba Ruiz, using a MRjob program and a set of mapper and reducer programs.
 
 mapper= tweetsent_mapper.py
 reducer= tweetsent_reducer.py
@@ -35,8 +34,10 @@ s3://practicasd1/AFINN-111.txt#AFINN-111.txt
 Take the default confing of Software that includes Hadoop 2.7.3 with the
  m3xlarge hardware: 1 master and 2 nodes. Execute the Cluster.
 
+2) subject of data anaitics and bussiness inteligence.
+ practicaIAN_galvezortiz.Rmd : analysis in R of a bussiness case, candy-data.csv data.
 
-2) subject of Data Bases:
+3) subject of Data Bases. All project with D. Córdoba Ruiz
 MDS_Memoria_CordovaRuizDavidGalvezortizMCruz.pdf is the memory with all information and description of the files, etc... programs included:
  *transform_to_json.py: take the xml file and move it into few json files each of them corresponding to each collection we want to create. 
  *enter_data_in_Mongodb.py: connects the MongoDB data bses, create a data base called dblp and write the json files into the the collections of the data base.
