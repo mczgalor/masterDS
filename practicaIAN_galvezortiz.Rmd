@@ -1,0 +1,334 @@
+---
+title: "Práctica Inteligencia y Analítica de Negocios"
+author: M.C. Gálvez Ortiz
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r,message=F, warning=F}
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(VIM)
+library(Hmisc)
+library(car)
+library(boot) 
+```
+
+# Evaluación de modelos
+
+#1. Cargar el fichero de datos "candy-data.csv", definiendo para ello la información de tipos de datos necesaria para interpretar las columnas adecuadamente en el lenguaje de programación seleccionado.
+
+```{r}
+#lectura fichero incluyendo la lectura de las variables categoricas 0-1 como factor:
+
+datos <- read.csv ("candy-data.csv", colClasses=c('character',rep('factor',9),rep('numeric',3)))
+
+dim(datos)
+head(datos)
+```
+
+
+```{r}
+describe(datos)
+```
+
+Hay 12 variables y la columna del nombre del caramelo.
+
+```{r}
+#Nas, no hay 
+dim.data.frame(datos)[1]
+datos_noNA <- na.omit(datos)
+dim.data.frame(datos_noNA)[1]
+# Visualizacion de valores faltantes
+aggr_plot <- datos %>% aggr(col=c('navyblue','red'),
+numbers=TRUE, cex.axis=.7, gap=3, 
+ylab=c("Histogram of missin data","Pattern"))
+
+```
+
+
+# 2. El modelo que debemos ajustar es una regresión mútiple, utilizando como variable de salida los valores de la columna winpercent y como variables explicativas (entrada) todas las demás columnas. El objetivo del análisis es identificar qué factores están más relacionados con la elección de un tipo de caramelo como ganador sobre los restantes.
+
+
+```{r}
+#distribución de la variable salida
+hist(datos$winpercent)
+```
+
+
+```{r}
+#ajuste lineal del campo winpercent en función de las otras 11 variables 
+#modelo 1
+lm.fit =lm(winpercent~ . - competitorname,data=datos)
+summary(lm.fit)
+#gráficas de residuos
+par(mfrow=c(2,2))
+plot(lm.fit)
+```
+
+```{r}
+#intervalos de confianza  
+confint(lm.fit,level=0.95)
+```
+
+El parametro F es mayor que 1, indica una relacion entre la variable 
+winpercent y las demás, pero parece que el valor de p no es significativo para algunas variables, dejando 4 variables con números de p muy altos.
+El valor de R de 0.54 implica una correlación baja. Para las variables que muestran mayor significancia, el chocolate sería la más peso.
+
+En gráficas de residuos se puede ver que los residuos se acercan a cero y no muestran patrones raros, el diagrama Q-Q parece indicar que los residuos siguen una distribución normal. La gráfica de localización de residuos parece que estan distribuidos homeogéneamente. La gráfica de residuos frente a influencia, muestra varios puntos por debajo de la línea de cook.
+Mas o menos se cumple que los residuos se distribuyen de manera normal y homocedástica, las relaciones lineales, pero respecto a la independencia de errores pudiera ser que no del todo.
+
+Se estudian posibles alternativas
+
+```{r}
+#ajuste que incluye las variables que muestran dependencia significativa
+#modelo 2
+lm2.fit =lm(winpercent~ chocolate+peanutyalmondy+fruity+crispedricewafer+hard
+            +sugarpercent,data=datos)
+summary (lm2.fit)
+
+#gráficas de residuos
+par(mfrow=c(2,2))
+plot(lm2.fit)
+```
+
+Comparando con el ajuste anterior, F es mayor y la correlación R es ligeramente menor pero el R ajustado es mayor en este segundo modelo. Los modelos son similares pero el segundo parece algo mejor,
+
+Cuando se exploran de manera individual los modelos donde se eliminan las variables con menos significancia, se ven variaciones en los coeficientes que hacen pensar que pueda existir una relación entre ellas, colinearidad?. En particular por ejemplo la dureza (hard) del caramelo esta relacionada con que tenga cacahuetes o almendras (peanutyalmondy). 
+
+Se explora con estas variables para buscar el mejor modelo haciendo uso
+de la libreria leaps para obtener los posible modelos hasta 10:
+
+```{r}
+library(leaps)
+leapss<-regsubsets(winpercent ~ chocolate + peanutyalmondy + fruity + crispedricewafer + hard 
+                   + sugarpercent,data=datos,nbest=10)
+
+summary(leapss)
+
+#tabla de modelos en función de R, mejor cuanto más cercano a 1 y
+#del parametro BIC, mejor cuanto más bajo.
+
+plot(leapss,scale="r2")
+plot(leapss, scale="bic")
+```
+
+```{r}
+#Resumen de modelos
+
+(summary(leapss))$rsq
+which.max(summary(leapss)$adjr2)
+(summary(leapss))$bic
+which.min(summary(leapss)$bic)
+summary(leapss)$which
+```
+
+El modelo con todas las variables maximiza R, efecto normal al tener mas variables, y el modelo donde solo hay 3 variables, chocolate, peanutyalmondy y  fruity, minimiza BIC.
+
+Si miramos el modelo de solo tres variables:
+
+
+```{r}
+#modelo 3
+lm3.fit =lm(winpercent~ chocolate+peanutyalmondy+fruity,data=datos)
+summary (lm3.fit)
+
+#gráficas de residuos
+par(mfrow=c(2,2))
+plot(lm3.fit)
+
+```
+
+En este modelo F es mayor pero R disminuye respecto a los anteriores. Los errores muestran una distribución localizada y puntos influyentes, lo que indicaria que el modelo lineal no sería adecuado.
+
+Otra forma de comparar con el paso "sabio" desde las variables significativas, usando el coeficiente AIC como parametro de comparación:
+
+```{r}
+# Stepwise Regression
+library(MASS)
+fit <- glm(winpercent ~ chocolate + peanutyalmondy + fruity + 
+             crispedricewafer + hard + sugarpercent,data=datos)
+step <- stepAIC(fit, direction="both")
+step$anova 
+```
+Parece mejor cuando no se elimina ninguna variable, seguido de eliminar dureza, crispedricewafer y sugarpercent.
+
+
+Resumen y comparación de modelos:
+
+```{r}
+#intervalos de confianza para ambos modelos
+round(exp(cbind(Estimate = coef(lm.fit), confint(lm.fit))), 2)
+round(exp(cbind(Estimate = coef(lm2.fit), confint(lm2.fit))), 2)
+round(exp(cbind(Estimate = coef(lm3.fit), confint(lm3.fit))), 2)
+
+#comparación de modelos con anova ya que estan anidados
+anova(lm2.fit, lm.fit, test = "Chisq")
+anova(lm3.fit, lm.fit, test = "Chisq")
+
+```
+
+En la comparación con Anova, entre primer y segundo modelo, como el valor del estadístico no es significativo y p es 0.856, en principio, son comparables para signifación 0.05, entonces la eliminación de las variables puede considerarse válida.
+
+El tercer modelo además de mostrar un valor más bajo de p, aunque no entra en la linea de significaciñon, claramente muestra diferencias en algunas variables y los residuos muestran una distribución localizada.
+
+Creo que hay una dependencia entre las variables peanutyalmondy, hard y tal vez crispedricewafer y en alguna medida tambien fruity y suparpercent. Lo cual tiene sentido, caramelos con algún tipo de fruto seco influencian la dureza, lo crujiente, etc, y pueden ser criterios a veces difíciles de diferenciar para el usuario que contesta la encuesta.
+
+El modelo 2 en este caso resulta el más apropiado para no perder información
+ como en el modelo 3 y no arrastrar variables innecesarias del modelo 1.
+ 
+# a) Primero divide la muestra total de datos en un 75% para training y un 25% para testing. Ajusta un modelo de regresión múltiple sobre los datos de training y luego comprueba su efectividad para predecir los valores de los datos de testing. (3 puntos).
+
+
+```{r}
+#división de la muestra total de datos en un 75% para training y un 25% para testing.
+
+set.seed(1)
+train = sample(1:dim(datos)[1], dim(datos)[1] * 0.75)
+
+dataTrain = datos[train, ]
+dataTest = datos[-train, ]
+
+
+```
+
+
+Se hace el ajuste a los modelo 2 elegido como el más apropiado.
+
+```{r}
+#ajuste en función de las variables sognificativas
+mod2train =glm(winpercent~chocolate+peanutyalmondy+fruity+
+                 crispedricewafer+hard+sugarpercent,data=dataTrain)
+summary (mod2train)
+```
+
+Intervalos de confianza:
+
+```{r}
+confint(lm2.fit,level=0.95)
+```
+
+
+```{r}
+#predicción de valores segun los dos modelos
+predtrain2 = predict(mod2train, dataTrain, type = "response")
+predtest2 = predict(mod2train, dataTest, type = "response")
+
+#comparación valores originales con predichos
+orig_preds <- data.frame(cbind(originales=dataTest$winpercent, predichos=predtest2)) 
+orig_preds
+
+```
+
+
+```{r}
+#Precisión
+
+#min_max 
+min_max_accuracy <- mean(apply(orig_preds, 1, min) / apply(orig_preds, 1, max)) 
+min_max_accuracy
+
+#MSE y RMSE
+MSE=mean((dataTest$winpercent-predtest2)^2)  
+RMSE=sqrt(MSE)
+MSE
+RMSE
+```
+
+# b) Utilizando bootstrap, calcula nuevos intervalos de confianza (95%) para los estimadores de todos los regresores del modelo. ¿Son consistentes todos los valores obtenidos con los resultados del apartado anterior?. ¿Qué variables seleccionaría para mantenerlas en el modelo? (3 puntos).
+
+
+Como se pide estudiar la seleción de variables se calculan los coeficientes para todas las variables, es decir, para el modelo 1:
+```{r}
+#función para obtener los coeficientes del ajust glm
+
+boot.fn=function (data,index)
+  + coefficients(glm(winpercent ~ . - competitorname,
+                     data=datos,subset =index))    
+set.seed(12)
+#replicación, en este caso se ha elegido n=1000
+int=boot(datos,boot.fn,1000)
+
+#intervalos de confianza, se usa en este caso solo el tipo basic, 
+#que usa el error estandar para comparar mejor con los intervalos 
+#obtenidos del modelo 1, calculado arriba.
+
+print("Intercept: (25.9244325 43.1435243), boot: ")
+boot.ci(int, index=1,type="basic")
+
+print("chocolate: (11.9779198 27.5182141), boot: ")
+boot.ci(int, index=2,type="basic")
+
+print("fruity: (1.9226936 16.9219505), boot: ")
+boot.ci(int, index=3,type="basic")
+
+print("caramel: (-5.0646342  9.5135969), boot: ")
+boot.ci(int, index=4,type="basic")
+
+print("peanutyalmondy: (2.8643149 17.2770620), boot: ")
+boot.ci(int, index=5,type="basic")
+
+print("nougat: (-10.5884911 12.1971523), boot: ")
+boot.ci(int, index=6,type="basic")
+
+print("crispedricewafer: (-1.5798982 19.4178378), boot: ")
+boot.ci(int, index=7,type="basic")
+
+print("hard: (-13.0514159  0.7207629), boot: ")
+boot.ci(int, index=8,type="basic")
+
+print("bar: (-9.6451266 10.5282068), boot: ")
+boot.ci(int, index=9,type="basic")
+
+print("pluribus, (-6.9134540  5.2044550), boot: ")
+boot.ci(int, index=10,type="basic")
+
+print("sugarpercet (-0.1995199 18.3730456), boot: ")
+boot.ci(int, index=11,type="basic")
+
+print("pricepercent: (-16.9162393  5.0595165), boot: ")
+boot.ci(int, index=12,type="basic")
+```
+
+Los coeficientes varian pero dentro del error, creo que son consistentes.
+A la vista solo de la variación de los coeficientes no eliminaria variables. Pero con el ejercicio anterior ya he expuesto cuales se seleccionarían.
+
+# c) Ahora realiza una validación cruzada (k-fold validation) con K=5. Compara la nueva estimación del MSE con la obtenida inicialmente ¿Qué podemos concluir acerca de la robustez del modelo?. (4 puntos).
+
+Aquí se compara con el modelo que se ha elegido como mejor, el 2.
+
+```{r}
+#error del modelo 
+cv_error <- cv.glm(dataTrain,mod2train)
+#error MSE
+cv_error$delta
+
+```
+
+K fold
+```{r}
+set.seed (12)
+cv.error.5 = rep (0 ,5)
+for (i in 1:5) {
+glmm.fit=glm(winpercent ~ chocolate + peanutyalmondy +fruity
+    +crispedricewafer+hard+sugarpercent,data=dataTrain)
+cv.error.5[i]=cv.glm (dataTrain,glmm.fit,K=5)$delta [1]
+}
+cv.error.5
+mean(cv.error.5)
+
+```
+
+Hay variación considerable en los valores de los errores.
+
+
+#CONCLUSIONES
+
+Con los resultados del ajuste de regresión lineal, la variación de los intervalos de confianza y la de los errores con un k fold de 5, se concluye que el modelo lineal no es muy bueno aunque el modelo 2 con 6 variables es aceptable. El modelo 2 tampoco es muy estable. Habría que explorar modelos no lineales y relaciones de colinearidad de varias de las variables. Como modelo sencillo me quedaria con la variable de chocolate como la más influyente claramente en el exito del caramelo, y luego peanutyalmondy, fruity y hard en una medida mas o menos igual de infuyente.
+
+
