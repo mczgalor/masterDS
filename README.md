@@ -42,4 +42,5 @@ MDS_Memoria_CordovaRuizDavidGalvezortizMCruz.pdf is the memory with all informat
  *enter_data_in_Mongodb.py: connects the MongoDB data bses, create a data base called dblp and write the json files into the the collections of the data base.
  *queries.py: Makes the queries, 10 questions of part I of the project. 
  *transform_csv.py: transform the json files to csv adapting the structure to use it in Neo4j.
+ Also a README.tex file with procedure explanation.
 
