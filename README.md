@@ -1,13 +1,14 @@
 # master Data Science
 Projects from the Data Science Master course 17-18
 
-1) From Distributed system subject: mapper and reducer to read tweeter json file and with a positive and negative word dictionary file, (AFINN-111.txt), explore the "happiness" of USA different states.
+1) Subject: Distributed system I : mapper and reducer to read tweeter json file and, with a positive and negative word dictionary file, (AFINN-111.txt), explore the "happiness" of USA different states.
 All project with D. Córdoba Ruiz, using a MRjob program and a set of mapper and reducer programs.
 
 mapper= tweetsent_mapper.py
 reducer= tweetsent_reducer.py
 
-execution:
+execution modes:
+
 inline:
 
 cat descargatweetspracticasd.json | python2.7
@@ -34,15 +35,24 @@ s3://practicasd1/AFINN-111.txt#AFINN-111.txt
 Take the default confing of Software that includes Hadoop 2.7.3 with the
  m3xlarge hardware: 1 master and 2 nodes. Execute the Cluster.
 
-2) subject of data analytics and business intelligence.
+2) Subject: Data analytics and business intelligence I.
 
  practicaIAN_galvezortiz.Rmd : analysis in R of a business case, candy-data.csv data.
 
-3) subject of Data Bases. All project with D. Córdoba Ruiz
-MDS_Memoria_CordovaRuizDavidGalvezortizMCruz.pdf is the memory with all information and description of the files, etc... programs included:
+3) Subject: Data Bases. All project with D. Córdoba Ruiz
+MDS_Memoria_CordovaRuizDavidGalvezortizMCruz.pdf is the memory with all information and description of the files, etc. programs included:
  *transform_to_json.py: take the xml file and move it into few json files each of them corresponding to each collection we want to create. 
  *enter_data_in_Mongodb.py: connects to MongoDB database, create a database called "dblp" and write the json files into the the collections of the database.
  *queries.py: Makes the queries, 10 questions (part I) of the project. 
  *transform_csv.py: transforms the json files to csv adapting the structure to use it in Neo4j.
  Also a README.tex file with procedure explanation.
 
+4) Subject: Information recovery, ELK environment.
+memoriaELK.pdf is the memory with all information and description of the files, etc.
+programs included:
+ *practica.elk_mov.conf: Logstash configuration file.
+ *movies_metadata.csv: Data file.
+ *consulta1_movies.sh, consulta2_movies.sh, consulta3_movies.sh, consulta4_movies.sh and consulta5_movies.sh: Files with the queries.
+ *outputconsulta1_movies.sh, outputconsulta2_movies.sh, outputconsulta3_movies.sh, outputconsulta4_movies.sh and outputconsulta5_movies.sh: Files with results of the queries. 
+ 
+ 5) Subject: 
