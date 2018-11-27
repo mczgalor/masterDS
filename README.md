@@ -69,4 +69,13 @@ programs included:
  
  *outputconsulta1_movies.sh, outputconsulta2_movies.sh, outputconsulta3_movies.sh, outputconsulta4_movies.sh and outputconsulta5_movies.sh: Files with results of the queries. 
  
+ 5) Subject: Data Mining I and II. Work developed with David Cordoba Ruiz, Laura Lopez Parrilla, and Victor Valero Fernandez.
+
+ 
+ Mineria_main.pdf: complete memory. 
+ 
+ mineriaDatos.rmd and mineriaDatos2.rmd: R files used. The work was dividid in two parts.
+ 
+ Mineria_main.Rmd: R file that joins two previous files.
+ 
 
