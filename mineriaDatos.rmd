@@ -1,0 +1,537 @@
+# Lectura de  librerias principales
+
+
+```{r warning=FALSE, message=FALSE}
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(VIM)
+library(Hmisc)
+library(corrplot)
+library(car)
+library(cowplot)
+library(data.table)
+library(pROC)
+library(ROCR)
+library(corrplot)
+```
+
+# Lectura y descripción de los datos
+
+```{r}
+set.seed(31415)
+data <- read.csv("catalogoalhambra.csv")
+head(data)
+```
+
+Descripción de los datos
+
+```{r}
+describe(data)
+```
+
+
+# Limpieza inicial y selección de datos útiles
+
+Selección de datos útiles para el estudio, junto con variables útiles en la medida de calidad para revisión a posteriori si es necesario.
+
+
+```{r}
+#Selecion de variables: generamos dos ficheros, uno que conserva las variables
+#utiles para el objetivo del estudio y ademas variables de calidad que pueden 
+#proporcionar informacion a posteriori si es necesario y otro con solo
+#las variables utiles:
+
+util_data_1 <- data %>% select(RA, DEC, objID, stell,s2n, F365W:dF814W,
+                    nfobs, Satur_Flag, Stellar_Flag, zb_1, M_ABS_1)
+
+#filtrado inicial: emilinacion de los datos con saturacion y de los datos con 
+#z muy grande
+datosmod =  util_data_1 %>% filter(zb_1<0.5 & Satur_Flag==0)
+
+#ordenacion de variables
+data_util <- datosmod %>% select(objID,RA, DEC, stell, matches("^F.*W$"),
+              J, H, KS, starts_with("d"),Stellar_Flag, M_ABS_1)
+
+#seleccion final de las variables para usar en el analisis
+util_data <- data_util %>% select(objID:F954W,J,H,KS,F814W,Stellar_Flag)
+head(util_data)
+```
+
+Revisión de los datos:
+
+```{r}
+summary(util_data)
+#ejemplo de funcion de densidad de una variable
+ggplot(util_data, aes(x=F923W,xmin=20,xmax=30)) + geom_density()
+```
+
+## Limpieza adicional
+
+Debido a los valores no observados o no detectados (99 y -99) los valores estadísticos que nos proporciona R para cada variable no son reales. Eliminamos estos datos no válidos (-99) y los convertimos en NA. Si miramos la distribución de densidad de los datos y sabiendo la limitación en sensibilidad de las cámaras que los tomaron, además de los campos señalados como no detectados (99), los datos más allá de valores en torno a 25-26 magnitudes son poco fiables. Podríamos eliminar estos datos o como hemos optado en este caso, sustituir los valores por encima del límite por el propio límite. Para cada magnitud buscamos el límite en la distribución de densidad y hacemos la sustitución, incluyendo los valores no detectados (99).
+
+
+Tras examinar cada variable y determinar el pico máximo de la función de densidad, dejamos cada filtro con su límite. 
+```{r}
+#Convertir -99 en NA
+util_data[c(4:27)][(util_data[,c(4:27)] == -99)] <- NA
+#Asignacion de limites
+util_data$F365W[(util_data$F365W == 99) | (util_data$F365W > 25.2)] <- 25.2
+util_data$F396W[(util_data$F396W == 99) | (util_data$F396W > 25.2)] <- 25.2
+util_data$F427W[(util_data$F427W == 99) | (util_data$F427W > 25.2)] <- 25.2
+util_data$F458W[(util_data$F458W == 99) | (util_data$F458W > 25.2)] <- 25.2
+util_data$F489W[(util_data$F489W == 99) | (util_data$F489W > 25.2)] <- 25.2
+util_data$F520W[(util_data$F520W == 99) | (util_data$F520W > 25.0)] <- 25.0
+util_data$F551W[(util_data$F551W == 99) | (util_data$F551W > 24.9)] <- 24.9
+util_data$F582W[(util_data$F582W == 99) | (util_data$F582W > 24.8)] <- 24.8
+util_data$F613W[(util_data$F613W == 99) | (util_data$F613W > 24.8)] <- 24.8
+util_data$F644W[(util_data$F644W == 99) | (util_data$F644W > 24.7)] <- 24.7
+util_data$F675W[(util_data$F675W == 99) | (util_data$F675W > 24.7)] <- 24.7
+util_data$F706W[(util_data$F706W == 99) | (util_data$F706W > 24.7)] <- 24.7
+util_data$F737W[(util_data$F737W == 99) | (util_data$F737W > 24.6)] <- 24.6
+util_data$F768W[(util_data$F768W == 99) | (util_data$F768W > 24.5)] <- 24.5
+util_data$F799W[(util_data$F799W == 99) | (util_data$F799W > 24.5)] <- 24.5
+util_data$F830W[(util_data$F830W == 99) | (util_data$F830W > 24.3)] <- 24.3
+util_data$F861W[(util_data$F861W == 99) | (util_data$F861W > 24.3)] <- 24.3
+util_data$F892W[(util_data$F892W == 99) | (util_data$F892W > 24.1)] <- 24.1
+util_data$F923W[(util_data$F923W == 99) | (util_data$F923W > 23.9)] <- 23.9
+util_data$F954W[(util_data$F954W == 99) | (util_data$F954W > 23.4)] <- 23.4
+util_data$J[(util_data$J == 99) | (util_data$J > 24.0)] <- 24.0
+util_data$H[(util_data$H == 99) | (util_data$H > 23.6)] <- 23.6
+util_data$KS[(util_data$KS == 99) | (util_data$KS > 23.4)] <- 23.4
+util_data$F814W[(util_data$F814W == 99) | (util_data$F814W > 24.4)] <- 24.4
+
+head(util_data)
+```
+
+# Revisión de los datos faltantes 
+
+
+```{r}
+#Contar los NAs 
+not_NA <- na.omit(util_data)
+dim.data.frame(util_data)[1]
+dim.data.frame(util_data)[1]-dim.data.frame(not_NA)[1]
+dim.data.frame(not_NA)[1]
+
+# Visualizacion de valores faltantes
+aggr_plot <- util_data %>% select(F365W:F814W) %>% aggr(col=c('navyblue','red'),
+numbers=TRUE, cex.axis=.7, gap=3, 
+ylab=c("Histogram of missin data","Pattern"))
+
+```
+
+Aunque pueda parecer que hay alguna tendencia, los datos faltantes se refieren a aquellos datos no observados, principalmente por motivos técnicos o de mal tiempo, con lo que deberían ser aleatorios.
+
+# Exploración de datos: revisión de dependencias entre variables
+
+```{r}
+#Eliminamos los datos faltantes (NA) para realizar las operaciones de analisis
+util_data=na.omit(util_data)
+```
+
+
+```{r}
+corrplot(cor(util_data), method = "circle")
+```
+
+Como era de esperar, hay correlación entre las variables de flujo entre sí y entre las variables que señalan la naturaleza estelar de los objetos (stell y Stellar_Flag). A priori no hay relación entre estas dos variables y las variables fotométricas, una razón puede ser que a partir de magnitud 21-22 se asignaba valor 0.5 a estas dos etiquetas, por la poca fiabilidad de los datos (objetos mas débiles con menor señal-ruido).
+
+Ejemplo de matriz de correlación para 4 variables de ejemplo. 
+```{r}
+#scatterplotMatrix(~ F644W + F923W + J + H, data=na.omit(util_data), span=0.6)
+
+```
+
+Se aprecian desviaciones de la linearidad, la mayoria probablemente datos erróneos pero algunas sub-tendencias pueden ser significativas y pertenecer a subgrupos de poblaciones. Por esto, en principio no hacemos imputación de datos, ya que puede afectar al objetivo del trabajo.
+
+
+Revisión si hay relación entre las etiquetas de estelaridad con todas las variables fotométricas.
+
+```{r}
+lm.fit =lm(stell~F365W+F396W+F427W+F458W+F489W+F520W+F551W+F582W+F613W+
+             F644W+F675W+F706W+F737W+F768W+F799W+F830W+F861W+F892W+
+             F923W+J+H+KS+F814W,data=util_data)
+summary (lm.fit)
+lm.fit =lm(Stellar_Flag~F365W+F396W+F427W+F458W+F489W+F520W+F551W+F582W+
+             F613W+F644W+F675W+F706W+F737W+F768W+F799W+F830W+F861W+
+             F892W+F923W+J+H+KS+F814W,data=util_data)
+summary (lm.fit)
+```
+
+Los resultados indican una relación entre las magnitudes y las etiquetas (nivel de significación), aunque en algun caso no aparece, puede ser debido a la presencia de datos de mala calidad en dichas variables o al órden en que están metidos y sus correspondientes dependencias. Los residuos indican una simetría buena en ambas variables.
+
+
+Correlación entre las etiquetas de estelaridad:
+```{r}
+lm.fit =lm(Stellar_Flag~stell,data=util_data)
+summary (lm.fit)
+```
+
+Como se ha mencionado antes, aunque debería haber una relación clara entre estas dos variables, reconocida en el nivel de significación de este ajuste, como hay un número de valores asignados a 0.5 por motivos de baja señal, la correlación no es tan grande como cabría esperar. 
+
+# Reducción de variables
+
+Hemos comprobado que hay relación y alta correlación entre las variables fotométricas. Para simplificar el estudio reducimos las 24 variables a 6, agrupadas de manera coherente, 4 grupos de filtros cercanos en longitud de onda y observados con la misma cámara, 1 grupo con los filtros infrarrojos (observados con la misma cámara) y otro con el filtro F814W que es  posterior a los anteriores.
+
+```{r}
+new_data <- util_data %>% mutate(F3F5=round(rowMeans(select(util_data,F365W:F520W)
+                        ,na.rm=TRUE),3))
+new_data <- new_data %>% mutate(F5F6=round(rowMeans(select(util_data,F551W:F675W)
+                        ,na.rm=TRUE),3))
+new_data <- new_data %>% mutate(F7F8=round(rowMeans(select(util_data,F706W:F830W)
+                        ,na.rm=TRUE),3))
+new_data <- new_data %>% mutate(F8F9=round(rowMeans(select(util_data,F861W:F954W)
+                        ,na.rm=TRUE),3))
+new_data <- new_data %>% mutate(JHKS=round(rowMeans(select(util_data,c(J,H,KS))
+                        ,na.rm=TRUE),3))
+new_data <- new_data %>% select(-c(F365W:KS))
+
+```
+
+```{r}
+corrplot(cor(na.omit(new_data)), method = "circle")
+```
+
+# Filtrado de Galaxias y Estrellas
+
+Suponiendo fiable que los objectos cuyas etiquetas de estelaridad indican que son estrellas o galaxias con alta probabilidad, hemos formado unos ficheros separando estos objectos para realizar un entrenamiento de los datos e intentar determinar un modelo que discrimine entre ambos tipos.
+
+Separación estrellas y galaxias y regresión logística con todas las variables. Añadimos una columna que asigna la probabiblidad de galaxia (1) y no galaxia (0).
+
+```{r}
+#FICHERO CON GALAXIAS
+util_data_gal <- util_data %>% filter(stell < 0.1 & Stellar_Flag < 0.1) %>% 
+                    mutate(galaxy = 1, prob = 1-stell)  %>%
+                    select(objID, F365W:F814W,galaxy,prob) 
+#FICHERO CON ESTRELLAS
+util_data_star <- util_data %>% filter(stell > 0.9 & Stellar_Flag > 0.9) %>% 
+                    mutate(galaxy = 0, prob = stell) %>% 
+                    select(objID, F365W:F814W,galaxy,prob) 
+#FICHERO CONJUNTO DE GALAXIAS Y ESTRELLAS
+utilt<-rbind(util_data_gal,util_data_star)
+
+#FICHERO DE OBJECTOS SIN CLASIFICACION DE ESTELARIDAD
+util_data_unknow <- util_data %>% filter(stell > 0.1 & Stellar_Flag > 0.1 
+                            & stell < 0.9 & Stellar_Flag < 0.9) %>%  
+                            select(objID,F365W:F814W)
+
+cat("num objetos que son galaxia:", dim.data.frame(util_data_gal)[1])
+cat(" \n num objetos que no son galaxia:", dim.data.frame(util_data_star)[1])
+cat(" \n num objetos que no sabemos lo que son:", dim.data.frame(util_data_unknow)[1])
+
+```
+
+Aunque en los datos hay muchos más objetos que son galaxias (2 terceras partes), consideramos que no llegan a ser datos desbalanceados. 
+
+# Análisis con clusterización
+
+Además del estudio anterior, experimentamos con algoritmos de agrupación/clusterización. Queremos ver si de manera natural, objetos con similares características se agrupan, en este caso, aún sabiendo que entre los objetos estelares hay varias clases, queremos saber si podemos separar galaxias de estrellas.
+
+Inicialmente usamos el algoritmo Kmeans. Calculamos la curva de error para identificar cuál es el k que minimiza la suma del cuadrado de los errores manteniendo el mínimo k.
+
+```{r}
+#calculo del error para valores de K hasta 6.
+k.max <- 6
+kdata <- na.omit(utilt) 
+
+wss <- sapply(1:k.max, 
+          function(k){kmeans(kdata, k, nstart=50,iter.max = 15 )$tot.withinss})
+wss
+plot(1:k.max, wss,
+     type="b", pch = 19, frame = FALSE, 
+     xlab="Number of clusters K",
+     ylab="Total within-clusters sum of squares")
+```
+
+El K que minimiza los errores esta entre 2 y 3.
+
+Para K=2, calculamos la clasterizacion para los datos con reducción de variables que contienen solo los datos con clasificación conocida estrella o galaxia para comprobar el algoritmo.
+
+
+```{r}
+kdata = utilt[,2:25]
+km.out = kmeans(kdata, 2, nstart =200)
+new_cluster <- kdata %>% mutate(grupo = km.out$cluster)
+centroides = aggregate(kdata,by=list(km.out$cluster),FUN=mean)
+t(centroides)
+```
+
+Ahora calculamos el numero de elementos que hay en cada grupo enfrentado contra si es estrella ( 0 ) o galaxia ( 1 ).
+
+```{r}
+tkmeans<-table(km.out$cluster,utilt$galaxy )
+tkmeans
+```
+
+La tabla nos dice que ha clasificado 4104 en el grupo 1 siendo del grupo 0 (estrellas) y 14422 siendo 1 (galaxias). Equivalentemente en el grupo 2. Aunque a priori no sabemos qué grupo es cada cosa, no cabe duda de que el grupo 1 es el grupo de las galaxias por su elvado índice de acierto.
+
+Calculamos el True Positive Rate (recall) y el False Positive Rate (ratio de falsa alarma) para visualizar la precisión del modelo y compararlo con los demás modelos que se van a estudiar a continuación.
+
+Los que se clasifican 1 (galaxias) siendo galaxias (1) son 14422.
+Los que se clasifican 2 (estrellas) sinedo estrellas (0) son 5101.
+
+**NOTA**: Puede que distinta ejecuciones hagan que el grupo 1 se intercambie con el 2. Para asegurar un valor fijo, como hemos introducido una semilla al principio, fijaremos la tabla con los valores tal cual lo hemos definido antes.
+
+```{r}
+tkmeans = c(4104, 5101, 14422, 3938)
+total_positive <- tkmeans[3]+tkmeans[4]
+TP_kmean <- tkmeans[3]/total_positive
+total_negative <- tkmeans[1]+tkmeans[2]
+FP_kmean <- tkmeans[1]/total_negative
+FP_kmean
+TP_kmean
+```
+
+
+Podemos aplicar un algoritmo de componentes principales para reducir todas las variables a 2 o 3 dimensiones y así poder valorar si existen grupos marcados.
+
+Para ello es interesante observar la pérdida de información en la reducción de variables.
+
+```{r}
+pc <- princomp(kdata)
+plot(pc, type='l')
+summary(pc)
+comp <- pc$scores[,1:3]
+
+```
+
+Se puede observar que la reducción a dos y tres componentes no conlleva una gran pérdida de información. Por tanto podemos aplicar Kmeans al set de datos reducido a dos variables y graficamos dos componentes.
+
+```{r}
+k <- kmeans(comp, 2, nstart=25, iter.max=1000)
+library(RColorBrewer)
+library(scales)
+palette(alpha(brewer.pal(9,'Set1'), 0.5))
+plot(comp, col=k$clust, pch=16)
+
+```
+
+
+Graficamos la clusterización en 3 dimensiones para terminar de apreciar los grupos.
+
+```{r}
+library(rgl)
+
+#plot3d(comp[,1], comp[,3], comp[,2],col=k$clust)
+
+```
+
+Gracias al gráfico en 3D se puede observar que la tercera componente no contiene mucha relevancia, sin embargo se pueden apreciar dos grupos. La nube más densa corresponde con las galaxias. Dada la naturaleza del algoritmo existe una zona de confusión en el centro de la nube donde existe un corte bien marcado. Esto puede deberse al ruido del set de datos.
+
+Podemos afirmar que la clusterización es un método a priori válido para obtener información de nuestro set de datos sin embargo K means no es el algoritmo ideal para este problema, debiendo optar por un algoritmo basado en densidades.
+
+
+# Regresión logistica
+
+## Ficheros de entrenamiento y testeo:
+
+Lo primero de todo es separ los datos en ficheros de training-test, tomando un 70% como training y 30% como test para luego realizar contrastes.
+
+```{r}
+n_data=dim(utilt)[1]
+n_train=round(0.7*n_data)
+n_test=n_data-n_train
+
+indices=1:n_data
+indices_train= sample(indices,n_train)
+indices_test=indices[-indices_train]
+
+train_data=utilt[indices_train,]
+test_data=utilt[indices_test,]
+dim(train_data)
+dim(test_data)
+class(train_data$galaxy)
+head(train_data)
+
+```
+
+Probamos el análisis de datos con todas las variables y con la lista de variables reducidas.
+
+## Regresión logistica con todas las variables usando el fichero de entrenamiento
+
+```{r}
+glm_log=glm(formula = galaxy~F365W+F396W+F427W+F458W+F489W+F520W+F551W+F582W+
+              F613W+F644W+F675W+F706W+F737W+F768W+F799W+
+              F830W+F861W+F892W+F923W+J+H+KS+F814W, 
+              family = binomial, data = train_data)
+summary(glm_log)
+```
+
+Observamos, al igual que cuando se hizo para el fichero original completo respecto a las variables etiquetas de estelaridad, que las variables estan relacionadas (nivel de significacion) salvo dos variables que segun el modelo no son relevantes. Probamos a quitarlas (F551W, F861W), pero podria ser solo por datos erroneos (aunque hemos limpiado bastante) o dependencias entre variables, el orden, etc.
+
+## Regresion logistica eliminando las dos variables:
+
+```{r}
+glm_log_1=glm(formula = galaxy~F365W+F396W+F427W+F458W+F489W+F520W+F582W+
+                F613W+F644W+F675W+F706W+F737W+F768W+F799W+F830W+
+                F923W+F892W+J+H+KS+F814W, 
+                family = binomial, data = train_data)
+summary(glm_log_1)
+```
+
+Ambos modelos son equivalentes si miramos las variaciones y residuos y el factor AIC
+
+Para visualizar la precision y sendibilidad del ajuste, pintamos la curva ROC de los modelos y creamos las tablas de eventos 
+
+
+```{r}
+prediction_train <- predict(glm_log, train_data, type = "response")
+tglm <- table(train_data$galaxy, prediction_train > 0.5)
+tglm
+```
+
+Predecimos para test:
+
+```{r}
+prediction_test = predict(glm_log, test_data, type = "response")
+tglm_test <- table(test_data$galaxy, prediction_test > 0.5)
+tglm_test
+
+```
+
+Esto quiere decir que los que han salido TRUE son los que son mayores de 0.5, esto es, los que los clasificamos como 1 (galaxias). Inversamente para menor que 0.5. Por tanto, ha clasificado correctamente como galaxias 5337, y como estrellas 2507.
+
+Calculamos el recall y el ratio de falsa alarma para los datos train puesto que el volumen de datos es semejante al utilizado en el kmeans.
+
+
+```{r}
+total_pos <- tglm[2]+tglm[4]
+TP_glm <- tglm[4]/total_pos
+total_neg <- tglm[1]+tglm[3]
+FP_glm <- tglm[3]/total_neg
+FP_glm
+TP_glm
+```
+
+
+```{r}
+z1_test = predict(glm_log, test_data, type = "response")
+
+
+y_test <- test_data$galaxy 
+
+pred <- prediction(z1_test, y_test)
+
+# Area bajo al curva de ROC
+auc.tmp <- performance(pred,"auc");
+auc_resume <- as.numeric(auc.tmp@y.values)
+
+
+cat("El area bajo la curva ROC del modelo es de: ", auc_resume)
+
+
+#Curva de ROC 
+g_test <- roc(galaxy ~ z1_test, data = test_data)
+plot(g_test)
+```
+
+Obtenemos un alto grado de prediccion. Además nos indica que el área bajo la curva ROC es cercano a 98.
+
+Podemos utilizar la tabla ANOVA que en regresion tradicional para comparar el ajuste de estos dos modelos, ya que estan anidados.
+
+```{r}
+anova(glm_log, glm_log_1, test = "Chisq")
+```
+
+Como el valor del estadístico no es significativo, en principio, la eliminación de las variables puede considerarse válida.
+
+
+## Regresión logística para fichero con reducción de variables
+
+Mismo análisis pero con el fichero que contiene la reducción de variables
+
+```{r}
+
+#FICHERO CON GALAXIAS
+new_data_gal <- new_data %>% filter(stell < 0.1 & Stellar_Flag < 0.1) %>% 
+                    mutate(galaxy = 1, prob = 1-stell)  %>%  
+                    select(objID, F3F5:JHKS,F814W,galaxy,prob) 
+#FICHERO CON ESTRELLAS
+new_data_star <- new_data %>% filter(stell > 0.9 & Stellar_Flag > 0.9) %>% 
+                     mutate(galaxy = 0, prob = stell) %>% 
+                     select(objID, F3F5:JHKS,F814W,galaxy,prob) 
+#FICHERO CONJUNTO DE GALAXIAS Y ESTRELLAS
+newt<-rbind(new_data_gal,new_data_star)
+
+#FICHERO DE OBJECTOS SIN CLASIFICACION DE ESTELARIDAD
+new_data_unknow  <- new_data %>% filter(stell > 0.1 & Stellar_Flag > 0.1 
+  & stell < 0.9 & Stellar_Flag < 0.9) %>%  select(objID,F3F5:JHKS,F814W)
+
+
+cat("num objetos que son galaxia:", dim.data.frame(new_data_gal)[1])
+cat("\n num objetos que no son galaxia:", dim.data.frame(new_data_star)[1])
+cat("\n num objetos que no sabemos lo que son:", dim.data.frame(new_data_unknow)[1])
+
+```
+
+
+Separación de datos en ficheros de training-test, tomando un 70% como training y 30% como test.
+
+```{r}
+
+n_new_data=dim(newt)[1]
+n_new_train=round(0.7*n_new_data)
+n_new_test=n_new_data-n_new_train
+
+indices=1:n_new_data
+indices_new_train= sample(indices,n_new_train)
+indices_new_test=indices[-indices_new_train]
+
+new_train_data=newt[indices_new_train,]
+new_test_data=newt[indices_new_test,]
+```
+
+Regresión logística con todas las variables usando el fichero de entrenamiento
+```{r}
+new_glm_log=glm(formula = galaxy~F3F5+F5F6+F7F8+F8F9+JHKS+F814W, 
+        family = binomial, data = new_train_data)
+summary(new_glm_log)
+```
+
+Este modelo se puede considerar peor que los dos anteriores, si comparamos los valores de los residuos y del factor AIC, aunque no es muy grande.
+
+Tabla de eventos 
+ 
+```{r}
+z_new = predict(new_glm_log, new_test_data, type = "response")
+tglm_new = table(new_test_data$galaxy, z_new > 0.5)
+tglm_new
+```
+
+```{r}
+total_pos <- tglm_new[2]+tglm_new[4]
+TP_glm_new <- tglm_new[4]/total_pos
+total_neg <- tglm_new[1]+tglm_new[3]
+FP_glm_new <- tglm_new[3]/total_neg
+FP_glm_new
+TP_glm_new
+```
+
+Curva ROC de los modelo
+
+```{r}
+prob_new_glm = predict(new_glm_log, type = c("response"))
+g_new <- roc(galaxy ~ prob_new_glm, data = new_train_data)
+plot(g_new)
+```
+
+Cálculo de la precisión del modelo
+
+```{r}
+# Calculamos sobre le fichero de entrenamiento:
+y_new <- new_test_data$galaxy 
+
+new_pred <- prediction(z_new, y_new)
+
+# Area bajo al curva de ROC
+auc.tmp_new <- performance(new_pred,"auc");
+auc_resume_new <- as.numeric(auc.tmp_new@y.values)
+
+
+cat("El area bajo la curva ROC del nuevo modelo es de: ", auc_resume_new)
+
+```
+
+Como vemos es muy similar a los valores obtenidos con los otros dos modelos (~98%), pero algo inferior.
+

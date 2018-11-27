@@ -1,0 +1,414 @@
+
+
+# Predicción de datos
+
+Con el modelo que da mejor resultado, asignamos un grupo (galaxia o no) a la lista de objetos de los cuales no sabemos su naturaleza.
+
+```{r}
+#Prediccion para los datos desconocidos
+pred <- predict(glm_log_1, util_data_unknow, type = "response") 
+head(pred)
+
+probs <- exp(pred)/(1+exp(pred)) # Da la probabilidad de que y=1
+
+#Anadimos prediccion y la probabilidad asociada
+util_data_unknow <- util_data_unknow %>% mutate( galaxy =
+                  trunc(pred+0.5)) %>% mutate(prob=probs)
+
+final_data <- rbind(utilt,util_data_unknow)
+head(final_data)
+
+```
+
+
+La regresión logística parece funcionar bien, con aproximadamente un 0.98% de recuperación de los datos/test. Pero en la ejecución para datos desconocidos es menor, discriminando bien estrellas de tipos frios pero con mucha confusión entre galaxias y tipos de estrellas calientes. Esto lo sabemos porque se ha comparado los resultados con índices de color de la manera tradicional en astronomía mostrada en la figura siguiente.
+
+
+```{r}
+final_datag <- final_data %>% filter(galaxy==1)
+final_datas <- final_data %>% filter(galaxy==0)
+
+gg <- util_data_unknow %>% filter(galaxy==1)
+ss <- util_data_unknow %>% filter(galaxy==0)
+
+xeg=final_datag$F644W-final_datag$F923W
+yeg=final_datag$J-final_datag$KS
+xes=final_datas$F644W-final_datas$F923W
+yes=final_datas$J-final_datas$KS
+
+xgg= gg$F644W-gg$F923W
+ygg= gg$J-gg$KS
+xss= ss$F644W-ss$F923W
+yss= ss$J-ss$KS
+
+plot(xeg,yeg,col='red',xlim=c(-2,5),ylim=c(-3,3),main="galaxia-estrella",
+     xlab="color1",ylab="color2")
+points(xes,yes,col='blue')
+plot(xgg,ygg,col='green',main="galaxia-estrella",xlab="color1",ylab="color2")
+points(xss,yss,col='yellow')
+
+```
+
+El rojo (y verde) señala galaxias y el azul (y amarillo) estrellas. Rojos y azules son la recuperación de datos y verde y amarillo los desconocidos, estando en la zona de confusión entre estrellas calientes y galaxias. Los índices astronómicos tampoco pueden discriminar mejor sin usar otras técnicas.
+
+Una de las maneras posibles que nos planteamos para mejorar el modelo fue mejorar la limpieza inicial de los datos con el parámetro de señal ruido pero al realizar la limpieza para una señal (parámetro s2n del fichero original) por encima de cierto límite, la mejora no fue casi apreciable y por eso no lo hemos incluído.
+
+
+
+# Evaluación de modelos. Comparación
+
+```{r}
+ par(lab=c(x=8,y=8,len=1))
+x <- c(FP_kmean, FP_glm, FP_glm_new)
+y <- c(TP_kmean, TP_glm, TP_glm_new)
+plot(x, y, pch=3, main="Evaluación de Modelos", xlab="False Positive Rate",
+     ylab="True Positive Rate", xlim=c(0,1), ylim=c(0,1))
+text(x-0.005,y-0.05,c("A", "B", "C"))
+legend("bottomright",legend=c("A Kmeans","B Glm", "C Glm reducido"))
+par(new="True")
+x1 <- seq(0,1,0.1)
+y1 <- x1
+plot(x1, y1, type="l", col="grey")
+```
+
+Como ya hemos ido viendo, parece que los modelos de regresión B y C son equivalentes y son mejores que el modelo de K-means en este caso.
+
+# Modelo con Máquinas de Vector Soporte 
+
+```{r, warning=FALSE, message=FALSE}
+library(e1071) 
+library(kernlab) 
+```
+
+
+```{r}
+variables <- train_data %>% select(F365W:F814W)
+dim(variables)
+label <- train_data %>% select(galaxy)
+dim(label)
+
+variables_test <- test_data %>% select(F365W:F814W)
+dim(variables_test)
+label_test <- test_data %>% select(galaxy)
+dim(label_test)
+```
+
+```{r}
+model = svm(y = label, x = variables, kernel = "linear", cost = 10, 
+            type = "C-classification", scale = FALSE)
+summary(model)
+```
+
+Tenemos alrededor de 3000 vectores soporte, es decir, objetos que intervienen en el cálculo del hiperplano separador (aproximadamente la mitad de cada grupo). Teniendo en cuenta que contamos con casi 20 mil, el número de vectores soportes es bastante óptimo. 
+
+Hallamos el índice de aciertos para el SVM.
+
+```{r}
+trainprediction = predict(model, train_data[,2:25], decision.values = TRUE)
+tsvm <- table(true = train_data$galaxy, trainprediction)
+tsvm
+cat('\n')
+testprediction = predict(model, test_data[,2:25], decision.values = TRUE)
+table(true = test_data$galaxy, testprediction)
+```
+
+## SVM no lineal
+
+Ahora probaremos con un modelo SVM con kernel RBF que permite crear hiperplanos no lineales.
+
+```{r}
+model_RBF = svm(y = train_data$galaxy, x = train_data[,2:25], kernel = "radial", cost = 1, type = "C-classification", scale = FALSE)
+summary(model_RBF)
+```
+
+Vemos que en comparanción con el lineal, el número de vecores soporte se ha reducido. Teniendo en cuenta que ya era un número óptimo esto no provoca gran diferencia. Comprobaremos aún así el índice de aciertos.
+
+```{r}
+trainpredictionRBF = predict(model_RBF, train_data[,2:25], decision.values = TRUE)
+tsvmRBF <- table(true = train_data$galaxy, trainpredictionRBF)
+tsvmRBF
+cat('\n')
+testpredictionRBF = predict(model_RBF, test_data[,2:25], decision.values = TRUE)
+table(true = test_data$galaxy, testpredictionRBF)
+```
+
+Parece que el RBF mejora ligeramente sobre el lineal.
+
+Calculamos ahora nuestras medidas de precisión (TP y FP rate) para ambos.
+
+```{r}
+total_pos <- tsvm[2]+tsvm[4]
+TP_svm <- tsvm[4]/total_pos
+total_neg <- tsvm[1]+tsvm[3]
+FP_svm <- tsvm[3]/total_neg
+cat("SVM Lineal \n\n")
+FP_svm
+TP_svm
+```
+
+```{r}
+total_pos <- tsvmRBF[2]+tsvmRBF[4]
+TP_svmRBF <- tsvmRBF[4]/total_pos
+total_neg <- tsvmRBF[1]+tsvmRBF[3]
+FP_svmRBF <- tsvmRBF[3]/total_neg
+cat("SVM No Lineal \n\n")
+FP_svmRBF
+TP_svmRBF
+```
+
+```{r}
+predsvm = prediction(attr(trainpredictionRBF, "decision.values"), train_data$galaxy)
+predsvm = performance(predsvm, "fpr", "tpr")
+plot(predsvm)
+```
+
+Aunque hemos visto que el modelo SVM con kernel no lineal da buenos resultados, usaremos la función tune para elegir los mejores parámetros para el modelo.
+
+Pintamos de nuevo la grafica de evaluación de modelos añadiendo los dos modelos SVM:
+
+```{r}
+# Como cada realizacion del cluster Kmeans puede variar el grupo, afecta al calculo de False y True positive rate. Sabiendo esto, si el FP_kmean es mayor que 0.5 es que se ha invertido con respecto a una ejecución anterior, por lo que le cambiamos los valores.
+par(lab=c(x=8,y=8,len=1))
+x <- c(FP_kmean, FP_glm, FP_glm_new)
+y <- c(TP_kmean, TP_glm, TP_glm_new)
+plot(x, y, pch=3, main="Evaluacion de Modelos", xlab="False Positive Rate",ylab="True Positive Rate", xlim=c(0,1), ylim=c(0,1))
+par(new="True")
+x1 <- seq(0,1,0.1)
+y1 <- x1
+plot(x1, y1, type="l", col="grey")
+par(new="True")
+x3 <- c(FP_svm, FP_svmRBF)
+y3 <- c(TP_svm, TP_svmRBF)
+X <- c(x, x3)
+Y <- c(y, y3)
+plot(x3, y3, pch=3, col = "blue", xlim=c(0,1), ylim=c(0,1))
+text(X-0.005, Y-0.05, c("A", "B", "C", "D", "E"), col = c("black", "black", "black", "blue", "blue"))
+legend("bottomright",legend=c("A Kmeans","B Glm", "C Glm reducido", "D SVM lineal", "E SVM RBF"))
+
+```
+
+Lo que nos dice que el SVM mejora las predicciones y, más en concreto, el SVM no lineal.
+
+
+```{r}
+# No hemos conseguido visualizar su resultado debido a que el tiempo de ejecucion no finalizaba. # Esto es interesante porque compara diversos parametros pudiendo diferencial cual de ellos 
+# actua mejor en un SVM para nuestro caso
+#tuned <- tune.svm(galaxy ~ ., data = variables, gamma = 10^(-2:2),
+#cost = 10^(-1:1))
+#summary(tuned)
+```
+
+
+# Estudio con Árboles de decisión
+
+Para explorar otros modelos, como los Árboles de decisión, hemos introducido una columna nueva en el fichero que contiene los objetos clasificados como estrellas (ajustándonos a la clasificación del apartado 5). Este fichero por tanto ya esta filtrado con los parámetros de limpieza inicianes (apartado 2). La columna añadida es una medida de la temperatura, que se ha añadido como factor, 0 para estrellas frías (por debajo de 3500 K) y estrellas calientes (por encima de 3500 K). Las temperaturas se han obtenido por herramientas de astrofísica para no usar las mismas variables que queremos estudiar en el problema. En este apartado queremos explorar mediante Árboles de decisión la clasificación en el parámetro tempetarura. 
+
+## Nuevo fichero de datos
+
+```{r}
+datal <- read.csv("estrellascontemp.csv")
+head(datal)
+```
+
+
+## Selección de datos útiles
+
+```{r}
+ut <- datal %>% select(objID,RA, DEC, matches("^F.*W$"),J, H, KS, starts_with("d"),temp)
+
+util_datat <- ut %>% select(objID:F954W,J,H,KS,temp)
+head(util_datat)
+```
+
+
+## Limpieza 
+
+```{r}
+#Convertir -99 en NA
+util_datat[c(4:27)][(util_datat[,c(4:27)] == -99)] <- NA
+#Asignacion de limites
+util_datat$F365W[(util_datat$F365W == 99) | (util_datat$F365W > 25.2)] <- 25.2
+util_datat$F396W[(util_datat$F396W == 99) | (util_datat$F396W > 25.2)] <- 25.2
+util_datat$F427W[(util_datat$F427W == 99) | (util_datat$F427W > 25.2)] <- 25.2
+util_datat$F458W[(util_datat$F458W == 99) | (util_datat$F458W > 25.2)] <- 25.2
+util_datat$F489W[(util_datat$F489W == 99) | (util_datat$F489W > 25.2)] <- 25.2
+util_datat$F520W[(util_datat$F520W == 99) | (util_datat$F520W > 25.0)] <- 25.0
+util_datat$F551W[(util_datat$F551W == 99) | (util_datat$F551W > 24.9)] <- 24.9
+util_datat$F582W[(util_datat$F582W == 99) | (util_datat$F582W > 24.8)] <- 24.8
+util_datat$F613W[(util_datat$F613W == 99) | (util_datat$F613W > 24.8)] <- 24.8
+util_datat$F644W[(util_datat$F644W == 99) | (util_datat$F644W > 24.7)] <- 24.7
+util_datat$F675W[(util_datat$F675W == 99) | (util_datat$F675W > 24.7)] <- 24.7
+util_datat$F706W[(util_datat$F706W == 99) | (util_datat$F706W > 24.7)] <- 24.7
+util_datat$F737W[(util_datat$F737W == 99) | (util_datat$F737W > 24.6)] <- 24.6
+util_datat$F768W[(util_datat$F768W == 99) | (util_datat$F768W > 24.5)] <- 24.5
+util_datat$F799W[(util_datat$F799W == 99) | (util_datat$F799W > 24.5)] <- 24.5
+util_datat$F830W[(util_datat$F830W == 99) | (util_datat$F830W > 24.3)] <- 24.3
+util_datat$F861W[(util_datat$F861W == 99) | (util_datat$F861W > 24.3)] <- 24.3
+util_datat$F892W[(util_datat$F892W == 99) | (util_datat$F892W > 24.1)] <- 24.1
+util_datat$F923W[(util_datat$F923W == 99) | (util_datat$F923W > 23.9)] <- 23.9
+util_datat$F954W[(util_datat$F954W == 99) | (util_datat$F954W > 23.4)] <- 23.4
+util_datat$J[(util_datat$J == 99) | (util_datat$J > 24.0)] <- 24.0
+util_datat$H[(util_datat$H == 99) | (util_datat$H > 23.6)] <- 23.6
+util_datat$KS[(util_datat$KS == 99) | (util_datat$KS > 23.4)] <- 23.4
+
+head(util_datat)
+```
+
+
+## Ficheros de entrenamiento y testeo
+
+```{r}
+n_datat=dim(util_datat)[1]
+
+n_traint=round(0.7*n_datat)
+n_testt=n_datat-n_traint
+
+indicest=1:n_datat
+indices_traint= sample(indicest,n_traint)
+indices_testt=indicest[-indices_traint]
+
+train_datat=util_datat[indices_traint,]
+test_datat=util_datat[indices_testt,]
+dim(train_datat)
+dim(test_datat)
+class(train_datat$temp)
+head(train_datat)
+```
+
+## Regresión logística para estudio de dependendia de variables
+
+```{r}
+glm_temp=glm(temp~F365W+F396W+F427W+F458W+F489W+F520W+F551W+F582W+
+              F613W+F644W+F675W+F706W+F737W+F768W+F799W+
+              F830W+F861W+F892W+F923W+J+H+KS, 
+               data = train_datat)
+summary(glm_temp)
+```
+
+
+## Árbol de decisión
+
+Eliminando las variables que salen sin dependencia en el apartado anterior (F644W, F923W y KS), construimos un Árbol de decisión. Establecemos inicialmente un factor de coste de 0.001, el método de clasificación y no ponemos límite de profundidad.
+ 
+```{r}
+library(rpart)
+set.seed(123)
+
+dfrpt <- rpart(temp~F365W+F396W+F427W+F458W+F489W+F520W+F582W+
+              F613W+F675W+F737W+F768W+F799W+
+              F830W+F861W+J, data=train_datat,cp=0.001,parms=list(split="information"))
+dfrpt
+
+```
+
+Pintamos las gráficas del Árbol y del factor de coste.
+
+```{r}
+library(rpart.plot)
+library(RColorBrewer)
+labels(dfrpt, pretty=T)
+plotcp(dfrpt)
+printcp(dfrpt)
+rpart.plot(dfrpt,type=3,branch=0.3,clip.right.labs=FALSE,main="Arbol de clasificación")
+```
+
+De la tabla del factor de coste, con nuestro cp inicial, se ve que el valor que minimiza el error es 0.00177, muy silimar al usado inicialmente aunque mayor. Aún así, usamos este valor extrayéndolo directamente de la tabla para *podar* el Árbol.
+
+```{r}
+#Poda
+poda_dfrpt<- prune(dfrpt, cp=dfrpt$cptable[which.min(dfrpt$cptable[,"xerror"]),"CP"])
+
+#pintamos arbol podado
+
+rpart.plot(poda_dfrpt,type=3,branch=0.3,clip.right.labs=FALSE,
+           main="Arbol de clasificacion podado")
+```
+
+Solo para mejor visualización, ya que el Árbol que sale es demasiado grande, realizamos el mismo ejercicio con una profundidad máxima de 4 y dibujamos.
+
+```{r}
+dfrpt2 <- rpart(temp~F365W+F396W+F427W+F458W+F489W+F520W+F551W+F582W+
+              F613W+F675W+F706W+F737W+F768W+F799W+
+              F830W+F861W+F892W+J+H, data=train_datat, cp=0.0017762,
+              parms=list(split="information"),control=list(maxdepth=4))
+
+rpart.plot(dfrpt2,type=3,branch=0.3,clip.right.labs=FALSE,main=
+             "Arbol de clasificacion cortado a profundidad 4")
+
+```
+
+
+Predecimos sobre los datos train y sobre los datos de test con el modelo completo podado. Añadimos tabla de confusión y curva Roc.
+
+```{r}
+#Para train
+n=dim(train_datat[1])
+y.pred=predict(poda_dfrpt,train_datat[,-c(25)])
+#y.pred 
+
+table(train_datat$temp, y.pred > 0.8)
+tr_train <- roc(temp ~ y.pred, data = train_datat)
+plot(tr_train)
+
+#Para test
+n2=dim(test_datat[1])
+y2.pred=predict(poda_dfrpt,test_datat[,-c(25)])
+#y2.pred 
+
+table(test_datat$temp, y2.pred > 0.8)
+tr_test <- roc(temp ~ y2.pred, data = test_datat)
+plot(tr_test)
+```
+
+
+Precisión del modelo
+
+```{r}
+# Area bajo al curva de ROC
+
+#train
+auc_DT_ROCt = auc(train_datat$temp,y.pred)
+auc_DT_ROCt
+
+#test
+auc_DT_ROC = auc(test_datat$temp,y2.pred)
+auc_DT_ROC
+```
+
+Comprobamos usando de nuevo un índice astrofísico que separa temperatura como se distribuyen los datos de la predicción:
+
+```{r}
+tt=data.frame(test_datat,tempred=y2.pred)
+
+#Separamos en datos frios y calientes segun la prediccion para dibujar
+
+ttc= tt  %>% filter(tempred>0.5) #calientes en rojo
+ttf= tt  %>% filter(tempred<0.5) #frias en azul
+
+xttc=ttc$F644W-ttc$F923W
+xttf=ttf$F644W-ttf$F923W
+
+plot(xttc,ttc$J,col='red',main="temperatura",xlab="color1",ylab="color2",xlim=c(-1,3))
+points(xttf,ttf$J,col='blue')
+
+```
+
+#Resumen y conclusiones
+
+Los objetivos eran: 
+
+1). Separar objetos de tipo galáctico y estelar.
+
+2). Discriminar objetos estelares por temperatura.
+
+En ambos casos se han conseguido resultados similares a procedimientos clásicos de astrofísica, usando **regresión logística**, **máquinas de vector soporte** y **k-means** en el problema 1), y **árboles de decisión** en el 2).
+
+Todos lo métodos usados han dado buen resultado aunque, como mencionamos en el trimestre pasado, el método de clusterización K means elegido tal vez no era el más adecuado.
+
+Los datos se componen de datos fotométricos a lo largo de un rango extenso en longitud de onda. Normalmente para hacer la clasificación entre objetos de distinta naturaleza (estrellas y galaxias por ejemplo), se usan combinaciones de colores (restas de datos fotométricos a distinta longitud de onda), que se han ido seleccionando y perfeccionando con el tiempo y que se revisan para cada catálogo.
+
+Los métodos usados en esta práctica son igual de eficientes y llegan a similar conclusión sin conocimiento previo. Que los modelos de regresión simplificados sean equivalentes es también normal, puesto que no todos los índices sirven para discriminar todos los tipos de objetos. Y en este caso no se han realizado combinaciones de datos.
+
+En el caso de añadir la temperatura, igualmente se usan índices de color para separar por comparación de color, si unos objetos son más fríos o más calientes que otros y siguen el patrón de los de antes, es decir, búsqueda de la mejor combinación a lo largo de los años. Un caso que se podría haber implementado con redes neuronales pero que no teniamos tiempo de hacer en R, habría sido determinar la temperatura númerica. Normalmente con tantos datos de fotometría, se puede comparar con modelos y obtener la temperatura. Creemos que con una red neuronal podríamos haber entrenado los datos para determinar la temperatura de los objetos.
+
+Los métodos usados en esta práctica empiezan a popularizarse en astrofísica para facilitar y agilizar trabajos de clasificación de este tipo.

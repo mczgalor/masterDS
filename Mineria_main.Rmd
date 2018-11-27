@@ -1,0 +1,20 @@
+---
+title: "Mineria de datos"
+author: David Cordoba Ruiz, Laura Lopez Parrilla, M.C. Galvez Ortiz, Victor Valero
+  Fernandez
+output:
+  bookdown:: gitbook:null  
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,results = 'hold',warning = F, error = F)
+```
+
+*NOTA: Laura Lopez Parrilla ha participado en la parte correspondiente a Mineria de datos I pero no en la parte correspondiente a Mineria de datos II.  
+
+```{r child='mineriaDatos.Rmd'}
+```
+
+
+```{r child='mineriaDatos2.Rmd'}
+```
