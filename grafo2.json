@@ -1,0 +1,5190 @@
+{
+ "directed": false,
+ "multigraph": false,
+ "graph": {
+  "name": "Analisis Artistas Spotify"
+ },
+ "nodes": [
+  {
+   "name": "ZPU",
+   "popularity": 53,
+   "image_url": "https://i.scdn.co/image/3f92708544e05b35cc6cc0b4e90870150c3e53a9",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.20180932498260265,
+   "betweenness": 0.0002811900510241028,
+   "pagerank": 0.0006496900895463552,
+   "comunidad": 1,
+   "id": "spotify:artist:7F9Bd5X4sxdwWRJVpbfMtb"
+  },
+  {
+   "name": "Alexis y Fido",
+   "popularity": 72,
+   "image_url": "https://i.scdn.co/image/f384691ba5926355632f1407857acb2b44a9138c",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.20006898930665748,
+   "betweenness": 0.001084884342002548,
+   "pagerank": 0.0007000430007345817,
+   "comunidad": 2,
+   "id": "spotify:artist:7tU1VKOuxiNZwBZC6RHidA"
+  },
+  {
+   "name": "Rayden",
+   "popularity": 54,
+   "image_url": "https://i.scdn.co/image/1bdac369592e6a607f2e107512f67ee536e22c59",
+   "degree_weight": 4,
+   "degreeCent": 0.0034482758620689655,
+   "closeness": 0.21505376344086022,
+   "betweenness": 0.0006873445651228561,
+   "pagerank": 0.001055241525243523,
+   "comunidad": 1,
+   "id": "spotify:artist:6G43BFwUJvFWbev3knhgEa"
+  },
+  {
+   "name": "El Sevilla",
+   "popularity": 21,
+   "image_url": "https://developer.spotify.com/wp-content/uploads/2016/07/icon1@2x.png",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.211717466691002,
+   "betweenness": 0.007738528379991859,
+   "pagerank": 0.0006600534312189669,
+   "comunidad": 3,
+   "id": "spotify:artist:1Vpl8Df0xDEh4Z4At1a6Jl"
+  },
+  {
+   "name": "Bman Zerowan",
+   "popularity": 20,
+   "image_url": "https://i.scdn.co/image/307dbbc76784461940394a91bfec8b66ece8575d",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.2030812324929972,
+   "betweenness": 0.00011185272858880456,
+   "pagerank": 0.0005935355865354253,
+   "comunidad": 1,
+   "id": "spotify:artist:1e93sDxSMqpA3Sa6FtczbB"
+  },
+  {
+   "name": "Leonel Garc\u00eda",
+   "popularity": 64,
+   "image_url": "https://i.scdn.co/image/b287b43d85ad9b04fa4f84be2dd34261ba508524",
+   "visitado": true,
+   "degree_weight": 35,
+   "degreeCent": 0.020689655172413793,
+   "closeness": 0.23843782117163412,
+   "betweenness": 0.02694902214073664,
+   "pagerank": 0.007040843017109873,
+   "comunidad": 4,
+   "id": "spotify:artist:3t7UqWteBBmHXkcVhMSyay"
+  },
+  {
+   "name": "Marlango",
+   "popularity": 42,
+   "image_url": "https://i.scdn.co/image/26e00a10eb7061629f20db30e928a1b78d28b91c",
+   "visitado": true,
+   "degree_weight": 17,
+   "degreeCent": 0.008620689655172414,
+   "closeness": 0.21990521327014217,
+   "betweenness": 0.01217879249636434,
+   "pagerank": 0.0031287576864670232,
+   "comunidad": 4,
+   "id": "spotify:artist:1sssLDz8bNSqKkW1zndP0D"
+  },
+  {
+   "name": "Lucio Godoy",
+   "popularity": 16,
+   "image_url": "https://i.scdn.co/image/be25c991585cb32265916e6eb5bfcf9d6f8180fc",
+   "degree_weight": 5,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.23387096774193547,
+   "betweenness": 0.00014736983573888346,
+   "pagerank": 0.0005942587198533343,
+   "comunidad": 3,
+   "id": "spotify:artist:01GgtOb4JYac9rRFGdT9De"
+  },
+  {
+   "name": "Vanesa Mart\u00edn",
+   "popularity": 67,
+   "image_url": "https://i.scdn.co/image/de1f3637d32c98baa31b12e4632ab19f08a4f606",
+   "visitado": true,
+   "degree_weight": 28,
+   "degreeCent": 0.01293103448275862,
+   "closeness": 0.2557883131201764,
+   "betweenness": 0.01953226896727646,
+   "pagerank": 0.0039169598182276,
+   "comunidad": 5,
+   "id": "spotify:artist:5kSJMVPcTITrSZxTrHllVN"
+  },
+  {
+   "name": "Hombres G",
+   "popularity": 68,
+   "image_url": "https://i.scdn.co/image/4a88a9bbdd03bcf4e77090706b696e58635c8932",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.20390226753383722,
+   "betweenness": 4.246590189436279e-05,
+   "pagerank": 0.0006609796744685524,
+   "comunidad": 3,
+   "id": "spotify:artist:60uh2KYYSCqAgJNxcU4DA0"
+  },
+  {
+   "name": "Ximena Sari\u00f1ana",
+   "popularity": 61,
+   "image_url": "https://i.scdn.co/image/6c00dd8966eecccb28e33ccfdc48dd0e58b2986e",
+   "degree_weight": 4,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.22979397781299524,
+   "betweenness": 0.002753982724034128,
+   "pagerank": 0.0008476787567535437,
+   "comunidad": 4,
+   "id": "spotify:artist:7plUpXSFcSJUZSiZAoXqr1"
+  },
+  {
+   "name": "Vicente Amigo",
+   "popularity": 50,
+   "image_url": "https://i.scdn.co/image/38abc1101c820e8f8ffb897db7eb822e3a1f2f04",
+   "degree_weight": 8,
+   "degreeCent": 0.0034482758620689655,
+   "closeness": 0.226076788150458,
+   "betweenness": 0.0008383053201355357,
+   "pagerank": 0.001096571613437512,
+   "comunidad": 5,
+   "id": "spotify:artist:4uo8Bp99zyj8HQW1ynweoY"
+  },
+  {
+   "name": "Ang\u00e9lica Leyva",
+   "popularity": 13,
+   "image_url": "https://i.scdn.co/image/f7cb33fb8b78c8db4fdb7c385212ad3bb4f33124",
+   "visitado": true,
+   "degree_weight": 3,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.21928166351606806,
+   "betweenness": 0.0017241379310344827,
+   "pagerank": 0.0007290412734093233,
+   "comunidad": 3,
+   "id": "spotify:artist:1erg9MpdMcrFT0IEtqV9u8"
+  },
+  {
+   "name": "Saga & Sonyc",
+   "popularity": 36,
+   "image_url": "https://i.scdn.co/image/98ef975ebadebbaa3a66190b6db1328822039347",
+   "visitado": true,
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.19436997319034852,
+   "betweenness": 0.0017241379310344827,
+   "pagerank": 0.0007926355985852073,
+   "comunidad": 2,
+   "id": "spotify:artist:4qML3fudSey7ECpjdFtgwp"
+  },
+  {
+   "name": "Aureo Baqueiro",
+   "popularity": 31,
+   "image_url": "https://developer.spotify.com/wp-content/uploads/2016/07/icon1@2x.png",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.20426131361155134,
+   "betweenness": 0.0003049798081182006,
+   "pagerank": 0.0006474149736143682,
+   "comunidad": 4,
+   "id": "spotify:artist:2P0cJqbmutoDZiQiidKXRH"
+  },
+  {
+   "name": "El Santo",
+   "popularity": 23,
+   "image_url": "https://i.scdn.co/image/81ae036a814072bce5d6127297afad88509f25f6",
+   "visitado": true,
+   "degree_weight": 38,
+   "degreeCent": 0.007758620689655172,
+   "closeness": 0.21253206302674973,
+   "betweenness": 0.005440866022595208,
+   "pagerank": 0.0024556648479725045,
+   "comunidad": 1,
+   "id": "spotify:artist:0X0o5wsXqn6uunus02kGvF"
+  },
+  {
+   "name": "Mal\u00fa",
+   "popularity": 66,
+   "visitado": true,
+   "degree_weight": 53,
+   "degreeCent": 0.021551724137931036,
+   "closeness": 0.2894211576846307,
+   "betweenness": 0.15546401635081464,
+   "pagerank": 0.006421681319920214,
+   "comunidad": 5,
+   "id": "spotify:artist:3TLGNOdp1UWYMnV5XG9HkR"
+  },
+  {
+   "name": "Andreas Lutz",
+   "popularity": 41,
+   "image_url": "https://i.scdn.co/image/5f4f07f966a695182824d6293a402ca3a3cb839d",
+   "visitado": true,
+   "degree_weight": 28,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.21137026239067055,
+   "betweenness": 0.0034467882538454673,
+   "pagerank": 0.0011201402060784732,
+   "comunidad": 1,
+   "id": "spotify:artist:6O0C4RGhaPyUrtno687JEY"
+  },
+  {
+   "name": "Yuri",
+   "popularity": 64,
+   "image_url": "https://i.scdn.co/image/8b9237aac98adf648991664b83e6dc8ecc8d8a53",
+   "degree_weight": 5,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.20336605890603085,
+   "betweenness": 0.00033103629879982873,
+   "pagerank": 0.0006466887610631025,
+   "comunidad": 4,
+   "id": "spotify:artist:4OgNARLQSC4yy7Dsa5cqxx"
+  },
+  {
+   "name": "Antonio Gonz\u00e1lez",
+   "popularity": 24,
+   "image_url": "https://i.scdn.co/image/0473ea6111397ac58bb3e2c47298d4ac3aad1aac",
+   "visitado": true,
+   "degree_weight": 67,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.19294743845642048,
+   "betweenness": 0.00020026172181804013,
+   "pagerank": 0.0006370900838416803,
+   "comunidad": 6,
+   "id": "spotify:artist:0iQqeQIjpf8F72j3qSvXtz"
+  },
+  {
+   "name": "Yandel",
+   "popularity": 85,
+   "image_url": "https://i.scdn.co/image/6d260138f0d11711afcdb7639e40a7379adc80b8",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.22192462215419934,
+   "betweenness": 0.002379267693832727,
+   "pagerank": 0.0006925127172055635,
+   "comunidad": 2,
+   "id": "spotify:artist:0eHQ9o50hj6ZDNBt6Ys1sD"
+  },
+  {
+   "name": "El Canijo de Jerez",
+   "popularity": 45,
+   "image_url": "https://i.scdn.co/image/abdfc335ab66fffa6a0639ab120e25db53119d5a",
+   "visitado": true,
+   "degree_weight": 7,
+   "degreeCent": 0.00603448275862069,
+   "closeness": 0.22053231939163498,
+   "betweenness": 0.007234370757456621,
+   "pagerank": 0.002292936515433961,
+   "comunidad": 3,
+   "id": "spotify:artist:1F1UN5rQ0UCxM8A8ZDE6k7"
+  },
+  {
+   "name": "Yahir",
+   "popularity": 61,
+   "image_url": "https://i.scdn.co/image/3379d02fec32b67a306ed5edcbf307b11009ad8c",
+   "visitado": true,
+   "degree_weight": 11,
+   "degreeCent": 0.004310344827586207,
+   "closeness": 0.22740639090374437,
+   "betweenness": 0.006110466910205091,
+   "pagerank": 0.0017224104126432646,
+   "comunidad": 2,
+   "id": "spotify:artist:1bqHIHJm8coUJqqoguolZJ"
+  },
+  {
+   "name": "Juan Luis Guerra 4.40",
+   "popularity": 70,
+   "image_url": "https://i.scdn.co/image/7573735409c18a0dc186d0312b79b6e3d657559a",
+   "visitado": true,
+   "degree_weight": 24,
+   "degreeCent": 0.01206896551724138,
+   "closeness": 0.24855367473751874,
+   "betweenness": 0.038043183775242,
+   "pagerank": 0.00412986204866122,
+   "comunidad": 5,
+   "id": "spotify:artist:3nlpTZci9O5W8RsNoNH559"
+  },
+  {
+   "name": "Carlos Jean",
+   "popularity": 48,
+   "image_url": "https://i.scdn.co/image/13cd14c40e677db080978ef1e373b05c6775be1f",
+   "degree_weight": 4,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.23829087921117503,
+   "betweenness": 0.0017241636750031937,
+   "pagerank": 0.0008555038178624928,
+   "comunidad": 3,
+   "id": "spotify:artist:3oDsfHaRCBv7Jp8HO6VgeA"
+  },
+  {
+   "name": "Kriss",
+   "popularity": 39,
+   "image_url": "https://i.scdn.co/image/d5c3b21f7298982ae57137ff26821a0c6577c049",
+   "visitado": true,
+   "degree_weight": 13,
+   "degreeCent": 0.005172413793103448,
+   "closeness": 0.2116016052535571,
+   "betweenness": 0.008605813572937432,
+   "pagerank": 0.002287576476568712,
+   "comunidad": 1,
+   "id": "spotify:artist:2ICpdq6XH4igauS6tosVgH"
+  },
+  {
+   "name": "Tosko",
+   "popularity": 37,
+   "image_url": "https://i.scdn.co/image/033573ad9613f03852323d63e43cdbbef0bacfc2",
+   "degree_weight": 19,
+   "degreeCent": 0.004310344827586207,
+   "closeness": 0.21657953696788648,
+   "betweenness": 0.0003714408244033087,
+   "pagerank": 0.0013446896041833661,
+   "comunidad": 1,
+   "id": "spotify:artist:6TB7aGH2wncweq212VM7OF"
+  },
+  {
+   "name": "Legendario",
+   "popularity": 42,
+   "image_url": "https://i.scdn.co/image/bd98660312f8c6c49a8c11cd3d616d6b955142e6",
+   "visitado": true,
+   "degree_weight": 68,
+   "degreeCent": 0.01896551724137931,
+   "closeness": 0.23260477240826147,
+   "betweenness": 0.01942796769643014,
+   "pagerank": 0.005987469702756636,
+   "comunidad": 1,
+   "id": "spotify:artist:6X97A7Vfil4DrnAxEJBPc2"
+  },
+  {
+   "name": "Becky G",
+   "popularity": 84,
+   "image_url": "https://i.scdn.co/image/706c5caeed2ef757932e5cb04cce09dc9f7448f1",
+   "visitado": true,
+   "degree_weight": 16,
+   "degreeCent": 0.013793103448275862,
+   "closeness": 0.19934696683278913,
+   "betweenness": 0.017746456744664144,
+   "pagerank": 0.005246640077249836,
+   "comunidad": 2,
+   "id": "spotify:artist:4obzFoKoKRHIphyHzJ35G3"
+  },
+  {
+   "name": "Jesse & Joy",
+   "popularity": 77,
+   "image_url": "https://i.scdn.co/image/d4a3883c33fcaae690613238bb5fa6557bd08030",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.2246320681642138,
+   "betweenness": 0.000852982129939157,
+   "pagerank": 0.0006104580185314174,
+   "comunidad": 4,
+   "id": "spotify:artist:1mX1TWKpNxDSAH16LgDfiR"
+  },
+  {
+   "name": "Manuel Mart\u00ednez",
+   "popularity": 34,
+   "image_url": "https://i.scdn.co/image/bca5cdef33f63b07c0055fef3ee8889879bb9fed",
+   "visitado": true,
+   "degree_weight": 4,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.21137026239067055,
+   "betweenness": 0.0034467882538454673,
+   "pagerank": 0.0011201402060784732,
+   "comunidad": 1,
+   "id": "spotify:artist:6hHsPFPs8O0jq2HpudqjSR"
+  },
+  {
+   "name": "Nestakilla",
+   "popularity": 29,
+   "image_url": "https://i.scdn.co/image/3e5bdfbd930a4e6c8869cc57682ba869ee50504a",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.21986353297952996,
+   "betweenness": 0.02159144435643306,
+   "pagerank": 0.0006600332854862622,
+   "comunidad": 1,
+   "id": "spotify:artist:6puPKMhUzdm13LtG4LfrO9"
+  },
+  {
+   "name": "J Balvin",
+   "popularity": 95,
+   "image_url": "https://i.scdn.co/image/3464232821db557fa7eb3c2979425995bec84356",
+   "degree_weight": 3,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.22032288698955366,
+   "betweenness": 0.005971455002719159,
+   "pagerank": 0.000977071673094134,
+   "comunidad": 2,
+   "id": "spotify:artist:1vyhD5VmyZ7KMfW5gqLgo5"
+  },
+  {
+   "name": "Tomatito",
+   "popularity": 52,
+   "image_url": "https://i.scdn.co/image/6274e4e555e37cde2a065bf57c62a7d851438ec0",
+   "degree_weight": 4,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.22264875239923224,
+   "betweenness": 0.0005689833146386126,
+   "pagerank": 0.0008927936576508232,
+   "comunidad": 5,
+   "id": "spotify:artist:3wxFXeuHQEq4NubZunCIMe"
+  },
+  {
+   "name": "Rush Smith",
+   "popularity": 22,
+   "image_url": "https://i.scdn.co/image/c22c9ad6b4a7251e97eed091a53aa13a6a76a2fb",
+   "visitado": true,
+   "degree_weight": 9,
+   "degreeCent": 0.00603448275862069,
+   "closeness": 0.15958178566515338,
+   "betweenness": 0.008605813572937432,
+   "pagerank": 0.00269819246624194,
+   "comunidad": 7,
+   "id": "spotify:artist:5fE2d2bH7Gk9TzzUzDG4uM"
+  },
+  {
+   "name": "Lichis",
+   "popularity": 29,
+   "image_url": "https://i.scdn.co/image/3865dfa70765d0d3c320bd37d703a5fe7b901bbd",
+   "visitado": true,
+   "degree_weight": 11,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.206810483152077,
+   "betweenness": 0.0017241379310344827,
+   "pagerank": 0.0007471631897945162,
+   "comunidad": 3,
+   "id": "spotify:artist:1Z6c0iLhCdsGm8mmm1OwLh"
+  },
+  {
+   "name": "Zeropositivo",
+   "popularity": 26,
+   "image_url": "https://i.scdn.co/image/66832be1308771322cacf9250f6a1c0b72aad84e",
+   "visitado": true,
+   "degree_weight": 28,
+   "degreeCent": 0.011206896551724138,
+   "closeness": 0.239422084623323,
+   "betweenness": 0.011646785504363925,
+   "pagerank": 0.0035934876212222223,
+   "comunidad": 1,
+   "id": "spotify:artist:5mhAqBlaOlTLA5txzZf22K"
+  },
+  {
+   "name": "Phone",
+   "popularity": 5,
+   "image_url": "https://i.scdn.co/image/e00ff666e8491bec645dc17970b11d70c37de091",
+   "degree_weight": 3,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.18979057591623036,
+   "betweenness": 0.03705779457338959,
+   "pagerank": 0.0007092848520597874,
+   "comunidad": 7,
+   "id": "spotify:artist:7lZwPLmN9rAm6oadhQFPhB"
+  },
+  {
+   "name": "Marc Anthony",
+   "popularity": 78,
+   "image_url": "https://i.scdn.co/image/be9cd13d7e82b17dffcc817c690cb4871a45a168",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.24046434494195687,
+   "betweenness": 0.031133012159365963,
+   "pagerank": 0.0006469501242327153,
+   "comunidad": 2,
+   "id": "spotify:artist:4wLXwxDeWQ8mtUIRPxGiD6"
+  },
+  {
+   "name": "Javier Ojeda",
+   "popularity": 29,
+   "image_url": "https://i.scdn.co/image/a701e79a4a77bae5c6d5032ed677e4bdc9349b68",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.2297484650425827,
+   "betweenness": 0.018416241509476367,
+   "pagerank": 0.0006387972267579307,
+   "comunidad": 4,
+   "id": "spotify:artist:7qyL6M8Rib3S7jLWOYUjaI"
+  },
+  {
+   "name": "Don Omar",
+   "popularity": 78,
+   "image_url": "https://i.scdn.co/image/ad4acffbfe867dd93df97c2335030225c10ba714",
+   "degree_weight": 6,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.2247191011235955,
+   "betweenness": 0.006331199489810273,
+   "pagerank": 0.0009782253284895829,
+   "comunidad": 2,
+   "id": "spotify:artist:33ScadVnbm2X8kkUqOkC6Z"
+  },
+  {
+   "name": "Los Amaya",
+   "popularity": 32,
+   "image_url": "https://i.scdn.co/image/144a8cc11d5bc7317f3711438f115dac679f671f",
+   "visitado": true,
+   "degree_weight": 179,
+   "degreeCent": 0.01810344827586207,
+   "closeness": 0.2605570530098832,
+   "betweenness": 0.05848808698726535,
+   "pagerank": 0.005884494985661815,
+   "comunidad": 3,
+   "id": "spotify:artist:0BSPrk9z6EHzPOac8r07bw"
+  },
+  {
+   "name": "Maui",
+   "popularity": 21,
+   "image_url": "https://i.scdn.co/image/7a27503ed05a3d3ff36419026dd15bc35e0cce17",
+   "visitado": true,
+   "degree_weight": 7,
+   "degreeCent": 0.005172413793103448,
+   "closeness": 0.21961378265808407,
+   "betweenness": 0.008605813572937432,
+   "pagerank": 0.0022749194472782004,
+   "comunidad": 3,
+   "id": "spotify:artist:6ny3O70cD3aCt893w4Rcq5"
+  },
+  {
+   "name": "Enrique Iglesias",
+   "popularity": 83,
+   "image_url": "https://i.scdn.co/image/72451364835d9bf39d11f77b421f40cc464cc235",
+   "degree_weight": 3,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.23976849937990904,
+   "betweenness": 0.008740043626927653,
+   "pagerank": 0.0006301757071832785,
+   "comunidad": 5,
+   "id": "spotify:artist:7qG3b048QCHVRO5Pv1T5lw"
+  },
+  {
+   "name": "V\u00edctor Manuelle",
+   "popularity": 67,
+   "image_url": "https://i.scdn.co/image/c01e4357a7bbdc1e3eabd3556fbbaf4bd63f2eed",
+   "visitado": true,
+   "degree_weight": 56,
+   "degreeCent": 0.023275862068965515,
+   "closeness": 0.22722820763956905,
+   "betweenness": 0.048754882031667994,
+   "pagerank": 0.008885631078382288,
+   "comunidad": 2,
+   "id": "spotify:artist:4N5fp4zhTsVITZTVfsXpc2"
+  },
+  {
+   "name": "Paty Cant\u00fa",
+   "popularity": 69,
+   "image_url": "https://i.scdn.co/image/1857975c994bff6aedd53cab58532630e7ebdce6",
+   "degree_weight": 3,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.22078416444613627,
+   "betweenness": 0.00039765750014332963,
+   "pagerank": 0.0008398598473409769,
+   "comunidad": 4,
+   "id": "spotify:artist:7K9rdoOJSiKXoVXPlSkGKT"
+  },
+  {
+   "name": "Cruz Cafun\u00e9",
+   "popularity": 59,
+   "image_url": "https://i.scdn.co/image/fc49b0f0bd42b12f2f3a721cd81681e9c7254600",
+   "visitado": true,
+   "degree_weight": 10,
+   "degreeCent": 0.008620689655172414,
+   "closeness": 0.2157336804909801,
+   "betweenness": 0.040490846212736624,
+   "pagerank": 0.003518761813125111,
+   "comunidad": 1,
+   "id": "spotify:artist:0jeYkqwckGJoHQhhXwgzk3"
+  },
+  {
+   "name": "Juan Mag\u00e1n",
+   "popularity": 81,
+   "image_url": "https://i.scdn.co/image/aaedff7c0774d5eca828a1b37283f4cf03c0f027",
+   "visitado": true,
+   "degree_weight": 134,
+   "degreeCent": 0.05862068965517241,
+   "closeness": 0.2765196662693683,
+   "betweenness": 0.22014196173606423,
+   "pagerank": 0.02283817208623184,
+   "comunidad": 2,
+   "id": "spotify:artist:1ackd5XprZEkH3McKbQD51"
+  },
+  {
+   "name": "Pitbull",
+   "popularity": 83,
+   "image_url": "https://i.scdn.co/image/c82dfff224bfb7fe29e0364a5aacc55da29b465b",
+   "degree_weight": 5,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.21779947427713106,
+   "betweenness": 0.0030192883062780313,
+   "pagerank": 0.0006913590618101146,
+   "comunidad": 2,
+   "id": "spotify:artist:0TnOYISbd1XYRBk9myaseg"
+  },
+  {
+   "name": "India Martinez",
+   "popularity": 65,
+   "image_url": "https://i.scdn.co/image/eb85d5edc02cc4a87cd89b82166e2832461e2267",
+   "visitado": true,
+   "degree_weight": 61,
+   "degreeCent": 0.01982758620689655,
+   "closeness": 0.27128157156220767,
+   "betweenness": 0.04756753152162569,
+   "pagerank": 0.005854304378227441,
+   "comunidad": 5,
+   "id": "spotify:artist:6FOpWOxsjQxKEbLiJpU1xV"
+  },
+  {
+   "name": "Lolita",
+   "popularity": 41,
+   "image_url": "https://i.scdn.co/image/536573a4341784e8fb6e6a7bf81297790874de01",
+   "visitado": true,
+   "degree_weight": 53,
+   "degreeCent": 0.01293103448275862,
+   "closeness": 0.2617919205596931,
+   "betweenness": 0.024169123747239618,
+   "pagerank": 0.00398782967860381,
+   "comunidad": 5,
+   "id": "spotify:artist:1Jl0XzEt7csnco2FUybCrK"
+  },
+  {
+   "name": "Lasai",
+   "popularity": 29,
+   "image_url": "https://i.scdn.co/image/df2b11271c1016236f15e6c286da1740804b23fa",
+   "degree_weight": 5,
+   "degreeCent": 0.004310344827586207,
+   "closeness": 0.22337762372424416,
+   "betweenness": 0.001109697844985582,
+   "pagerank": 0.0013191445028000643,
+   "comunidad": 1,
+   "id": "spotify:artist:4jm1fGGclMs7yvK3BgFDsN"
+  },
+  {
+   "name": "Shotta",
+   "popularity": 50,
+   "image_url": "https://i.scdn.co/image/018767be3d09a08f1b17b0a0a4851465458a500b",
+   "degree_weight": 3,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.2117561153705732,
+   "betweenness": 1.2352461141548048e-05,
+   "pagerank": 0.0008104431413412431,
+   "comunidad": 1,
+   "id": "spotify:artist:6kSbf0Xe8Bdhitd3d6Jr2z"
+  },
+  {
+   "name": "Jos\u00e9 de Rico",
+   "popularity": 49,
+   "image_url": "https://i.scdn.co/image/10baf3fbea565c0112938d7e0e3e769f73964bb6",
+   "visitado": true,
+   "degree_weight": 57,
+   "degreeCent": 0.02413793103448276,
+   "closeness": 0.19631071247249957,
+   "betweenness": 0.03904878309664632,
+   "pagerank": 0.010103719908617578,
+   "comunidad": 2,
+   "id": "spotify:artist:2ny2IhV61AbrsaWpjvGM7m"
+  },
+  {
+   "name": "Estrella Morente",
+   "popularity": 48,
+   "image_url": "https://i.scdn.co/image/5d8a8acf40b6f19078bcabcdd98624e1a5e83090",
+   "degree_weight": 3,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.20803443328550933,
+   "betweenness": 0.0005189871168820085,
+   "pagerank": 0.000623481628011328,
+   "comunidad": 5,
+   "id": "spotify:artist:5gKJbL392PiokTPUoL7N6D"
+  },
+  {
+   "name": "Ricardo Montaner",
+   "popularity": 70,
+   "image_url": "https://i.scdn.co/image/10883f86a2674cc84fc3b34db4416f8ab4a976dc",
+   "degree_weight": 3,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.22044849866970734,
+   "betweenness": 0.000603037998328583,
+   "pagerank": 0.0006120282566899655,
+   "comunidad": 5,
+   "id": "spotify:artist:4uoz4FUMvpeyGClFTTDBsD"
+  },
+  {
+   "name": "Keyo",
+   "popularity": 13,
+   "image_url": "https://i.scdn.co/image/d30e5b69ad1b0761b5b240964c1a98735f05cc1b",
+   "degree_weight": 4,
+   "degreeCent": 0.0034482758620689655,
+   "closeness": 0.20458553791887124,
+   "betweenness": 2.528933979947041e-06,
+   "pagerank": 0.0010241561942261226,
+   "comunidad": 1,
+   "id": "spotify:artist:1DxeNMvlfRhAntxYl3fx8H"
+  },
+  {
+   "name": "Fuego",
+   "popularity": 64,
+   "image_url": "https://i.scdn.co/image/05d06c5ecb9f5521084cc5e13ec35fe2217292a1",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.21702525724976612,
+   "betweenness": 0.000571124829622343,
+   "pagerank": 0.0006807985969075951,
+   "comunidad": 2,
+   "id": "spotify:artist:7wU2WGCJ8HxkekHHE2QLul"
+  },
+  {
+   "name": "Luis Enrique",
+   "popularity": 60,
+   "image_url": "https://i.scdn.co/image/02bdfed4ac00f4bced6cf9bde8d03c4770d3e7de",
+   "visitado": true,
+   "degree_weight": 14,
+   "degreeCent": 0.005172413793103448,
+   "closeness": 0.19873222545828337,
+   "betweenness": 0.002298275245967837,
+   "pagerank": 0.0017552504737190554,
+   "comunidad": 4,
+   "id": "spotify:artist:2mUI4K6csTQd3jieswcmiI"
+  },
+  {
+   "name": "El Arrebato",
+   "popularity": 53,
+   "image_url": "https://i.scdn.co/image/2235c55a55eec489ecacec6b561883c891ab95f2",
+   "visitado": true,
+   "degree_weight": 3,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.22857142857142856,
+   "betweenness": 0.001293786314884704,
+   "pagerank": 0.0008424822060021693,
+   "comunidad": 3,
+   "id": "spotify:artist:2dJyJptNE5bMmbN6z08iNJ"
+  },
+  {
+   "name": "Black Bee",
+   "popularity": 34,
+   "image_url": "https://i.scdn.co/image/99c32032e36a8b229e2bfafcd886363661e7fc4e",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.20512820512820512,
+   "betweenness": 0.0019726383038802925,
+   "pagerank": 0.0006773430742593292,
+   "comunidad": 1,
+   "id": "spotify:artist:0d5GsQYotMQwdRKbQ5lXMr"
+  },
+  {
+   "name": "Georgi Manga",
+   "popularity": 3,
+   "image_url": "https://i.scdn.co/image/7b7490218abf7cd7ecdad8ffa452dc0ee2fc1c05",
+   "visitado": true,
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.16531281174291007,
+   "betweenness": 0.0017241379310344827,
+   "pagerank": 0.0008641720095725534,
+   "comunidad": 7,
+   "id": "spotify:artist:1V1F963i0kG30gCumvrWwz"
+  },
+  {
+   "name": "Juanes",
+   "popularity": 77,
+   "image_url": "https://i.scdn.co/image/7446618cc519de1de8b89e0188ccf272cf681625",
+   "degree_weight": 8,
+   "degreeCent": 0.004310344827586207,
+   "closeness": 0.24691358024691357,
+   "betweenness": 0.002322462330734902,
+   "pagerank": 0.0012872525983145314,
+   "comunidad": 5,
+   "id": "spotify:artist:0UWZUmn7sybxMCqrw9tGa7"
+  },
+  {
+   "name": "Shabu",
+   "popularity": 47,
+   "image_url": "https://i.scdn.co/image/830247542591d67c4c35d0c250686378abe86e10",
+   "visitado": true,
+   "degree_weight": 58,
+   "degreeCent": 0.017241379310344827,
+   "closeness": 0.2241112828438949,
+   "betweenness": 0.016929242685553982,
+   "pagerank": 0.005438726832760195,
+   "comunidad": 1,
+   "id": "spotify:artist:7yI6f6KLTIotYOuspbjPMP"
+  },
+  {
+   "name": "Rapsusklei",
+   "popularity": 56,
+   "image_url": "https://i.scdn.co/image/0aab2e8ccd6fd952d9f25d3902ede225d0a92edf",
+   "degree_weight": 15,
+   "degreeCent": 0.004310344827586207,
+   "closeness": 0.22758485383558957,
+   "betweenness": 0.0010022584572409179,
+   "pagerank": 0.0013545115488408073,
+   "comunidad": 1,
+   "id": "spotify:artist:451DVjaBuGYfvDfvG9MxaG"
+  },
+  {
+   "name": "Carlos Rivera",
+   "popularity": 73,
+   "image_url": "https://i.scdn.co/image/e1dd9f010eda9c3d87ca2f9c3fdb208458525844",
+   "degree_weight": 4,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.22078416444613627,
+   "betweenness": 0.0002760322321780374,
+   "pagerank": 0.0007861224499071616,
+   "comunidad": 4,
+   "id": "spotify:artist:39yVoqm6sYFvvqF1RciUVf"
+  },
+  {
+   "name": "Rosendo",
+   "popularity": 50,
+   "image_url": "https://i.scdn.co/image/e7f0838d77b7215e95a13bf6ff54ad9b7182c5bb",
+   "degree_weight": 4,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.22727272727272727,
+   "betweenness": 0.001996820224317176,
+   "pagerank": 0.0006505557601629078,
+   "comunidad": 3,
+   "id": "spotify:artist:0P4FkbP57uc9XBnJ9aoA3N"
+  },
+  {
+   "name": "JPelirrojo",
+   "popularity": 40,
+   "image_url": "https://i.scdn.co/image/ba83f0760ec5cc7010eba202077c90a120f4bd77",
+   "visitado": true,
+   "degree_weight": 55,
+   "degreeCent": 0.02586206896551724,
+   "closeness": 0.17488315995778683,
+   "betweenness": 0.05235707427160142,
+   "pagerank": 0.01136123409370582,
+   "comunidad": 7,
+   "id": "spotify:artist:2UPMr33hbn7wxQSR0ezRMG"
+  },
+  {
+   "name": "Juaninacka",
+   "popularity": 47,
+   "image_url": "https://i.scdn.co/image/0bcec9bad7b4baac1cc62b3a428a220afbf79492",
+   "visitado": true,
+   "degree_weight": 39,
+   "degreeCent": 0.017241379310344827,
+   "closeness": 0.2532198209997817,
+   "betweenness": 0.04057084395606541,
+   "pagerank": 0.005468722952535278,
+   "comunidad": 1,
+   "id": "spotify:artist:6a7aRbyLNHHiwqgLh87Mpy"
+  },
+  {
+   "name": "Fyahbwoy",
+   "popularity": 57,
+   "image_url": "https://i.scdn.co/image/cb2d4ee3e07dfdbaf688931fb463fe32c727d159",
+   "visitado": true,
+   "degree_weight": 32,
+   "degreeCent": 0.021551724137931036,
+   "closeness": 0.23340040241448692,
+   "betweenness": 0.035670007006018065,
+   "pagerank": 0.007695876585116033,
+   "comunidad": 1,
+   "id": "spotify:artist:6uFTGm4t8Z6tXyCm22sLQM"
+  },
+  {
+   "name": "Ha*Ash",
+   "popularity": 76,
+   "image_url": "https://i.scdn.co/image/e7522596743b307b66f8c8eab0582849048df7e0",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.2078853046594982,
+   "betweenness": 0.0005188351238294973,
+   "pagerank": 0.000624668860094249,
+   "comunidad": 5,
+   "id": "spotify:artist:5xd2Tg7Zo8755eCy8Gxkp8"
+  },
+  {
+   "name": "Haze",
+   "popularity": 43,
+   "image_url": "https://i.scdn.co/image/2234ac4fe30c7bb66cb78d44b3a8d5456522c80b",
+   "visitado": true,
+   "degree_weight": 32,
+   "degreeCent": 0.023275862068965515,
+   "closeness": 0.2401656314699793,
+   "betweenness": 0.03869641061283814,
+   "pagerank": 0.009206059445946862,
+   "comunidad": 3,
+   "id": "spotify:artist:6c4WWQ2PYJlgnxtkQKqI5s"
+  },
+  {
+   "name": "Roc\u00edo Jurado",
+   "popularity": 47,
+   "image_url": "https://i.scdn.co/image/092fe2a7ead0f29c29cad8a93e17fa81c1f56c0e",
+   "visitado": true,
+   "degree_weight": 95,
+   "degreeCent": 0.01896551724137931,
+   "closeness": 0.24534686971235195,
+   "betweenness": 0.028836238785679702,
+   "pagerank": 0.0069693039018502555,
+   "comunidad": 6,
+   "id": "spotify:artist:1FlYevYLENR3IMgMlnMvf9"
+  },
+  {
+   "name": "Paulina Rubio",
+   "popularity": 67,
+   "image_url": "https://i.scdn.co/image/3ed86a596ae4ca9d5f510119f3ba80b869723f7b",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.23116779593463532,
+   "betweenness": 0.0071408845040075684,
+   "pagerank": 0.0006829378289031128,
+   "comunidad": 6,
+   "id": "spotify:artist:1d6dwipPrsFSJVmFTTdFSS"
+  },
+  {
+   "name": "Joan Manuel Serrat",
+   "popularity": 61,
+   "image_url": "https://i.scdn.co/image/a74dd0e311e15343ac38392654be5bf3d2d7342a",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.22445820433436534,
+   "betweenness": 7.266966171788996e-05,
+   "pagerank": 0.0006110825882056738,
+   "comunidad": 3,
+   "id": "spotify:artist:1t7t8q4zoYHp22JLIx3FM7"
+  },
+  {
+   "name": "Jory Boy",
+   "popularity": 69,
+   "image_url": "https://i.scdn.co/image/25eb1844969eb383c81fc3d586e43c50c2839d85",
+   "degree_weight": 6,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.19568151147098514,
+   "betweenness": 0.004703608521838933,
+   "pagerank": 0.0007159748723621509,
+   "comunidad": 2,
+   "id": "spotify:artist:5lFhCi03HDneWzvCxGctrT"
+  },
+  {
+   "name": "Albert Pla",
+   "popularity": 40,
+   "image_url": "https://i.scdn.co/image/76a12f03b6ceb9c1ab44a11d8691605823797b62",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.20358020358020357,
+   "betweenness": 0.00011484876094911345,
+   "pagerank": 0.0006553496541725217,
+   "comunidad": 3,
+   "id": "spotify:artist:0oIls1SE66gDuk4BZObFaN"
+  },
+  {
+   "name": "Ana Santana",
+   "popularity": 12,
+   "image_url": "https://i.scdn.co/image/e7007abb5869be973db77a6f3f4d4771b443dc0b",
+   "visitado": true,
+   "degree_weight": 3,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.21928166351606806,
+   "betweenness": 0.0017241379310344827,
+   "pagerank": 0.0007290412734093233,
+   "comunidad": 3,
+   "id": "spotify:artist:28fV3xTiOjwUgGRNaL0i7X"
+  },
+  {
+   "name": "Emmanuel Lehamann",
+   "popularity": 12,
+   "image_url": "https://i.scdn.co/image/fd589d1953e9b2aca85d20feecc067c679c88bbd",
+   "visitado": true,
+   "degree_weight": 3,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.21928166351606806,
+   "betweenness": 0.0017241379310344827,
+   "pagerank": 0.0007290412734093231,
+   "comunidad": 3,
+   "id": "spotify:artist:2oNAk2w9Sea9A55bagmK9J"
+  },
+  {
+   "name": "Juan Manuel Canizares",
+   "popularity": 21,
+   "image_url": "https://i.scdn.co/image/e66ea86b393d87e32c679538997b05042e833deb",
+   "degree_weight": 11,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.20640569395017794,
+   "betweenness": 0.0002545793539813355,
+   "pagerank": 0.0008942513020238897,
+   "comunidad": 5,
+   "id": "spotify:artist:3zQSnPTi4hnj4XkGa48roL"
+  },
+  {
+   "name": "Ana Torroja",
+   "popularity": 58,
+   "image_url": "https://i.scdn.co/image/9703fab469aa733e3501c3cf1877099edd48cd0f",
+   "visitado": true,
+   "degree_weight": 18,
+   "degreeCent": 0.007758620689655172,
+   "closeness": 0.23006743355811185,
+   "betweenness": 0.008738347736026752,
+   "pagerank": 0.002364532789072573,
+   "comunidad": 4,
+   "id": "spotify:artist:5YekZn3GGnPIURNA6RG124"
+  },
+  {
+   "name": "Aleks Syntek",
+   "popularity": 68,
+   "image_url": "https://i.scdn.co/image/73d96bbd8ac9869029e5327d27e92f71488ca8d6",
+   "visitado": true,
+   "degree_weight": 77,
+   "degreeCent": 0.02413793103448276,
+   "closeness": 0.2508108108108108,
+   "betweenness": 0.046519837249897,
+   "pagerank": 0.00886938965260623,
+   "comunidad": 4,
+   "id": "spotify:artist:0r8toju2ecKaVtItkzAnNi"
+  },
+  {
+   "name": "Ana Mena",
+   "popularity": 65,
+   "image_url": "https://i.scdn.co/image/fea26944cfaf0a799bfe9f8c549383a77e04c264",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.17347091371317483,
+   "betweenness": 4.444614559477318e-05,
+   "pagerank": 0.0006736143657215501,
+   "comunidad": 2,
+   "id": "spotify:artist:6k8mwkKJKKjBILo7ypBspl"
+  },
+  {
+   "name": "Armando Manzanero",
+   "popularity": 55,
+   "image_url": "https://i.scdn.co/image/782d4e8fccf1262e2f0b15f4b412338a2daa8088",
+   "visitado": true,
+   "degree_weight": 133,
+   "degreeCent": 0.028448275862068967,
+   "closeness": 0.23971895019632156,
+   "betweenness": 0.043192131468922104,
+   "pagerank": 0.010352593058722197,
+   "comunidad": 5,
+   "id": "spotify:artist:5lODCkFdEtpPn3YxfmyLfT"
+  },
+  {
+   "name": "Paco de Luc\u00eda",
+   "popularity": 55,
+   "image_url": "https://i.scdn.co/image/da661057b736c36095e5db589993654fef887cb9",
+   "visitado": true,
+   "degree_weight": 515,
+   "degreeCent": 0.03103448275862069,
+   "closeness": 0.24733475479744135,
+   "betweenness": 0.050677836616387986,
+   "pagerank": 0.011739130003856716,
+   "comunidad": 5,
+   "id": "spotify:artist:3h8OjAdgYXVRoMZ8jFd6Uw"
+  },
+  {
+   "name": "David Bisbal",
+   "popularity": 75,
+   "image_url": "https://i.scdn.co/image/87ce973159985b3de9fe92d1f1dc1ac367314ff2",
+   "visitado": true,
+   "degree_weight": 43,
+   "degreeCent": 0.02413793103448276,
+   "closeness": 0.27573092464939386,
+   "betweenness": 0.04438295442313125,
+   "pagerank": 0.007844520240403951,
+   "comunidad": 5,
+   "id": "spotify:artist:5gOJTI4TusSENizxhcG7jB"
+  },
+  {
+   "name": "El Gran Wyoming",
+   "popularity": 15,
+   "image_url": "https://developer.spotify.com/wp-content/uploads/2016/07/icon1@2x.png",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.22812192723697147,
+   "betweenness": 0.010608922230014755,
+   "pagerank": 0.0006760201333661543,
+   "comunidad": 5,
+   "id": "spotify:artist:7lzZJXyb6P2dpsHq9BlUCr"
+  },
+  {
+   "name": "Farruko",
+   "popularity": 85,
+   "image_url": "https://i.scdn.co/image/8e8422dfb34e509b8c6c2d449c25857ca546a55f",
+   "degree_weight": 5,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.2247191011235955,
+   "betweenness": 0.006331199489810273,
+   "pagerank": 0.0009782253284895829,
+   "comunidad": 2,
+   "id": "spotify:artist:329e4yvIujISKGKz1BZZbO"
+  },
+  {
+   "name": "Bunbury",
+   "popularity": 72,
+   "image_url": "https://i.scdn.co/image/1673fa6dc75e6d077bbba5805b87c4895e160cf0",
+   "degree_weight": 3,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.19587977034785545,
+   "betweenness": 0.00028218538062785493,
+   "pagerank": 0.0006559916590793747,
+   "comunidad": 4,
+   "id": "spotify:artist:4uqzzJg3ww5eH7IgGV7DMT"
+  },
+  {
+   "name": "Pepe de Lucia",
+   "popularity": 35,
+   "image_url": "https://i.scdn.co/image/2880281b4a67713aeae4ca14f34cdc14b1846737",
+   "visitado": true,
+   "degree_weight": 51,
+   "degreeCent": 0.011206896551724138,
+   "closeness": 0.23591620907057148,
+   "betweenness": 0.013275359936894984,
+   "pagerank": 0.0038010827533878255,
+   "comunidad": 5,
+   "id": "spotify:artist:4TSc19UzeXfitDugKiKoU1"
+  },
+  {
+   "name": "Marta S\u00e1nchez",
+   "popularity": 53,
+   "image_url": "https://i.scdn.co/image/cad72fe8ab9280c857baa66e75f67176294d8632",
+   "visitado": true,
+   "degree_weight": 24,
+   "degreeCent": 0.017241379310344827,
+   "closeness": 0.25584472871636527,
+   "betweenness": 0.025699706414669694,
+   "pagerank": 0.005958300942637485,
+   "comunidad": 3,
+   "id": "spotify:artist:368rTiMKMrz3b03az6B14w"
+  },
+  {
+   "name": "Sergio Dalma",
+   "popularity": 58,
+   "image_url": "https://i.scdn.co/image/67bf8c988bf8b3de250d154e8cbcdbbc52363326",
+   "degree_weight": 4,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.21735057148210604,
+   "betweenness": 0.00011698677467674664,
+   "pagerank": 0.0008314998716185771,
+   "comunidad": 5,
+   "id": "spotify:artist:7x6XYw3yCC67Pizi4o0wvZ"
+  },
+  {
+   "name": "Antonio Vega",
+   "popularity": 48,
+   "image_url": "https://i.scdn.co/image/6b2fe0bd77231c1e9ca6e1e40f432c00d69a8358",
+   "visitado": true,
+   "degree_weight": 114,
+   "degreeCent": 0.006896551724137931,
+   "closeness": 0.23683135973866884,
+   "betweenness": 0.007205613596679972,
+   "pagerank": 0.002381348402836076,
+   "comunidad": 3,
+   "id": "spotify:artist:0r4YtlmJPQk1xhiVKHuPeF"
+  },
+  {
+   "name": "Xcese",
+   "popularity": 34,
+   "image_url": "https://i.scdn.co/image/eb844ed525fd96509124ecd110df826dcdf68d92",
+   "visitado": true,
+   "degree_weight": 20,
+   "degreeCent": 0.01206896551724138,
+   "closeness": 0.22911317400750544,
+   "betweenness": 0.05893831892492997,
+   "pagerank": 0.004270252561437512,
+   "comunidad": 1,
+   "id": "spotify:artist:6q0a8EJVDLXee3CE2FHpIv"
+  },
+  {
+   "name": "Benny",
+   "popularity": 55,
+   "image_url": "https://i.scdn.co/image/36d41a7ed0e3b91b1290b0b9b1bb74e9d832c627",
+   "degree_weight": 3,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.2090466750765904,
+   "betweenness": 0.0002778299328371732,
+   "pagerank": 0.000632275902763313,
+   "comunidad": 4,
+   "id": "spotify:artist:3YHFRVdfHlJ98iAc50PIYk"
+  },
+  {
+   "name": "Victor Magan",
+   "popularity": 34,
+   "image_url": "https://i.scdn.co/image/eac2166b06b7f5697d7940cf0f1b80e967115f82",
+   "degree_weight": 9,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.2190745986779981,
+   "betweenness": 0.01080321308126014,
+   "pagerank": 0.0007197393692310221,
+   "comunidad": 2,
+   "id": "spotify:artist:6alFyA4PruPsPkMVpXgKdO"
+  },
+  {
+   "name": "Spanish Fly",
+   "popularity": 24,
+   "image_url": "https://i.scdn.co/image/9c1cf7c3c66c377eac3f91d587ab366af7b660b3",
+   "degree_weight": 4,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.21152443471918309,
+   "betweenness": 2.528933979947041e-06,
+   "pagerank": 0.0007907293989210271,
+   "comunidad": 1,
+   "id": "spotify:artist:0YsY4S6w5U8rvbExaxlL03"
+  },
+  {
+   "name": "Baroe",
+   "popularity": 14,
+   "image_url": "https://i.scdn.co/image/c05e1f008fa698e33c7d0ae3f78a5a48fb4e6a91",
+   "visitado": true,
+   "degree_weight": 4,
+   "degreeCent": 0.0034482758620689655,
+   "closeness": 0.2114473204520598,
+   "betweenness": 0.005167950968432954,
+   "pagerank": 0.001507134645583638,
+   "comunidad": 1,
+   "id": "spotify:artist:5PA5TW8Z3rel2dNleGj1L5"
+  },
+  {
+   "name": "Tiziano Ferro",
+   "popularity": 66,
+   "image_url": "https://i.scdn.co/image/466b704b1d7c8377c82c534d09bb925697b1b6de",
+   "visitado": true,
+   "degree_weight": 45,
+   "degreeCent": 0.01982758620689655,
+   "closeness": 0.2517361111111111,
+   "betweenness": 0.0602373397235952,
+   "pagerank": 0.008211084771759086,
+   "comunidad": 2,
+   "id": "spotify:artist:11TplWqOPQBTmg2eiSLt1m"
+  },
+  {
+   "name": "ToteKing",
+   "popularity": 54,
+   "image_url": "https://i.scdn.co/image/2c2bb1eb27c39cbc6be46e91a7becb5b70703283",
+   "degree_weight": 10,
+   "degreeCent": 0.007758620689655172,
+   "closeness": 0.2890605532020932,
+   "betweenness": 0.11775944359219184,
+   "pagerank": 0.00222373877528421,
+   "comunidad": 1,
+   "id": "spotify:artist:224rbIjYbXaTI7lnP2ZMNJ"
+  },
+  {
+   "name": "Duddi Wallace",
+   "popularity": 25,
+   "image_url": "https://i.scdn.co/image/6f8d6bddec274061adb36c613506a20606eb9792",
+   "degree_weight": 3,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.19010160603080958,
+   "betweenness": 0.0001364903866212862,
+   "pagerank": 0.0006033919116238648,
+   "comunidad": 1,
+   "id": "spotify:artist:6FKV48glHG8QUpYGBnSSwj"
+  },
+  {
+   "name": "Danny Romero",
+   "popularity": 59,
+   "image_url": "https://i.scdn.co/image/ff8099d1aed3aaebf0d169ef1da933585b583e23",
+   "visitado": true,
+   "degree_weight": 23,
+   "degreeCent": 0.013793103448275862,
+   "closeness": 0.24111411348991893,
+   "betweenness": 0.15814579073004148,
+   "pagerank": 0.005013061789047367,
+   "comunidad": 2,
+   "id": "spotify:artist:30HlKUFTsqlFQsPfyv2yuM"
+  },
+  {
+   "name": "Nengo Flow",
+   "popularity": 76,
+   "image_url": "https://i.scdn.co/image/b42a7682d4b239115548ddebff212f4fdc7a44de",
+   "degree_weight": 3,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.18259090193609318,
+   "betweenness": 0.0007730963741000867,
+   "pagerank": 0.0007230458961428209,
+   "comunidad": 2,
+   "id": "spotify:artist:12vb80Km0Ew53ABfJOepVz"
+  },
+  {
+   "name": "Chavela Vargas",
+   "popularity": 53,
+   "image_url": "https://i.scdn.co/image/1124127c0099b954485f8ee313f779c524ae41da",
+   "degree_weight": 3,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.19388266755808123,
+   "betweenness": 0.0001248392556669609,
+   "pagerank": 0.0006566473070053387,
+   "comunidad": 4,
+   "id": "spotify:artist:0WC6O2ZzUcDYvcmt2mGh8c"
+  },
+  {
+   "name": "De La Ghetto",
+   "popularity": 83,
+   "image_url": "https://i.scdn.co/image/b34e52c3aec897e329e22fc2ace749b3c9269e77",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.18184668443329677,
+   "betweenness": 0.00022828835252052662,
+   "pagerank": 0.0006923995098001884,
+   "comunidad": 2,
+   "id": "spotify:artist:3EiLUeyEcA6fbRPSHkG5kb"
+  },
+  {
+   "name": "Jose Merce",
+   "popularity": 49,
+   "image_url": "https://i.scdn.co/image/4fdc78a9fed85d9f69ba2b7b654d28f43a351383",
+   "visitado": true,
+   "degree_weight": 38,
+   "degreeCent": 0.016379310344827584,
+   "closeness": 0.2515177797051171,
+   "betweenness": 0.02710997439453037,
+   "pagerank": 0.00526487679283528,
+   "comunidad": 5,
+   "id": "spotify:artist:7p5J8SfKU9Rulp7tcA53G8"
+  },
+  {
+   "name": "Pastora Soler",
+   "popularity": 52,
+   "image_url": "https://i.scdn.co/image/b56b0e5343c9ac37f0f9f3688ac9df7d310aa304",
+   "visitado": true,
+   "degree_weight": 18,
+   "degreeCent": 0.01293103448275862,
+   "closeness": 0.24071384104586013,
+   "betweenness": 0.014127764986158156,
+   "pagerank": 0.004227243672990027,
+   "comunidad": 5,
+   "id": "spotify:artist:6nh96lsvDLuCVpgpfjeYnM"
+  },
+  {
+   "name": "Niggaswing",
+   "popularity": 29,
+   "image_url": "https://developer.spotify.com/wp-content/uploads/2016/07/icon1@2x.png",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.2037947997189037,
+   "betweenness": 0.0010144256459629442,
+   "pagerank": 0.0006429482513113714,
+   "comunidad": 1,
+   "id": "spotify:artist:5iTzvaRtQkXsbDBD5J6EsA"
+  },
+  {
+   "name": "Xandra Garsem",
+   "popularity": 46,
+   "image_url": "https://i.scdn.co/image/20abedbbf7c28ecb2ba4e8cf4736f9c2f4080e95",
+   "visitado": true,
+   "degree_weight": 11,
+   "degreeCent": 0.00603448275862069,
+   "closeness": 0.1655487369773084,
+   "betweenness": 0.010322513462854423,
+   "pagerank": 0.002892062892376617,
+   "comunidad": 7,
+   "id": "spotify:artist:14HpVzsOYc0nufSwtkMp1s"
+  },
+  {
+   "name": "Sanco",
+   "popularity": 48,
+   "image_url": "https://i.scdn.co/image/3c2a7f156e618e7bdb6a8aeeabbd90164148ef92",
+   "visitado": true,
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.19436997319034852,
+   "betweenness": 0.0006217723837440038,
+   "pagerank": 0.0007099850055485568,
+   "comunidad": 2,
+   "id": "spotify:artist:1kUrqRqUOsCLLvBHStRYVB"
+  },
+  {
+   "name": "Jefe de la M",
+   "popularity": 29,
+   "image_url": "https://i.scdn.co/image/25578c08bd0ab61152b921199dcd9469a2cc7290",
+   "visitado": true,
+   "degree_weight": 17,
+   "degreeCent": 0.009482758620689655,
+   "closeness": 0.21601489757914338,
+   "betweenness": 0.0032197575475633898,
+   "pagerank": 0.002785735646647354,
+   "comunidad": 1,
+   "id": "spotify:artist:53rucYkv8YQMttlnJewnag"
+  },
+  {
+   "name": "Carlitos Rossy",
+   "popularity": 58,
+   "image_url": "https://i.scdn.co/image/aaff2fcd29383b504411137b3766163dc020d7e3",
+   "visitado": true,
+   "degree_weight": 36,
+   "degreeCent": 0.023275862068965515,
+   "closeness": 0.2001035018112817,
+   "betweenness": 0.03988437672505119,
+   "pagerank": 0.009842260275910748,
+   "comunidad": 2,
+   "id": "spotify:artist:0FDJB5xf8i09jDjIg1qNED"
+  },
+  {
+   "name": "Jorge Drexler",
+   "popularity": 67,
+   "image_url": "https://i.scdn.co/image/13308fc9988c10802aae0ab485fba25f2cae74ea",
+   "degree_weight": 9,
+   "degreeCent": 0.004310344827586207,
+   "closeness": 0.23775363804058208,
+   "betweenness": 0.007284429077275993,
+   "pagerank": 0.00137029711558119,
+   "comunidad": 5,
+   "id": "spotify:artist:4ssUf5gLb1GBLxi1BhPrVt"
+  },
+  {
+   "name": "Chenoa",
+   "popularity": 46,
+   "image_url": "https://i.scdn.co/image/7e75d36889b1007fd63787d80d7a70172a548aa9",
+   "degree_weight": 4,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.2376562179881172,
+   "betweenness": 0.009540305835807918,
+   "pagerank": 0.0008795344577137019,
+   "comunidad": 2,
+   "id": "spotify:artist:0i3ypO6G38iZmANDHWZxlY"
+  },
+  {
+   "name": "Alejandro Fernandez",
+   "popularity": 77,
+   "image_url": "https://i.scdn.co/image/7105526f06b692308b739d2832c3f564184374da",
+   "visitado": true,
+   "degree_weight": 34,
+   "degreeCent": 0.013793103448275862,
+   "closeness": 0.2644175974470025,
+   "betweenness": 0.0239261257392839,
+   "pagerank": 0.005190985020165965,
+   "comunidad": 5,
+   "id": "spotify:artist:6sq1yF0OZEWA4xoXVKW1L9"
+  },
+  {
+   "name": "Morodo",
+   "popularity": 57,
+   "image_url": "https://i.scdn.co/image/9e0ce6e150e8d045a14cca19adb7669ac19af702",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.2183323922454357,
+   "betweenness": 4.9067458546498145e-05,
+   "pagerank": 0.0005959705064735281,
+   "comunidad": 1,
+   "id": "spotify:artist:2OnH4HpywAxWkSOEsyjdjn"
+  },
+  {
+   "name": "Estopa",
+   "popularity": 68,
+   "image_url": "https://i.scdn.co/image/7e5eac20fb357ace5ed8c246598174470976938d",
+   "visitado": true,
+   "degree_weight": 40,
+   "degreeCent": 0.025,
+   "closeness": 0.25338575797291396,
+   "betweenness": 0.03454451953981261,
+   "pagerank": 0.00845312045258942,
+   "comunidad": 3,
+   "id": "spotify:artist:5ZqnEfVdEGmoPxtELhN7ai"
+  },
+  {
+   "name": "Macaco",
+   "popularity": 59,
+   "image_url": "https://i.scdn.co/image/df41cc98c0b14ba24bf7c80876f9d1f2e33af04b",
+   "visitado": true,
+   "degree_weight": 152,
+   "degreeCent": 0.04051724137931034,
+   "closeness": 0.2724283701268201,
+   "betweenness": 0.11513624398842114,
+   "pagerank": 0.014437920666897235,
+   "comunidad": 3,
+   "id": "spotify:artist:7mUBMaZW1MXGswaneb0JTT"
+  },
+  {
+   "name": "Langui",
+   "popularity": 33,
+   "image_url": "https://i.scdn.co/image/d4091c1f012fa7afc535663faf769402b526c37e",
+   "degree_weight": 3,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.24267782426778242,
+   "betweenness": 0.008256393943675451,
+   "pagerank": 0.0006088394372568322,
+   "comunidad": 3,
+   "id": "spotify:artist:7h6MxYxbsY32fXD7nAtOz5"
+  },
+  {
+   "name": "Capaz",
+   "popularity": 46,
+   "image_url": "https://i.scdn.co/image/fc0d30a5e580c6ccecf9cb740fe07a0383d5393f",
+   "visitado": true,
+   "degree_weight": 25,
+   "degreeCent": 0.016379310344827584,
+   "closeness": 0.2588707877705869,
+   "betweenness": 0.06088062926583848,
+   "pagerank": 0.005151331869918924,
+   "comunidad": 1,
+   "id": "spotify:artist:4QxHdQXtGwHUMaEPxPljuE"
+  },
+  {
+   "name": "Joaqu\u00edn Sabina",
+   "popularity": 70,
+   "image_url": "https://i.scdn.co/image/a22f3d2823353fb4a7a6fe17aba3eb77a781e6ae",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.2160551313093686,
+   "betweenness": 0.00018278380896880636,
+   "pagerank": 0.0006124555805400213,
+   "comunidad": 3,
+   "id": "spotify:artist:4aeIWo5CMF1uRmqgJdwkZW"
+  },
+  {
+   "name": "Ana Bel\u00e9n",
+   "popularity": 54,
+   "image_url": "https://i.scdn.co/image/a796e61750b328f50061061d0cec8254353a564f",
+   "degree_weight": 4,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.2321857485988791,
+   "betweenness": 0.00243209792808151,
+   "pagerank": 0.0008800780898290519,
+   "comunidad": 3,
+   "id": "spotify:artist:4NOZW7dBOmBMMAG9EGQd4t"
+  },
+  {
+   "name": "Jefe de la M.",
+   "popularity": 27,
+   "image_url": "https://i.scdn.co/image/76106e5c0b3e046d4e34dec4a160a8f2799b3f7e",
+   "visitado": true,
+   "degree_weight": 14,
+   "degreeCent": 0.008620689655172414,
+   "closeness": 0.24405638544077424,
+   "betweenness": 0.007332140858804672,
+   "pagerank": 0.002524217234130511,
+   "comunidad": 1,
+   "id": "spotify:artist:2SZTXJwVYRndgYbwuVmJtn"
+  },
+  {
+   "name": "Duo Kie",
+   "popularity": 40,
+   "image_url": "https://i.scdn.co/image/0e4cc6dccf6fa12e9bb099ac77bc537e7dd8cfff",
+   "visitado": true,
+   "degree_weight": 27,
+   "degreeCent": 0.01982758620689655,
+   "closeness": 0.25064822817631804,
+   "betweenness": 0.03079287334003454,
+   "pagerank": 0.006226670719512887,
+   "comunidad": 1,
+   "id": "spotify:artist:6HdO9DuwHJ5nCZIzBW7HVv"
+  },
+  {
+   "name": "Antonio Carmona",
+   "popularity": 58,
+   "image_url": "https://i.scdn.co/image/447864c5a5196df10f21f33a8db8c82fa1240c48",
+   "visitado": true,
+   "degree_weight": 30,
+   "degreeCent": 0.010344827586206896,
+   "closeness": 0.28978266300274796,
+   "betweenness": 0.048716590208125375,
+   "pagerank": 0.0031636549731320234,
+   "comunidad": 3,
+   "id": "spotify:artist:1YVEF2N8QHkkQ84LM51Xyo"
+  },
+  {
+   "name": "Bebe",
+   "popularity": 61,
+   "image_url": "https://i.scdn.co/image/069ca463fb9611748a374da7bbd5edff81239d25",
+   "visitado": true,
+   "degree_weight": 89,
+   "degreeCent": 0.017241379310344827,
+   "closeness": 0.28382676780034255,
+   "betweenness": 0.06370737774519547,
+   "pagerank": 0.005623788600430139,
+   "comunidad": 3,
+   "id": "spotify:artist:2byU53ebtTxcAnIRE814Ts"
+  },
+  {
+   "name": "Antonio Orozco",
+   "popularity": 64,
+   "image_url": "https://i.scdn.co/image/3daa73e9eb4de70b76a1e4fa0e2def2b1b4c60f6",
+   "visitado": true,
+   "degree_weight": 30,
+   "degreeCent": 0.016379310344827584,
+   "closeness": 0.3108252947481243,
+   "betweenness": 0.19339855686560056,
+   "pagerank": 0.004980213280291439,
+   "comunidad": 5,
+   "id": "spotify:artist:1ADdpen72RPuafRcv0YRBf"
+  },
+  {
+   "name": "Paco Le\u00f3n",
+   "popularity": 23,
+   "image_url": "https://i.scdn.co/image/60a18ef78b46065a654e9a2a53b326b8e1a13540",
+   "visitado": true,
+   "degree_weight": 16,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.2300218124132461,
+   "betweenness": 0.00545353592784905,
+   "pagerank": 0.0006171058823558802,
+   "comunidad": 6,
+   "id": "spotify:artist:2oLf1wRejHR2dQrZTC2ypZ"
+  },
+  {
+   "name": "Prince Royce",
+   "popularity": 82,
+   "image_url": "https://i.scdn.co/image/a1a440590285acec0f83387fe921df798156c2eb",
+   "degree_weight": 5,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.21597467883075777,
+   "betweenness": 0.0009241282873461673,
+   "pagerank": 0.0005939978369207886,
+   "comunidad": 4,
+   "id": "spotify:artist:3MHaV05u0io8fQbZ2XPtlC"
+  },
+  {
+   "name": "Lion Sitte",
+   "popularity": 27,
+   "image_url": "https://i.scdn.co/image/2a6c966ea719e8519bf81f2ebca6cb0618f3cdde",
+   "degree_weight": 4,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.2109090909090909,
+   "betweenness": 0.002674181868348518,
+   "pagerank": 0.0009389779003872551,
+   "comunidad": 1,
+   "id": "spotify:artist:02hp2iDLn55fIc8fMbsJAr"
+  },
+  {
+   "name": "Francisco C\u00e9spedes",
+   "popularity": 55,
+   "image_url": "https://i.scdn.co/image/94fba91c9d776f2baaa52246793560b9dc7953c9",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.2063322660974742,
+   "betweenness": 0.00016918156276638353,
+   "pagerank": 0.00061887989825508,
+   "comunidad": 5,
+   "id": "spotify:artist:54jti4nqabEAlBvIDU2zt8"
+  },
+  {
+   "name": "Pablo L\u00f3pez",
+   "popularity": 66,
+   "image_url": "https://i.scdn.co/image/2ed44229bd13815d1c211f4fd064fbd27a383f3b",
+   "visitado": true,
+   "degree_weight": 11,
+   "degreeCent": 0.00603448275862069,
+   "closeness": 0.2599148554783778,
+   "betweenness": 0.004431074989356676,
+   "pagerank": 0.0017868469289196746,
+   "comunidad": 5,
+   "id": "spotify:artist:4uyqaioPEdClDxU6zvYlAZ"
+  },
+  {
+   "name": "Alberto gambino",
+   "popularity": 39,
+   "image_url": "https://i.scdn.co/image/4a017adb609bec42d4fbf5efc01ce86088ac9fe7",
+   "visitado": true,
+   "degree_weight": 29,
+   "degreeCent": 0.010344827586206896,
+   "closeness": 0.21319610365741593,
+   "betweenness": 0.013768239139397393,
+   "pagerank": 0.0037150019818437195,
+   "comunidad": 1,
+   "id": "spotify:artist:2KaaIknCVW5SstugreNkha"
+  },
+  {
+   "name": "Curric\u00e9",
+   "popularity": 36,
+   "image_url": "https://i.scdn.co/image/1e8e3bfc30c66a99ba0d8f093025627ce7de3bdd",
+   "visitado": true,
+   "degree_weight": 27,
+   "degreeCent": 0.00603448275862069,
+   "closeness": 0.17780502759043532,
+   "betweenness": 0.028596697509392397,
+   "pagerank": 0.0025246426028001246,
+   "comunidad": 7,
+   "id": "spotify:artist:1vQD8GJtrRRZbNLc2wuoAu"
+  },
+  {
+   "name": "David Cuello",
+   "popularity": 25,
+   "image_url": "https://i.scdn.co/image/471d45537a493e1017fb64303f5f0348c5c1e0fc",
+   "visitado": true,
+   "degree_weight": 9,
+   "degreeCent": 0.0034482758620689655,
+   "closeness": 0.19450033534540576,
+   "betweenness": 0.005167950968432954,
+   "pagerank": 0.0015854114895404343,
+   "comunidad": 2,
+   "id": "spotify:artist:1wzDsC88hQYnT3yWtFQZH8"
+  },
+  {
+   "name": "Rosario",
+   "popularity": 61,
+   "image_url": "https://i.scdn.co/image/be23548b2f749bc72e8ce69061e49501e6a4bc90",
+   "visitado": true,
+   "degree_weight": 93,
+   "degreeCent": 0.028448275862068967,
+   "closeness": 0.2806677957899831,
+   "betweenness": 0.11201970877189048,
+   "pagerank": 0.008797836044116897,
+   "comunidad": 3,
+   "id": "spotify:artist:05xSLrRgGwm2nCH2SmnNMW"
+  },
+  {
+   "name": "Youssou N'Dour",
+   "popularity": 54,
+   "image_url": "https://i.scdn.co/image/a75eb5ffcccfc0e4e15cb7caf4d55f52b12631fd",
+   "degree_weight": 5,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.24994613229907348,
+   "betweenness": 0.0036754089114499973,
+   "pagerank": 0.0006131208652019407,
+   "comunidad": 3,
+   "id": "spotify:artist:77zlytAFjPFjUKda8TNIDY"
+  },
+  {
+   "name": "Ni\u00f1a Pastori",
+   "popularity": 63,
+   "image_url": "https://i.scdn.co/image/a59f8459f058ad7b7efefe58295c03de330d12e1",
+   "visitado": true,
+   "degree_weight": 53,
+   "degreeCent": 0.013793103448275862,
+   "closeness": 0.2512998266897747,
+   "betweenness": 0.014520331428582958,
+   "pagerank": 0.004201871961810164,
+   "comunidad": 5,
+   "id": "spotify:artist:6UelqIK8qwhWFc2f6nSEh8"
+  },
+  {
+   "name": "Miguel Bos\u00e9",
+   "popularity": 69,
+   "image_url": "https://i.scdn.co/image/ad1666425e4b203a2c322466efde4d9d37855fb9",
+   "visitado": true,
+   "degree_weight": 30,
+   "degreeCent": 0.014655172413793103,
+   "closeness": 0.2448290417897847,
+   "betweenness": 0.019995945648710507,
+   "pagerank": 0.004682094855490647,
+   "comunidad": 4,
+   "id": "spotify:artist:7mWCSSOYqm4E9mB7V4ot6S"
+  },
+  {
+   "name": "Ariel Rot",
+   "popularity": 43,
+   "image_url": "https://i.scdn.co/image/6b801fceb257637c55af5d9d286afb5f6888cd84",
+   "degree_weight": 3,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.232,
+   "betweenness": 0.0017247994603575019,
+   "pagerank": 0.000876138324596792,
+   "comunidad": 5,
+   "id": "spotify:artist:5kXK8waG1JeBQ8b5leWNSu"
+  },
+  {
+   "name": "Henry Mendez",
+   "popularity": 55,
+   "image_url": "https://i.scdn.co/image/0b05d55859a97fdb2141063ad37d8d2d308c4d58",
+   "degree_weight": 19,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.1980536110636845,
+   "betweenness": 0.0021166202520881785,
+   "pagerank": 0.0007201986289793701,
+   "comunidad": 2,
+   "id": "spotify:artist:4mnY9Vvz3GXQIyHljvWnY1"
+  },
+  {
+   "name": "David DeMar\u00eda",
+   "popularity": 53,
+   "image_url": "https://i.scdn.co/image/9211ccdbc4d33f2134ddbcc8c35e3e80cdf3ca7d",
+   "visitado": true,
+   "degree_weight": 27,
+   "degreeCent": 0.009482758620689655,
+   "closeness": 0.24385116670170276,
+   "betweenness": 0.008563127612110824,
+   "pagerank": 0.002939620635724301,
+   "comunidad": 5,
+   "id": "spotify:artist:6oaqXcTI16QinRDKLtkMaI"
+  },
+  {
+   "name": "Buika",
+   "popularity": 52,
+   "image_url": "https://i.scdn.co/image/3f32aeafdc0637d9e4a50a921a4efc3e63db3c0d",
+   "degree_weight": 3,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.2446741193840962,
+   "betweenness": 0.012068611273652939,
+   "pagerank": 0.00064239667508441,
+   "comunidad": 3,
+   "id": "spotify:artist:1gbXoccc8bjK8eUh92mILy"
+  },
+  {
+   "name": "Melendi",
+   "popularity": 75,
+   "image_url": "https://i.scdn.co/image/0fdcc48291f31be927690bb2828bbc8efcc33cdb",
+   "visitado": true,
+   "degree_weight": 23,
+   "degreeCent": 0.015517241379310345,
+   "closeness": 0.2550010991426687,
+   "betweenness": 0.02891426529177844,
+   "pagerank": 0.005217260818983535,
+   "comunidad": 5,
+   "id": "spotify:artist:1EXjXQpDx2pROygh8zvHs4"
+  },
+  {
+   "name": "Benji & Fede",
+   "popularity": 60,
+   "image_url": "https://i.scdn.co/image/8cf073fe9318201d6ab3dd85e38facc49f2476ad",
+   "degree_weight": 3,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.18586764941515782,
+   "betweenness": 1.6363690458480855e-05,
+   "pagerank": 0.0006913224935364341,
+   "comunidad": 2,
+   "id": "spotify:artist:2nftqfbLohpDYzY8VUlvbm"
+  },
+  {
+   "name": "Kultama",
+   "popularity": 28,
+   "image_url": "https://i.scdn.co/image/3abfe9e4dd9f567fafa1f7373e95a9ce74734673",
+   "degree_weight": 3,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.2537737912929337,
+   "betweenness": 0.01741194793512777,
+   "pagerank": 0.000599975497126576,
+   "comunidad": 3,
+   "id": "spotify:artist:2OQvY2AVkXEaRFyhGiL10V"
+  },
+  {
+   "name": "Muchachito Bombo Infierno",
+   "popularity": 47,
+   "image_url": "https://i.scdn.co/image/c672ec03059e5b3a8aca6debb7275679d9d1dce0",
+   "visitado": true,
+   "degree_weight": 5,
+   "degreeCent": 0.0034482758620689655,
+   "closeness": 0.21033544877606528,
+   "betweenness": 0.003572965606161193,
+   "pagerank": 0.00130688242483834,
+   "comunidad": 3,
+   "id": "spotify:artist:6529KpSlnP8S0kXhx7ayBb"
+  },
+  {
+   "name": "Lenacay",
+   "popularity": 8,
+   "image_url": "https://i.scdn.co/image/ae2f1dc84db0e010b9e003bd595d420a00878cad",
+   "visitado": true,
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.206810483152077,
+   "betweenness": 0.0017241379310344827,
+   "pagerank": 0.0007471631897945162,
+   "comunidad": 3,
+   "id": "spotify:artist:2zpbRhezEL4Ri6nGNgQ2H4"
+  },
+  {
+   "name": "La Mari",
+   "popularity": 31,
+   "image_url": "https://developer.spotify.com/wp-content/uploads/2016/07/icon1@2x.png",
+   "visitado": true,
+   "degree_weight": 3,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.22065817005896898,
+   "betweenness": 0.0008772641683566052,
+   "pagerank": 0.0006253402094358108,
+   "comunidad": 6,
+   "id": "spotify:artist:0DbsVEIuRbvG3mTe0HuYNV"
+  },
+  {
+   "name": "Movimiento Original",
+   "popularity": 63,
+   "image_url": "https://i.scdn.co/image/d684c55f5d8f91e210e72b08d56d01e06839ecf1",
+   "visitado": true,
+   "degree_weight": 21,
+   "degreeCent": 0.016379310344827584,
+   "closeness": 0.22141630082076733,
+   "betweenness": 0.02759898857452485,
+   "pagerank": 0.006739698523600446,
+   "comunidad": 1,
+   "id": "spotify:artist:50u2mXgysmTttY0BizYWAo"
+  },
+  {
+   "name": "Jerry Rivera",
+   "popularity": 62,
+   "image_url": "https://i.scdn.co/image/d111a55e032b666f68360ad2b83cfc1a063a143d",
+   "visitado": true,
+   "degree_weight": 20,
+   "degreeCent": 0.00603448275862069,
+   "closeness": 0.2323252553575005,
+   "betweenness": 0.01768982739975616,
+   "pagerank": 0.0021363675921720862,
+   "comunidad": 4,
+   "id": "spotify:artist:7wOZy3KdFVVINgNFFxkxwO"
+  },
+  {
+   "name": "Yomo",
+   "popularity": 58,
+   "image_url": "https://i.scdn.co/image/ef466f7914bbc89754e1d352f1a88e55fea9618a",
+   "degree_weight": 3,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.19568151147098514,
+   "betweenness": 0.004703608521838933,
+   "pagerank": 0.0007159748723621509,
+   "comunidad": 2,
+   "id": "spotify:artist:4myAXQmMuS1lZe8T6Y7eBg"
+  },
+  {
+   "name": "Zatu",
+   "popularity": 32,
+   "image_url": "https://i.scdn.co/image/579838bcf9613b4316917f413b1e3efffca19ff2",
+   "degree_weight": 4,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.21735057148210604,
+   "betweenness": 0.00011185272858880456,
+   "pagerank": 0.0008252744051314529,
+   "comunidad": 1,
+   "id": "spotify:artist:3vBquCxFYZbHGRQSMwJpZh"
+  },
+  {
+   "name": "Manolo Garcia",
+   "popularity": 60,
+   "image_url": "https://i.scdn.co/image/16ae0aa8b7f117021efffe271f2497dcc59dd2c0",
+   "degree_weight": 3,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.24775736864587783,
+   "betweenness": 0.005564083907330948,
+   "pagerank": 0.0006222866236584229,
+   "comunidad": 3,
+   "id": "spotify:artist:4eBTqTx5ssOK5YwmijmfU4"
+  },
+  {
+   "name": "Dasoul",
+   "popularity": 58,
+   "image_url": "https://i.scdn.co/image/2229bc0c4206564bc2f1272144ef6a04dde8c643",
+   "visitado": true,
+   "degree_weight": 39,
+   "degreeCent": 0.02672413793103448,
+   "closeness": 0.24390243902439024,
+   "betweenness": 0.0694287194972569,
+   "pagerank": 0.010409846137918153,
+   "comunidad": 2,
+   "id": "spotify:artist:0lNg9YtW8USxeZZnEqz3RQ"
+  },
+  {
+   "name": "Taburete",
+   "popularity": 63,
+   "image_url": "https://i.scdn.co/image/c2184b125261f2456007e4e99a0f9e9e77dfd491",
+   "visitado": true,
+   "degree_weight": 4,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.21936459909228442,
+   "betweenness": 0.0019324267196790543,
+   "pagerank": 0.0009835153977168485,
+   "comunidad": 3,
+   "id": "spotify:artist:40Ippe6JeofRURQ4nbF8DT"
+  },
+  {
+   "name": "Los Manolos",
+   "popularity": 44,
+   "image_url": "https://i.scdn.co/image/8bba435c17f13cf9160807bfa56a90092a01dbd7",
+   "visitado": true,
+   "degree_weight": 15,
+   "degreeCent": 0.01293103448275862,
+   "closeness": 0.22032288698955366,
+   "betweenness": 0.02203518061822117,
+   "pagerank": 0.005125150829117652,
+   "comunidad": 3,
+   "id": "spotify:artist:4WsE6jJORlwp3OcAWkCUrj"
+  },
+  {
+   "name": "El Chojin",
+   "popularity": 54,
+   "image_url": "https://i.scdn.co/image/71bb6e464a47a04c44f8d52ef6a520489c789e71",
+   "visitado": true,
+   "degree_weight": 112,
+   "degreeCent": 0.05603448275862069,
+   "closeness": 0.24252561154087393,
+   "betweenness": 0.10427152370625759,
+   "pagerank": 0.022152912672701287,
+   "comunidad": 1,
+   "id": "spotify:artist:3m1an5fzquhCtk4UnhmLmc"
+  },
+  {
+   "name": "Antonio Flores",
+   "popularity": 49,
+   "image_url": "https://i.scdn.co/image/4b97149f7791566246f1fa9b1211373af6b9bf2e",
+   "visitado": true,
+   "degree_weight": 20,
+   "degreeCent": 0.01206896551724138,
+   "closeness": 0.2765196662693683,
+   "betweenness": 0.026835337914636815,
+   "pagerank": 0.0038575383888475013,
+   "comunidad": 3,
+   "id": "spotify:artist:6GwZIG7UlxQR6n9kO8QlV6"
+  },
+  {
+   "name": "Maluma",
+   "popularity": 88,
+   "image_url": "https://i.scdn.co/image/2da95d0d9292f71fb3673f762daf3f37acecd3a0",
+   "visitado": true,
+   "degree_weight": 40,
+   "degreeCent": 0.03189655172413793,
+   "closeness": 0.2212051868802441,
+   "betweenness": 0.05827657900275222,
+   "pagerank": 0.012496111509179739,
+   "comunidad": 2,
+   "id": "spotify:artist:1r4hJ1h58CWwUQe3MxPuau"
+  },
+  {
+   "name": "Ojos de Brujo",
+   "popularity": 42,
+   "image_url": "https://i.scdn.co/image/72eb9f344e89d251b03f77d885f034a6b3edab3a",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.20710587395108015,
+   "betweenness": 0.0006430550651423916,
+   "pagerank": 0.0006671690370054564,
+   "comunidad": 3,
+   "id": "spotify:artist:6iKnagOuTEr3kLRAJlXRjq"
+  },
+  {
+   "name": "Gordo Master",
+   "popularity": 41,
+   "image_url": "https://i.scdn.co/image/39230ed44ba8c52153f40d0697218cfd0baff0cc",
+   "visitado": true,
+   "degree_weight": 47,
+   "degreeCent": 0.03189655172413793,
+   "closeness": 0.2452431289640592,
+   "betweenness": 0.060079997813181144,
+   "pagerank": 0.010474404920519296,
+   "comunidad": 1,
+   "id": "spotify:artist:5y1Ia0TH2oNXKLkKNOdjZQ"
+  },
+  {
+   "name": "Raimundo Amador",
+   "popularity": 43,
+   "image_url": "https://i.scdn.co/image/a7f6c294fa0a6ae4e6ecf0d7343967149fe725e3",
+   "visitado": true,
+   "degree_weight": 62,
+   "degreeCent": 0.013793103448275862,
+   "closeness": 0.2642369020501139,
+   "betweenness": 0.05627351614424631,
+   "pagerank": 0.005152005851412437,
+   "comunidad": 3,
+   "id": "spotify:artist:3skUHmTNpFUxTZaVxgvhF7"
+  },
+  {
+   "name": "\u00c1lvaro Urquijo",
+   "popularity": 33,
+   "image_url": "https://i.scdn.co/image/5fb96b897778b4aee3b65ad7bcd1bc7d127309b0",
+   "degree_weight": 3,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.20383060973466877,
+   "betweenness": 0.00033859709631876194,
+   "pagerank": 0.0006256608438236853,
+   "comunidad": 4,
+   "id": "spotify:artist:0yiwWDdqEuLc99kyfJgOEP"
+  },
+  {
+   "name": "Bad Bunny",
+   "popularity": 95,
+   "image_url": "https://i.scdn.co/image/e4d513d1ff18c1baddb884543072c15123c76bd9",
+   "degree_weight": 4,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.19707781175671085,
+   "betweenness": 0.004202698040012624,
+   "pagerank": 0.0009710410973035378,
+   "comunidad": 2,
+   "id": "spotify:artist:4q3ewBCX7sLwd24euuV69X"
+  },
+  {
+   "name": "Manuel Carrasco",
+   "popularity": 65,
+   "image_url": "https://i.scdn.co/image/999ec319052b1ea6a2394370edaf1cc2b315fd47",
+   "visitado": true,
+   "degree_weight": 17,
+   "degreeCent": 0.007758620689655172,
+   "closeness": 0.23947151114781173,
+   "betweenness": 0.004048647953301377,
+   "pagerank": 0.0023037582211289124,
+   "comunidad": 5,
+   "id": "spotify:artist:7qAoXV4U0qDxQAUqhszjAA"
+  },
+  {
+   "name": "Damon Robinson",
+   "popularity": 14,
+   "image_url": "https://i.scdn.co/image/7fb6595ed8ff920bea76256bf3cc21011bb8c3bb",
+   "degree_weight": 3,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.2063322660974742,
+   "betweenness": 3.7934009699205624e-05,
+   "pagerank": 0.0005945558436668526,
+   "comunidad": 1,
+   "id": "spotify:artist:7Ik3J0IrFcsTEesDkdRRSE"
+  },
+  {
+   "name": "Camaron De La Isla",
+   "popularity": 51,
+   "image_url": "https://i.scdn.co/image/e5cf8b4abd3089970fa4694cf4aaeaf6b1d673d4",
+   "degree_weight": 68,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.22687267748875414,
+   "betweenness": 0.011691540977969287,
+   "pagerank": 0.0006798503961392471,
+   "comunidad": 3,
+   "id": "spotify:artist:5MnhtFXEfqi637k6NfKuZI"
+  },
+  {
+   "name": "CHK",
+   "popularity": 31,
+   "image_url": "https://i.scdn.co/image/024e11e2df20af7db4e74bd440ab85c6f6796312",
+   "visitado": true,
+   "degree_weight": 45,
+   "degreeCent": 0.008620689655172414,
+   "closeness": 0.195714526742028,
+   "betweenness": 0.01375145041801791,
+   "pagerank": 0.0037459892047862773,
+   "comunidad": 2,
+   "id": "spotify:artist:3brsBnqei6wKUeR0aGlwJ3"
+  },
+  {
+   "name": "Moncho",
+   "popularity": 31,
+   "image_url": "https://i.scdn.co/image/28105940a36400a3144e67417bdbec7419663c4e",
+   "degree_weight": 12,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.23237179487179488,
+   "betweenness": 0.0012504467179694344,
+   "pagerank": 0.0006222769445570454,
+   "comunidad": 6,
+   "id": "spotify:artist:7wl2zsfpo2anm8K9Nqwd0B"
+  },
+  {
+   "name": "Diego El Cigala",
+   "popularity": 54,
+   "image_url": "https://i.scdn.co/image/12ce4cbd78e122f35926e3c72ef61a1c67e0f611",
+   "visitado": true,
+   "degree_weight": 34,
+   "degreeCent": 0.010344827586206896,
+   "closeness": 0.25,
+   "betweenness": 0.02578411528340852,
+   "pagerank": 0.0036382446535181455,
+   "comunidad": 5,
+   "id": "spotify:artist:7mLYMGXg84miYydKwi2aRi"
+  },
+  {
+   "name": "Marco Antonio Sol\u00eds",
+   "popularity": 73,
+   "image_url": "https://i.scdn.co/image/b8362380049b6c3ce5e1112f36dce3f4cf7ef02e",
+   "degree_weight": 4,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.22167017007452705,
+   "betweenness": 0.00016985927939745674,
+   "pagerank": 0.0006013715315860396,
+   "comunidad": 4,
+   "id": "spotify:artist:3tJnB0s6c3oXPq1SCCavnd"
+  },
+  {
+   "name": "Rasel",
+   "popularity": 52,
+   "image_url": "https://i.scdn.co/image/f7e88c39dbf5d6d793c00ef93363f0ba2acd032d",
+   "degree_weight": 3,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.23562868169815154,
+   "betweenness": 0.0006622746767159666,
+   "pagerank": 0.0006144860666338072,
+   "comunidad": 5,
+   "id": "spotify:artist:1uh9OOdPa89c5zPaOD6K2N"
+  },
+  {
+   "name": "Revolver",
+   "popularity": 47,
+   "image_url": "https://i.scdn.co/image/92aa621e5566232fef081232fde41fc10fbb984a",
+   "visitado": true,
+   "degree_weight": 11,
+   "degreeCent": 0.007758620689655172,
+   "closeness": 0.2269170579029734,
+   "betweenness": 0.009056871767708998,
+   "pagerank": 0.0027639903865128257,
+   "comunidad": 4,
+   "id": "spotify:artist:0U5P1naxYkkOsbHIGkVU9c"
+  },
+  {
+   "name": "Chronic Sound",
+   "popularity": 24,
+   "image_url": "https://i.scdn.co/image/af428ef0aa0b4b170af6dd7dd27a0b6daef0a7c5",
+   "degree_weight": 4,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.19443513241702984,
+   "betweenness": 0.0006361035468321767,
+   "pagerank": 0.0006127194997059054,
+   "comunidad": 1,
+   "id": "spotify:artist:0qkxTksbSTBK0d2Pwxl3ct"
+  },
+  {
+   "name": "Diego Mart\u00edn",
+   "popularity": 37,
+   "image_url": "https://i.scdn.co/image/54f0f9cc9b049eda70f80628be92742b4301b5f0",
+   "visitado": true,
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.23237179487179488,
+   "betweenness": 0.004693353089857918,
+   "pagerank": 0.0006372290585162088,
+   "comunidad": 3,
+   "id": "spotify:artist:19hC9CpsBVN8bQJ4rPmQYx"
+  },
+  {
+   "name": "Green Valley",
+   "popularity": 56,
+   "image_url": "https://i.scdn.co/image/207984d7e85b3d2bc39fc134fe65a26dc031bf58",
+   "visitado": true,
+   "degree_weight": 23,
+   "degreeCent": 0.016379310344827584,
+   "closeness": 0.25823686553873554,
+   "betweenness": 0.058496317647928724,
+   "pagerank": 0.00528296540329465,
+   "comunidad": 1,
+   "id": "spotify:artist:1v7iZcyrm4fHfsEBiseomy"
+  },
+  {
+   "name": "Adri\u00e1n",
+   "popularity": 34,
+   "image_url": "https://i.scdn.co/image/a58088e24932acffb945db1349f2628ef9a5790f",
+   "visitado": true,
+   "degree_weight": 17,
+   "degreeCent": 0.01206896551724138,
+   "closeness": 0.23572444625076203,
+   "betweenness": 0.007511327737975348,
+   "pagerank": 0.0035786928486661023,
+   "comunidad": 5,
+   "id": "spotify:artist:4k7LMyjBVLRrTqCMGN2k4Y"
+  },
+  {
+   "name": "Samuel O'Kane",
+   "popularity": 32,
+   "image_url": "https://i.scdn.co/image/b18a1a51172fdd253fbb9afc91c929e3c3d8a191",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.20567375886524822,
+   "betweenness": 0.010661718698646896,
+   "pagerank": 0.0006865557903527341,
+   "comunidad": 1,
+   "id": "spotify:artist:5gsD4pp3LGAkFqlphHK4fQ"
+  },
+  {
+   "name": "Pablo Albor\u00e1n",
+   "popularity": 76,
+   "image_url": "https://i.scdn.co/image/561d47b926be346b8de96d6f6b557b271e5d296a",
+   "visitado": true,
+   "degree_weight": 22,
+   "degreeCent": 0.010344827586206896,
+   "closeness": 0.2635764598954783,
+   "betweenness": 0.024982387375196462,
+   "pagerank": 0.003239625986952606,
+   "comunidad": 5,
+   "id": "spotify:artist:5M9Bb4adKAgrOFOhc05Y50"
+  },
+  {
+   "name": "M\u00f3nica Guech",
+   "popularity": 15,
+   "image_url": "https://i.scdn.co/image/26e2ef415df83f8d7ea3f226ef1d83d0bcea4253",
+   "visitado": true,
+   "degree_weight": 3,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.21928166351606806,
+   "betweenness": 0.0017241379310344827,
+   "pagerank": 0.0007290412734093231,
+   "comunidad": 3,
+   "id": "spotify:artist:4ojJxy0mjqvQ1ejgmwhfoD"
+  },
+  {
+   "name": "Raul Paz",
+   "popularity": 33,
+   "image_url": "https://i.scdn.co/image/2f51af6e72d8fc76f02925a588dc408abbd34c74",
+   "visitado": true,
+   "degree_weight": 13,
+   "degreeCent": 0.005172413793103448,
+   "closeness": 0.21961378265808407,
+   "betweenness": 0.008605813572937432,
+   "pagerank": 0.002274919447278201,
+   "comunidad": 3,
+   "id": "spotify:artist:5jRt7DUQuMW6zZ2tLXFz6c"
+  },
+  {
+   "name": "David Lafuente",
+   "popularity": 31,
+   "image_url": "https://i.scdn.co/image/34b088bc39e7d4195062e814e76ce0ee4b349d98",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.16416643079535806,
+   "betweenness": 1.8595102793728242e-05,
+   "pagerank": 0.0007359435272959727,
+   "comunidad": 2,
+   "id": "spotify:artist:30OJY6GPLkTXxBzwWgPB2x"
+  },
+  {
+   "name": "Gocho",
+   "popularity": 42,
+   "image_url": "https://i.scdn.co/image/ac813f1abfe982b53a87683c107aa0a9af916e1f",
+   "degree_weight": 3,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.22192462215419934,
+   "betweenness": 0.002379267693832727,
+   "pagerank": 0.0006925127172055635,
+   "comunidad": 2,
+   "id": "spotify:artist:1E2ZsvpZKP4qMPNARv36W5"
+  },
+  {
+   "name": "Sasha Sokol",
+   "popularity": 38,
+   "image_url": "https://i.scdn.co/image/a6ed0d4090952032f462e7761757a861f264fc5b",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.19717831038585756,
+   "betweenness": 7.266901773164606e-05,
+   "pagerank": 0.0006242040289363721,
+   "comunidad": 4,
+   "id": "spotify:artist:36Wnz8AZ8DFZ7C0QQhlQdx"
+  },
+  {
+   "name": "Los Chichos",
+   "popularity": 48,
+   "image_url": "https://i.scdn.co/image/0fd61291e31d94d73ba8e1255b0a5abdb4394d7d",
+   "degree_weight": 14,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.21183345507669832,
+   "betweenness": 0.00083098487706315,
+   "pagerank": 0.0009047568806166196,
+   "comunidad": 3,
+   "id": "spotify:artist:1xivtET7hPQUzwgnLRQfEP"
+  },
+  {
+   "name": "Rub\u00e9n Blades",
+   "popularity": 61,
+   "image_url": "https://i.scdn.co/image/56b3a34dedcaa9a3be3dfdeebc60598b4d13c8d3",
+   "degree_weight": 3,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.21577380952380953,
+   "betweenness": 0.001141194918807199,
+   "pagerank": 0.0008698449801092813,
+   "comunidad": 4,
+   "id": "spotify:artist:5BwMgvRwlq61SmknvsVIQj"
+  },
+  {
+   "name": "Arkano",
+   "popularity": 57,
+   "image_url": "https://i.scdn.co/image/d246114c6243e669f670929a3e3ef2244d98b954",
+   "degree_weight": 3,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.23237179487179488,
+   "betweenness": 0.015007445911269153,
+   "pagerank": 0.0006646347842397908,
+   "comunidad": 5,
+   "id": "spotify:artist:5ACyfaynUH9FpBaR8uZprQ"
+  },
+  {
+   "name": "Yuridia",
+   "popularity": 72,
+   "image_url": "https://i.scdn.co/image/491beabf4ce8c88b5a771268386d8b41c4912141",
+   "degree_weight": 6,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.20124913254684246,
+   "betweenness": 0.0005058859698709748,
+   "pagerank": 0.000700123800231076,
+   "comunidad": 2,
+   "id": "spotify:artist:5B8ApeENp4bE4EE3LI8jK2"
+  },
+  {
+   "name": "Luis Fonsi",
+   "popularity": 84,
+   "image_url": "https://i.scdn.co/image/0b16def1e214e35dd2f5eea3a279c5c5759fe8f5",
+   "degree_weight": 5,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.24534686971235195,
+   "betweenness": 0.0012866957480774147,
+   "pagerank": 0.0008433392258680888,
+   "comunidad": 3,
+   "id": "spotify:artist:4V8Sr092TqfHkfAA5fXXqG"
+  },
+  {
+   "name": "Alejandro Sanz",
+   "popularity": 76,
+   "image_url": "https://i.scdn.co/image/1316e87138e23255642187e93575af7f6b315fbf",
+   "visitado": true,
+   "degree_weight": 73,
+   "degreeCent": 0.04051724137931034,
+   "closeness": 0.2859255607591817,
+   "betweenness": 0.10901543170517747,
+   "pagerank": 0.012832018028047794,
+   "comunidad": 5,
+   "id": "spotify:artist:5sUrlPAHlS9NEirDB8SEbF"
+  },
+  {
+   "name": "Fito Blanko",
+   "popularity": 45,
+   "image_url": "https://i.scdn.co/image/92792d7c703c0105ca5a53d6b3cdcee361ec4734",
+   "degree_weight": 4,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.1980536110636845,
+   "betweenness": 0.0021166202520881785,
+   "pagerank": 0.0007201986289793701,
+   "comunidad": 2,
+   "id": "spotify:artist:5eYDJJfPXinVZq2mXleOSW"
+  },
+  {
+   "name": "Buxxi",
+   "popularity": 48,
+   "image_url": "https://i.scdn.co/image/0d2aa1c5d253e22f56d54dc62aa8f367727fa7df",
+   "degree_weight": 3,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.21702525724976612,
+   "betweenness": 0.000571124829622343,
+   "pagerank": 0.0006807985969075951,
+   "comunidad": 2,
+   "id": "spotify:artist:08Cb5OwPZ7SrS19MNYaHqz"
+  },
+  {
+   "name": "Luigi 21 Plus",
+   "popularity": 65,
+   "image_url": "https://i.scdn.co/image/6271140fcb21181ad31cd32839bd2b7671a5179a",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.18259090193609318,
+   "betweenness": 0.0007730963741000867,
+   "pagerank": 0.000723045896142821,
+   "comunidad": 2,
+   "id": "spotify:artist:77GVmrLGuxNEvj2ibvT62v"
+  },
+  {
+   "name": "David Summers",
+   "popularity": 45,
+   "image_url": "https://i.scdn.co/image/0b6bb55aeea3e8e83ee428966833667bca309828",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.20426131361155134,
+   "betweenness": 0.0003049798081182006,
+   "pagerank": 0.0006474149736143682,
+   "comunidad": 4,
+   "id": "spotify:artist:38DCnAQ5QAcMW9TSnsgYGt"
+  },
+  {
+   "name": "Lola Flores",
+   "popularity": 36,
+   "image_url": "https://i.scdn.co/image/3ab5bc9a6187526e41b675141cda05415067b6f0",
+   "degree_weight": 70,
+   "degreeCent": 0.0034482758620689655,
+   "closeness": 0.23190723710515793,
+   "betweenness": 0.002506323832203632,
+   "pagerank": 0.0011216188111038991,
+   "comunidad": 6,
+   "id": "spotify:artist:1ZcvF2meiXi5UPDJWxrKR5"
+  },
+  {
+   "name": "SFDK",
+   "popularity": 63,
+   "visitado": true,
+   "degree_weight": 110,
+   "degreeCent": 0.061206896551724135,
+   "closeness": 0.26771290099238404,
+   "betweenness": 0.2070294800084547,
+   "pagerank": 0.019352334296171367,
+   "comunidad": 1,
+   "id": "spotify:artist:56n1NeXsTOOxjX3Z4lVMTJ"
+  },
+  {
+   "name": "Jorge Gonz\u00e1lez",
+   "popularity": 18,
+   "image_url": "https://i.scdn.co/image/fac388772fa311ab7b824ac5fe51302fc6f43869",
+   "visitado": true,
+   "degree_weight": 4,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.21936459909228442,
+   "betweenness": 0.0034467882538454673,
+   "pagerank": 0.0011103165883892725,
+   "comunidad": 3,
+   "id": "spotify:artist:1klmyNgaJuXvhP80ilG8Ns"
+  },
+  {
+   "name": "Sweet California",
+   "popularity": 48,
+   "image_url": "https://i.scdn.co/image/aeef644908feaf398ba7fcea50cd5fd2f32b4de8",
+   "visitado": true,
+   "degree_weight": 14,
+   "degreeCent": 0.006896551724137931,
+   "closeness": 0.22519899048728403,
+   "betweenness": 0.009907467339554108,
+   "pagerank": 0.0027794578562952412,
+   "comunidad": 2,
+   "id": "spotify:artist:0D48D7HFC7NtWKftvsDIXq"
+  },
+  {
+   "name": "Kaze",
+   "popularity": 55,
+   "image_url": "https://i.scdn.co/image/88bbd9574f824ae1e9800f90f3659a504e1c435f",
+   "visitado": true,
+   "degree_weight": 4,
+   "degreeCent": 0.0034482758620689655,
+   "closeness": 0.2114473204520598,
+   "betweenness": 0.005167950968432954,
+   "pagerank": 0.0015071346455836378,
+   "comunidad": 1,
+   "id": "spotify:artist:2X11x8C63wCzAf1WwsIuLg"
+  },
+  {
+   "name": "Mala Juntera",
+   "popularity": 36,
+   "image_url": "https://i.scdn.co/image/222dcf5d96d5bd3cade20b234001ac6f897209ab",
+   "visitado": true,
+   "degree_weight": 3,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.2117561153705732,
+   "betweenness": 8.181845229240428e-06,
+   "pagerank": 0.0008207948378408463,
+   "comunidad": 1,
+   "id": "spotify:artist:4rkQU6RutVFwsTLrazXXxK"
+  },
+  {
+   "name": "Little Pepe",
+   "popularity": 45,
+   "image_url": "https://i.scdn.co/image/7912e5eb80529179db928fa71086e1809085c91b",
+   "visitado": true,
+   "degree_weight": 63,
+   "degreeCent": 0.028448275862068967,
+   "closeness": 0.2287517254979294,
+   "betweenness": 0.030283170961918973,
+   "pagerank": 0.008719187073364176,
+   "comunidad": 1,
+   "id": "spotify:artist:33CBC8BnDtnQKsgK2JeOyO"
+  },
+  {
+   "name": "Xriz",
+   "popularity": 54,
+   "image_url": "https://i.scdn.co/image/b6497256a7465ce9d21a1addd047985d16b30624",
+   "visitado": true,
+   "degree_weight": 9,
+   "degreeCent": 0.006896551724137931,
+   "closeness": 0.2066631035097096,
+   "betweenness": 0.005236847139980212,
+   "pagerank": 0.002517451982748011,
+   "comunidad": 2,
+   "id": "spotify:artist:2CbZTubQz6tdFmZ3TDUwp7"
+  },
+  {
+   "name": "Anabella Arregui",
+   "popularity": 15,
+   "image_url": "https://i.scdn.co/image/6216a4d87452379eed04a7b5c989ab43cbb2a4c2",
+   "visitado": true,
+   "degree_weight": 7,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.21936459909228442,
+   "betweenness": 0.0034467882538454673,
+   "pagerank": 0.0011103165883892727,
+   "comunidad": 3,
+   "id": "spotify:artist:6UrfjFR3PI73egKEd432h0"
+  },
+  {
+   "name": "Peret",
+   "popularity": 39,
+   "image_url": "https://i.scdn.co/image/73733df143101b179f93dd84e3f97068ab039be1",
+   "visitado": true,
+   "degree_weight": 87,
+   "degreeCent": 0.01206896551724138,
+   "closeness": 0.2188679245283019,
+   "betweenness": 0.015785504407985297,
+   "pagerank": 0.004437164957428867,
+   "comunidad": 6,
+   "id": "spotify:artist:2bhNZ8x8k2VfVhNRKESlcj"
+  },
+  {
+   "name": "Diana Navarro",
+   "popularity": 43,
+   "image_url": "https://i.scdn.co/image/6f52e738350238a9e454d0a5672d87d85ba5959a",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.2376075378943056,
+   "betweenness": 0.014630605591876624,
+   "pagerank": 0.0006478066145233572,
+   "comunidad": 1,
+   "id": "spotify:artist:2UPK6yJypnotLzHuUBiVa2"
+  },
+  {
+   "name": "Mala Rodr\u00edguez",
+   "popularity": 64,
+   "image_url": "https://i.scdn.co/image/221b7fce3c1db693d13f0cfbce310f2588c58591",
+   "degree_weight": 4,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.2696420269642027,
+   "betweenness": 0.05435347723555373,
+   "pagerank": 0.0008682902763956612,
+   "comunidad": 3,
+   "id": "spotify:artist:3Ces1OJeGOVGcUB0wPaPXJ"
+  },
+  {
+   "name": "Coti",
+   "popularity": 57,
+   "image_url": "https://i.scdn.co/image/848073f6bab77ba4c887d397f33b3dbfb3bc9bdb",
+   "degree_weight": 3,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.24076380240763803,
+   "betweenness": 0.0005299581220907883,
+   "pagerank": 0.0005693414156061605,
+   "comunidad": 5,
+   "id": "spotify:artist:1OUDQLymoysITxprkd0Qvj"
+  },
+  {
+   "name": "Xuso Jones",
+   "popularity": 32,
+   "visitado": true,
+   "degree_weight": 11,
+   "degreeCent": 0.009482758620689655,
+   "closeness": 0.19795221843003413,
+   "betweenness": 0.0537209906275715,
+   "pagerank": 0.004056331864874185,
+   "comunidad": 7,
+   "id": "spotify:artist:79BxXJ1YNDGCkcFoIKFhw1"
+  },
+  {
+   "name": "Lila Downs",
+   "popularity": 59,
+   "image_url": "https://i.scdn.co/image/1be6a8558c0bfb94bc0de7a15785f5629c984535",
+   "degree_weight": 21,
+   "degreeCent": 0.0034482758620689655,
+   "closeness": 0.23668639053254437,
+   "betweenness": 0.004457004411574185,
+   "pagerank": 0.0011103431662596692,
+   "comunidad": 3,
+   "id": "spotify:artist:3mXI2gpwWnNO9qbQG3n3EP"
+  },
+  {
+   "name": "Ana Gabriel",
+   "popularity": 66,
+   "image_url": "https://i.scdn.co/image/6197e7c6b9dd409219abf5e5cbe1973002dad331",
+   "degree_weight": 4,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.20240795672657477,
+   "betweenness": 0.00023521093103967767,
+   "pagerank": 0.0006647903784098,
+   "comunidad": 6,
+   "id": "spotify:artist:41ESHLayJ5sDKjAOv6cMhe"
+  },
+  {
+   "name": "Tito",
+   "popularity": 31,
+   "image_url": "https://i.scdn.co/image/8f96387a955d2db69e9e39ff6a99d3162107863a",
+   "degree_weight": 3,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.21179477816322803,
+   "betweenness": 2.4545535687721283e-05,
+   "pagerank": 0.0008277882413881424,
+   "comunidad": 1,
+   "id": "spotify:artist:5xXfRvwpVttCnlyXXGtyYH"
+  },
+  {
+   "name": "Natalia Lafourcade",
+   "popularity": 75,
+   "image_url": "https://i.scdn.co/image/364e93c37657a891cd9e58897b4eb0c48ccf3629",
+   "degree_weight": 8,
+   "degreeCent": 0.002586206896551724,
+   "closeness": 0.22943037974683544,
+   "betweenness": 0.004191743344803772,
+   "pagerank": 0.0008735500174323831,
+   "comunidad": 4,
+   "id": "spotify:artist:1hcdI2N1023RvSwLzTtdsp"
+  },
+  {
+   "name": "Leslie Grace",
+   "popularity": 76,
+   "image_url": "https://i.scdn.co/image/cd905a7d5008404c5261f71a9a6606696ca06600",
+   "degree_weight": 2,
+   "degreeCent": 0.0017241379310344827,
+   "closeness": 0.18184668443329677,
+   "betweenness": 0.00022828835252052662,
+   "pagerank": 0.0006923995098001884,
+   "comunidad": 2,
+   "id": "spotify:artist:6BeO1KuAWBqFriL1mLHtNc"
+  }
+ ],
+ "links": [
+  {
+   "freq": 1,
+   "source": 0,
+   "target": 27
+  },
+  {
+   "freq": 1,
+   "source": 0,
+   "target": 157
+  },
+  {
+   "freq": 1,
+   "source": 1,
+   "target": 154
+  },
+  {
+   "freq": 1,
+   "source": 1,
+   "target": 159
+  },
+  {
+   "freq": 1,
+   "source": 2,
+   "target": 36
+  },
+  {
+   "freq": 1,
+   "source": 2,
+   "target": 123
+  },
+  {
+   "freq": 1,
+   "source": 2,
+   "target": 176
+  },
+  {
+   "freq": 1,
+   "source": 2,
+   "target": 201
+  },
+  {
+   "freq": 1,
+   "source": 3,
+   "target": 156
+  },
+  {
+   "freq": 1,
+   "source": 3,
+   "target": 161
+  },
+  {
+   "freq": 1,
+   "source": 4,
+   "target": 15
+  },
+  {
+   "freq": 1,
+   "source": 4,
+   "target": 68
+  },
+  {
+   "freq": 1,
+   "source": 5,
+   "target": 14
+  },
+  {
+   "freq": 4,
+   "source": 5,
+   "target": 16
+  },
+  {
+   "freq": 1,
+   "source": 5,
+   "target": 29
+  },
+  {
+   "freq": 1,
+   "source": 5,
+   "target": 45
+  },
+  {
+   "freq": 1,
+   "source": 5,
+   "target": 70
+  },
+  {
+   "freq": 2,
+   "source": 5,
+   "target": 80
+  },
+  {
+   "freq": 1,
+   "source": 5,
+   "target": 112
+  },
+  {
+   "freq": 1,
+   "source": 5,
+   "target": 194
+  },
+  {
+   "freq": 1,
+   "source": 5,
+   "target": 209
+  },
+  {
+   "freq": 4,
+   "source": 5,
+   "target": 212
+  },
+  {
+   "freq": 2,
+   "source": 6,
+   "target": 41
+  },
+  {
+   "freq": 2,
+   "source": 6,
+   "target": 88
+  },
+  {
+   "freq": 4,
+   "source": 6,
+   "target": 112
+  },
+  {
+   "freq": 2,
+   "source": 6,
+   "target": 138
+  },
+  {
+   "freq": 1,
+   "source": 7,
+   "target": 50
+  },
+  {
+   "freq": 4,
+   "source": 7,
+   "target": 125
+  },
+  {
+   "freq": 1,
+   "source": 8,
+   "target": 16
+  },
+  {
+   "freq": 3,
+   "source": 8,
+   "target": 49
+  },
+  {
+   "freq": 1,
+   "source": 8,
+   "target": 59
+  },
+  {
+   "freq": 1,
+   "source": 8,
+   "target": 91
+  },
+  {
+   "freq": 2,
+   "source": 8,
+   "target": 98
+  },
+  {
+   "freq": 2,
+   "source": 8,
+   "target": 105
+  },
+  {
+   "freq": 1,
+   "source": 8,
+   "target": 137
+  },
+  {
+   "freq": 3,
+   "source": 8,
+   "target": 141
+  },
+  {
+   "freq": 2,
+   "source": 8,
+   "target": 143
+  },
+  {
+   "freq": 1,
+   "source": 8,
+   "target": 165
+  },
+  {
+   "freq": 3,
+   "source": 8,
+   "target": 190
+  },
+  {
+   "freq": 1,
+   "source": 9,
+   "target": 90
+  },
+  {
+   "freq": 1,
+   "source": 9,
+   "target": 155
+  },
+  {
+   "freq": 1,
+   "source": 10,
+   "target": 80
+  },
+  {
+   "freq": 2,
+   "source": 10,
+   "target": 117
+  },
+  {
+   "freq": 1,
+   "source": 10,
+   "target": 138
+  },
+  {
+   "freq": 2,
+   "source": 11,
+   "target": 85
+  },
+  {
+   "freq": 2,
+   "source": 11,
+   "target": 89
+  },
+  {
+   "freq": 3,
+   "source": 11,
+   "target": 137
+  },
+  {
+   "freq": 1,
+   "source": 11,
+   "target": 170
+  },
+  {
+   "freq": 2,
+   "source": 12,
+   "target": 135
+  },
+  {
+   "freq": 1,
+   "source": 13,
+   "target": 101
+  },
+  {
+   "freq": 1,
+   "source": 14,
+   "target": 81
+  },
+  {
+   "freq": 15,
+   "source": 15,
+   "target": 26
+  },
+  {
+   "freq": 1,
+   "source": 15,
+   "target": 152
+  },
+  {
+   "freq": 1,
+   "source": 15,
+   "target": 196
+  },
+  {
+   "freq": 1,
+   "source": 15,
+   "target": 201
+  },
+  {
+   "freq": 1,
+   "source": 15,
+   "target": 211
+  },
+  {
+   "freq": 1,
+   "source": 16,
+   "target": 22
+  },
+  {
+   "freq": 3,
+   "source": 16,
+   "target": 50
+  },
+  {
+   "freq": 2,
+   "source": 16,
+   "target": 72
+  },
+  {
+   "freq": 6,
+   "source": 16,
+   "target": 81
+  },
+  {
+   "freq": 1,
+   "source": 16,
+   "target": 83
+  },
+  {
+   "freq": 1,
+   "source": 16,
+   "target": 84
+  },
+  {
+   "freq": 2,
+   "source": 16,
+   "target": 85
+  },
+  {
+   "freq": 3,
+   "source": 16,
+   "target": 89
+  },
+  {
+   "freq": 1,
+   "source": 16,
+   "target": 90
+  },
+  {
+   "freq": 1,
+   "source": 16,
+   "target": 98
+  },
+  {
+   "freq": 1,
+   "source": 16,
+   "target": 106
+  },
+  {
+   "freq": 3,
+   "source": 16,
+   "target": 114
+  },
+  {
+   "freq": 4,
+   "source": 16,
+   "target": 126
+  },
+  {
+   "freq": 1,
+   "source": 16,
+   "target": 127
+  },
+  {
+   "freq": 1,
+   "source": 16,
+   "target": 138
+  },
+  {
+   "freq": 2,
+   "source": 16,
+   "target": 141
+  },
+  {
+   "freq": 2,
+   "source": 16,
+   "target": 143
+  },
+  {
+   "freq": 3,
+   "source": 16,
+   "target": 150
+  },
+  {
+   "freq": 3,
+   "source": 16,
+   "target": 165
+  },
+  {
+   "freq": 1,
+   "source": 16,
+   "target": 173
+  },
+  {
+   "freq": 1,
+   "source": 16,
+   "target": 175
+  },
+  {
+   "freq": 1,
+   "source": 16,
+   "target": 179
+  },
+  {
+   "freq": 4,
+   "source": 16,
+   "target": 190
+  },
+  {
+   "freq": 2,
+   "source": 17,
+   "target": 196
+  },
+  {
+   "freq": 4,
+   "source": 18,
+   "target": 58
+  },
+  {
+   "freq": 1,
+   "source": 18,
+   "target": 81
+  },
+  {
+   "freq": 55,
+   "source": 19,
+   "target": 195
+  },
+  {
+   "freq": 12,
+   "source": 19,
+   "target": 204
+  },
+  {
+   "freq": 1,
+   "source": 20,
+   "target": 44
+  },
+  {
+   "freq": 1,
+   "source": 20,
+   "target": 47
+  },
+  {
+   "freq": 1,
+   "source": 21,
+   "target": 41
+  },
+  {
+   "freq": 1,
+   "source": 21,
+   "target": 76
+  },
+  {
+   "freq": 1,
+   "source": 21,
+   "target": 117
+  },
+  {
+   "freq": 5,
+   "source": 22,
+   "target": 188
+  },
+  {
+   "freq": 1,
+   "source": 23,
+   "target": 44
+  },
+  {
+   "freq": 2,
+   "source": 23,
+   "target": 62
+  },
+  {
+   "freq": 2,
+   "source": 23,
+   "target": 85
+  },
+  {
+   "freq": 6,
+   "source": 23,
+   "target": 135
+  },
+  {
+   "freq": 1,
+   "source": 23,
+   "target": 137
+  },
+  {
+   "freq": 2,
+   "source": 23,
+   "target": 190
+  },
+  {
+   "freq": 1,
+   "source": 24,
+   "target": 106
+  },
+  {
+   "freq": 1,
+   "source": 24,
+   "target": 116
+  },
+  {
+   "freq": 2,
+   "source": 24,
+   "target": 125
+  },
+  {
+   "freq": 1,
+   "source": 25,
+   "target": 196
+  },
+  {
+   "freq": 1,
+   "source": 26,
+   "target": 123
+  },
+  {
+   "freq": 1,
+   "source": 26,
+   "target": 157
+  },
+  {
+   "freq": 1,
+   "source": 26,
+   "target": 196
+  },
+  {
+   "freq": 1,
+   "source": 26,
+   "target": 200
+  },
+  {
+   "freq": 1,
+   "source": 27,
+   "target": 63
+  },
+  {
+   "freq": 1,
+   "source": 27,
+   "target": 68
+  },
+  {
+   "freq": 2,
+   "source": 27,
+   "target": 123
+  },
+  {
+   "freq": 1,
+   "source": 27,
+   "target": 132
+  },
+  {
+   "freq": 1,
+   "source": 27,
+   "target": 161
+  },
+  {
+   "freq": 1,
+   "source": 27,
+   "target": 176
+  },
+  {
+   "freq": 5,
+   "source": 27,
+   "target": 196
+  },
+  {
+   "freq": 3,
+   "source": 27,
+   "target": 201
+  },
+  {
+   "freq": 1,
+   "source": 28,
+   "target": 32
+  },
+  {
+   "freq": 1,
+   "source": 28,
+   "target": 48
+  },
+  {
+   "freq": 1,
+   "source": 28,
+   "target": 82
+  },
+  {
+   "freq": 1,
+   "source": 28,
+   "target": 101
+  },
+  {
+   "freq": 1,
+   "source": 28,
+   "target": 104
+  },
+  {
+   "freq": 1,
+   "source": 28,
+   "target": 164
+  },
+  {
+   "freq": 1,
+   "source": 28,
+   "target": 213
+  },
+  {
+   "freq": 1,
+   "source": 29,
+   "target": 190
+  },
+  {
+   "freq": 1,
+   "source": 30,
+   "target": 196
+  },
+  {
+   "freq": 1,
+   "source": 31,
+   "target": 46
+  },
+  {
+   "freq": 1,
+   "source": 31,
+   "target": 68
+  },
+  {
+   "freq": 1,
+   "source": 32,
+   "target": 47
+  },
+  {
+   "freq": 1,
+   "source": 32,
+   "target": 159
+  },
+  {
+   "freq": 2,
+   "source": 33,
+   "target": 84
+  },
+  {
+   "freq": 1,
+   "source": 33,
+   "target": 85
+  },
+  {
+   "freq": 1,
+   "source": 33,
+   "target": 89
+  },
+  {
+   "freq": 1,
+   "source": 34,
+   "target": 67
+  },
+  {
+   "freq": 3,
+   "source": 34,
+   "target": 133
+  },
+  {
+   "freq": 1,
+   "source": 35,
+   "target": 41
+  },
+  {
+   "freq": 1,
+   "source": 36,
+   "target": 51
+  },
+  {
+   "freq": 1,
+   "source": 36,
+   "target": 52
+  },
+  {
+   "freq": 1,
+   "source": 36,
+   "target": 99
+  },
+  {
+   "freq": 2,
+   "source": 36,
+   "target": 166
+  },
+  {
+   "freq": 1,
+   "source": 36,
+   "target": 196
+  },
+  {
+   "freq": 1,
+   "source": 36,
+   "target": 211
+  },
+  {
+   "freq": 2,
+   "source": 37,
+   "target": 67
+  },
+  {
+   "freq": 1,
+   "source": 37,
+   "target": 93
+  },
+  {
+   "freq": 1,
+   "source": 38,
+   "target": 159
+  },
+  {
+   "freq": 1,
+   "source": 38,
+   "target": 190
+  },
+  {
+   "freq": 1,
+   "source": 39,
+   "target": 81
+  },
+  {
+   "freq": 1,
+   "source": 39,
+   "target": 161
+  },
+  {
+   "freq": 3,
+   "source": 40,
+   "target": 44
+  },
+  {
+   "freq": 2,
+   "source": 40,
+   "target": 47
+  },
+  {
+   "freq": 1,
+   "source": 40,
+   "target": 159
+  },
+  {
+   "freq": 1,
+   "source": 41,
+   "target": 49
+  },
+  {
+   "freq": 1,
+   "source": 41,
+   "target": 59
+  },
+  {
+   "freq": 1,
+   "source": 41,
+   "target": 71
+  },
+  {
+   "freq": 1,
+   "source": 41,
+   "target": 117
+  },
+  {
+   "freq": 1,
+   "source": 41,
+   "target": 124
+  },
+  {
+   "freq": 4,
+   "source": 41,
+   "target": 125
+  },
+  {
+   "freq": 1,
+   "source": 41,
+   "target": 135
+  },
+  {
+   "freq": 1,
+   "source": 41,
+   "target": 146
+  },
+  {
+   "freq": 1,
+   "source": 41,
+   "target": 147
+  },
+  {
+   "freq": 1,
+   "source": 41,
+   "target": 156
+  },
+  {
+   "freq": 12,
+   "source": 41,
+   "target": 185
+  },
+  {
+   "freq": 8,
+   "source": 41,
+   "target": 204
+  },
+  {
+   "freq": 2,
+   "source": 42,
+   "target": 135
+  },
+  {
+   "freq": 1,
+   "source": 43,
+   "target": 47
+  },
+  {
+   "freq": 2,
+   "source": 43,
+   "target": 49
+  },
+  {
+   "freq": 2,
+   "source": 44,
+   "target": 75
+  },
+  {
+   "freq": 2,
+   "source": 44,
+   "target": 87
+  },
+  {
+   "freq": 6,
+   "source": 44,
+   "target": 150
+  },
+  {
+   "freq": 1,
+   "source": 44,
+   "target": 151
+  },
+  {
+   "freq": 2,
+   "source": 44,
+   "target": 164
+  },
+  {
+   "freq": 2,
+   "source": 44,
+   "target": 183
+  },
+  {
+   "freq": 1,
+   "source": 44,
+   "target": 188
+  },
+  {
+   "freq": 1,
+   "source": 45,
+   "target": 80
+  },
+  {
+   "freq": 1,
+   "source": 45,
+   "target": 85
+  },
+  {
+   "freq": 1,
+   "source": 46,
+   "target": 101
+  },
+  {
+   "freq": 1,
+   "source": 46,
+   "target": 178
+  },
+  {
+   "freq": 4,
+   "source": 47,
+   "target": 48
+  },
+  {
+   "freq": 1,
+   "source": 47,
+   "target": 57
+  },
+  {
+   "freq": 1,
+   "source": 47,
+   "target": 73
+  },
+  {
+   "freq": 2,
+   "source": 47,
+   "target": 87
+  },
+  {
+   "freq": 7,
+   "source": 47,
+   "target": 95
+  },
+  {
+   "freq": 3,
+   "source": 47,
+   "target": 101
+  },
+  {
+   "freq": 1,
+   "source": 47,
+   "target": 126
+  },
+  {
+   "freq": 1,
+   "source": 47,
+   "target": 154
+  },
+  {
+   "freq": 1,
+   "source": 47,
+   "target": 183
+  },
+  {
+   "freq": 2,
+   "source": 47,
+   "target": 192
+  },
+  {
+   "freq": 2,
+   "source": 47,
+   "target": 198
+  },
+  {
+   "freq": 1,
+   "source": 47,
+   "target": 206
+  },
+  {
+   "freq": 2,
+   "source": 49,
+   "target": 55
+  },
+  {
+   "freq": 2,
+   "source": 49,
+   "target": 65
+  },
+  {
+   "freq": 5,
+   "source": 49,
+   "target": 85
+  },
+  {
+   "freq": 4,
+   "source": 49,
+   "target": 116
+  },
+  {
+   "freq": 1,
+   "source": 49,
+   "target": 126
+  },
+  {
+   "freq": 4,
+   "source": 49,
+   "target": 128
+  },
+  {
+   "freq": 2,
+   "source": 49,
+   "target": 135
+  },
+  {
+   "freq": 2,
+   "source": 49,
+   "target": 141
+  },
+  {
+   "freq": 5,
+   "source": 49,
+   "target": 165
+  },
+  {
+   "freq": 1,
+   "source": 49,
+   "target": 177
+  },
+  {
+   "freq": 1,
+   "source": 49,
+   "target": 190
+  },
+  {
+   "freq": 1,
+   "source": 50,
+   "target": 72
+  },
+  {
+   "freq": 3,
+   "source": 50,
+   "target": 83
+  },
+  {
+   "freq": 2,
+   "source": 50,
+   "target": 105
+  },
+  {
+   "freq": 2,
+   "source": 50,
+   "target": 106
+  },
+  {
+   "freq": 2,
+   "source": 50,
+   "target": 124
+  },
+  {
+   "freq": 4,
+   "source": 50,
+   "target": 135
+  },
+  {
+   "freq": 2,
+   "source": 50,
+   "target": 143
+  },
+  {
+   "freq": 1,
+   "source": 50,
+   "target": 158
+  },
+  {
+   "freq": 2,
+   "source": 50,
+   "target": 195
+  },
+  {
+   "freq": 1,
+   "source": 51,
+   "target": 68
+  },
+  {
+   "freq": 1,
+   "source": 51,
+   "target": 69
+  },
+  {
+   "freq": 1,
+   "source": 51,
+   "target": 176
+  },
+  {
+   "freq": 1,
+   "source": 51,
+   "target": 201
+  },
+  {
+   "freq": 1,
+   "source": 52,
+   "target": 122
+  },
+  {
+   "freq": 1,
+   "source": 52,
+   "target": 196
+  },
+  {
+   "freq": 2,
+   "source": 53,
+   "target": 95
+  },
+  {
+   "freq": 2,
+   "source": 53,
+   "target": 101
+  },
+  {
+   "freq": 17,
+   "source": 53,
+   "target": 140
+  },
+  {
+   "freq": 1,
+   "source": 53,
+   "target": 168
+  },
+  {
+   "freq": 1,
+   "source": 53,
+   "target": 182
+  },
+  {
+   "freq": 2,
+   "source": 53,
+   "target": 191
+  },
+  {
+   "freq": 2,
+   "source": 54,
+   "target": 84
+  },
+  {
+   "freq": 1,
+   "source": 54,
+   "target": 177
+  },
+  {
+   "freq": 1,
+   "source": 55,
+   "target": 83
+  },
+  {
+   "freq": 1,
+   "source": 56,
+   "target": 110
+  },
+  {
+   "freq": 1,
+   "source": 56,
+   "target": 122
+  },
+  {
+   "freq": 1,
+   "source": 56,
+   "target": 161
+  },
+  {
+   "freq": 1,
+   "source": 56,
+   "target": 201
+  },
+  {
+   "freq": 1,
+   "source": 57,
+   "target": 202
+  },
+  {
+   "freq": 1,
+   "source": 58,
+   "target": 128
+  },
+  {
+   "freq": 6,
+   "source": 58,
+   "target": 150
+  },
+  {
+   "freq": 1,
+   "source": 58,
+   "target": 186
+  },
+  {
+   "freq": 1,
+   "source": 59,
+   "target": 92
+  },
+  {
+   "freq": 1,
+   "source": 60,
+   "target": 93
+  },
+  {
+   "freq": 1,
+   "source": 60,
+   "target": 157
+  },
+  {
+   "freq": 1,
+   "source": 61,
+   "target": 208
+  },
+  {
+   "freq": 2,
+   "source": 62,
+   "target": 124
+  },
+  {
+   "freq": 1,
+   "source": 62,
+   "target": 131
+  },
+  {
+   "freq": 1,
+   "source": 62,
+   "target": 138
+  },
+  {
+   "freq": 2,
+   "source": 62,
+   "target": 190
+  },
+  {
+   "freq": 1,
+   "source": 63,
+   "target": 119
+  },
+  {
+   "freq": 8,
+   "source": 63,
+   "target": 196
+  },
+  {
+   "freq": 1,
+   "source": 63,
+   "target": 200
+  },
+  {
+   "freq": 15,
+   "source": 63,
+   "target": 201
+  },
+  {
+   "freq": 9,
+   "source": 64,
+   "target": 68
+  },
+  {
+   "freq": 1,
+   "source": 64,
+   "target": 69
+  },
+  {
+   "freq": 1,
+   "source": 64,
+   "target": 132
+  },
+  {
+   "freq": 3,
+   "source": 64,
+   "target": 176
+  },
+  {
+   "freq": 1,
+   "source": 64,
+   "target": 196
+  },
+  {
+   "freq": 1,
+   "source": 65,
+   "target": 80
+  },
+  {
+   "freq": 1,
+   "source": 65,
+   "target": 177
+  },
+  {
+   "freq": 1,
+   "source": 66,
+   "target": 116
+  },
+  {
+   "freq": 3,
+   "source": 66,
+   "target": 162
+  },
+  {
+   "freq": 19,
+   "source": 67,
+   "target": 133
+  },
+  {
+   "freq": 1,
+   "source": 68,
+   "target": 99
+  },
+  {
+   "freq": 1,
+   "source": 68,
+   "target": 122
+  },
+  {
+   "freq": 1,
+   "source": 68,
+   "target": 123
+  },
+  {
+   "freq": 1,
+   "source": 68,
+   "target": 152
+  },
+  {
+   "freq": 1,
+   "source": 68,
+   "target": 157
+  },
+  {
+   "freq": 2,
+   "source": 68,
+   "target": 196
+  },
+  {
+   "freq": 1,
+   "source": 69,
+   "target": 93
+  },
+  {
+   "freq": 2,
+   "source": 69,
+   "target": 123
+  },
+  {
+   "freq": 1,
+   "source": 69,
+   "target": 129
+  },
+  {
+   "freq": 1,
+   "source": 69,
+   "target": 161
+  },
+  {
+   "freq": 1,
+   "source": 69,
+   "target": 176
+  },
+  {
+   "freq": 3,
+   "source": 69,
+   "target": 196
+  },
+  {
+   "freq": 1,
+   "source": 70,
+   "target": 143
+  },
+  {
+   "freq": 1,
+   "source": 71,
+   "target": 105
+  },
+  {
+   "freq": 2,
+   "source": 71,
+   "target": 125
+  },
+  {
+   "freq": 1,
+   "source": 71,
+   "target": 175
+  },
+  {
+   "freq": 1,
+   "source": 71,
+   "target": 185
+  },
+  {
+   "freq": 1,
+   "source": 72,
+   "target": 73
+  },
+  {
+   "freq": 1,
+   "source": 72,
+   "target": 85
+  },
+  {
+   "freq": 8,
+   "source": 72,
+   "target": 169
+  },
+  {
+   "freq": 11,
+   "source": 72,
+   "target": 195
+  },
+  {
+   "freq": 3,
+   "source": 72,
+   "target": 210
+  },
+  {
+   "freq": 1,
+   "source": 74,
+   "target": 116
+  },
+  {
+   "freq": 1,
+   "source": 74,
+   "target": 158
+  },
+  {
+   "freq": 4,
+   "source": 75,
+   "target": 111
+  },
+  {
+   "freq": 1,
+   "source": 76,
+   "target": 116
+  },
+  {
+   "freq": 2,
+   "source": 77,
+   "target": 135
+  },
+  {
+   "freq": 2,
+   "source": 78,
+   "target": 135
+  },
+  {
+   "freq": 7,
+   "source": 79,
+   "target": 84
+  },
+  {
+   "freq": 3,
+   "source": 79,
+   "target": 89
+  },
+  {
+   "freq": 1,
+   "source": 79,
+   "target": 106
+  },
+  {
+   "freq": 8,
+   "source": 80,
+   "target": 81
+  },
+  {
+   "freq": 2,
+   "source": 80,
+   "target": 135
+  },
+  {
+   "freq": 1,
+   "source": 80,
+   "target": 138
+  },
+  {
+   "freq": 1,
+   "source": 81,
+   "target": 94
+  },
+  {
+   "freq": 1,
+   "source": 81,
+   "target": 121
+  },
+  {
+   "freq": 1,
+   "source": 81,
+   "target": 186
+  },
+  {
+   "freq": 1,
+   "source": 81,
+   "target": 194
+  },
+  {
+   "freq": 1,
+   "source": 82,
+   "target": 202
+  },
+  {
+   "freq": 1,
+   "source": 83,
+   "target": 103
+  },
+  {
+   "freq": 1,
+   "source": 83,
+   "target": 106
+  },
+  {
+   "freq": 1,
+   "source": 83,
+   "target": 130
+  },
+  {
+   "freq": 3,
+   "source": 83,
+   "target": 138
+  },
+  {
+   "freq": 1,
+   "source": 83,
+   "target": 139
+  },
+  {
+   "freq": 1,
+   "source": 83,
+   "target": 190
+  },
+  {
+   "freq": 1,
+   "source": 83,
+   "target": 210
+  },
+  {
+   "freq": 34,
+   "source": 84,
+   "target": 89
+  },
+  {
+   "freq": 67,
+   "source": 84,
+   "target": 167
+  },
+  {
+   "freq": 1,
+   "source": 84,
+   "target": 170
+  },
+  {
+   "freq": 1,
+   "source": 85,
+   "target": 106
+  },
+  {
+   "freq": 2,
+   "source": 85,
+   "target": 113
+  },
+  {
+   "freq": 3,
+   "source": 85,
+   "target": 126
+  },
+  {
+   "freq": 1,
+   "source": 85,
+   "target": 135
+  },
+  {
+   "freq": 2,
+   "source": 85,
+   "target": 171
+  },
+  {
+   "freq": 1,
+   "source": 85,
+   "target": 189
+  },
+  {
+   "freq": 2,
+   "source": 85,
+   "target": 190
+  },
+  {
+   "freq": 1,
+   "source": 86,
+   "target": 157
+  },
+  {
+   "freq": 1,
+   "source": 86,
+   "target": 170
+  },
+  {
+   "freq": 1,
+   "source": 87,
+   "target": 159
+  },
+  {
+   "freq": 1,
+   "source": 88,
+   "target": 173
+  },
+  {
+   "freq": 1,
+   "source": 89,
+   "target": 190
+  },
+  {
+   "freq": 1,
+   "source": 90,
+   "target": 91
+  },
+  {
+   "freq": 1,
+   "source": 90,
+   "target": 92
+  },
+  {
+   "freq": 1,
+   "source": 90,
+   "target": 105
+  },
+  {
+   "freq": 1,
+   "source": 90,
+   "target": 125
+  },
+  {
+   "freq": 2,
+   "source": 90,
+   "target": 135
+  },
+  {
+   "freq": 1,
+   "source": 90,
+   "target": 189
+  },
+  {
+   "freq": 2,
+   "source": 91,
+   "target": 141
+  },
+  {
+   "freq": 2,
+   "source": 92,
+   "target": 135
+  },
+  {
+   "freq": 1,
+   "source": 92,
+   "target": 158
+  },
+  {
+   "freq": 2,
+   "source": 93,
+   "target": 100
+  },
+  {
+   "freq": 1,
+   "source": 93,
+   "target": 129
+  },
+  {
+   "freq": 3,
+   "source": 93,
+   "target": 174
+  },
+  {
+   "freq": 1,
+   "source": 93,
+   "target": 178
+  },
+  {
+   "freq": 2,
+   "source": 93,
+   "target": 196
+  },
+  {
+   "freq": 2,
+   "source": 94,
+   "target": 138
+  },
+  {
+   "freq": 1,
+   "source": 96,
+   "target": 110
+  },
+  {
+   "freq": 1,
+   "source": 96,
+   "target": 122
+  },
+  {
+   "freq": 2,
+   "source": 96,
+   "target": 196
+  },
+  {
+   "freq": 1,
+   "source": 97,
+   "target": 196
+  },
+  {
+   "freq": 1,
+   "source": 98,
+   "target": 154
+  },
+  {
+   "freq": 2,
+   "source": 99,
+   "target": 117
+  },
+  {
+   "freq": 1,
+   "source": 99,
+   "target": 119
+  },
+  {
+   "freq": 1,
+   "source": 99,
+   "target": 122
+  },
+  {
+   "freq": 1,
+   "source": 99,
+   "target": 123
+  },
+  {
+   "freq": 1,
+   "source": 99,
+   "target": 126
+  },
+  {
+   "freq": 1,
+   "source": 99,
+   "target": 176
+  },
+  {
+   "freq": 1,
+   "source": 99,
+   "target": 196
+  },
+  {
+   "freq": 1,
+   "source": 100,
+   "target": 110
+  },
+  {
+   "freq": 1,
+   "source": 101,
+   "target": 109
+  },
+  {
+   "freq": 1,
+   "source": 101,
+   "target": 111
+  },
+  {
+   "freq": 2,
+   "source": 101,
+   "target": 134
+  },
+  {
+   "freq": 1,
+   "source": 101,
+   "target": 154
+  },
+  {
+   "freq": 1,
+   "source": 101,
+   "target": 159
+  },
+  {
+   "freq": 2,
+   "source": 101,
+   "target": 168
+  },
+  {
+   "freq": 2,
+   "source": 101,
+   "target": 198
+  },
+  {
+   "freq": 2,
+   "source": 101,
+   "target": 202
+  },
+  {
+   "freq": 1,
+   "source": 101,
+   "target": 208
+  },
+  {
+   "freq": 2,
+   "source": 102,
+   "target": 111
+  },
+  {
+   "freq": 1,
+   "source": 102,
+   "target": 159
+  },
+  {
+   "freq": 2,
+   "source": 103,
+   "target": 173
+  },
+  {
+   "freq": 1,
+   "source": 104,
+   "target": 159
+  },
+  {
+   "freq": 1,
+   "source": 105,
+   "target": 112
+  },
+  {
+   "freq": 1,
+   "source": 105,
+   "target": 120
+  },
+  {
+   "freq": 2,
+   "source": 105,
+   "target": 135
+  },
+  {
+   "freq": 2,
+   "source": 105,
+   "target": 163
+  },
+  {
+   "freq": 2,
+   "source": 105,
+   "target": 177
+  },
+  {
+   "freq": 3,
+   "source": 105,
+   "target": 179
+  },
+  {
+   "freq": 1,
+   "source": 105,
+   "target": 190
+  },
+  {
+   "freq": 2,
+   "source": 106,
+   "target": 141
+  },
+  {
+   "freq": 1,
+   "source": 106,
+   "target": 190
+  },
+  {
+   "freq": 1,
+   "source": 107,
+   "target": 157
+  },
+  {
+   "freq": 1,
+   "source": 107,
+   "target": 201
+  },
+  {
+   "freq": 1,
+   "source": 108,
+   "target": 208
+  },
+  {
+   "freq": 1,
+   "source": 109,
+   "target": 182
+  },
+  {
+   "freq": 1,
+   "source": 110,
+   "target": 123
+  },
+  {
+   "freq": 2,
+   "source": 110,
+   "target": 161
+  },
+  {
+   "freq": 5,
+   "source": 110,
+   "target": 196
+  },
+  {
+   "freq": 1,
+   "source": 110,
+   "target": 201
+  },
+  {
+   "freq": 2,
+   "source": 111,
+   "target": 151
+  },
+  {
+   "freq": 1,
+   "source": 111,
+   "target": 193
+  },
+  {
+   "freq": 2,
+   "source": 112,
+   "target": 117
+  },
+  {
+   "freq": 1,
+   "source": 112,
+   "target": 179
+  },
+  {
+   "freq": 1,
+   "source": 113,
+   "target": 141
+  },
+  {
+   "freq": 1,
+   "source": 113,
+   "target": 154
+  },
+  {
+   "freq": 2,
+   "source": 114,
+   "target": 126
+  },
+  {
+   "freq": 2,
+   "source": 114,
+   "target": 170
+  },
+  {
+   "freq": 1,
+   "source": 114,
+   "target": 190
+  },
+  {
+   "freq": 1,
+   "source": 115,
+   "target": 119
+  },
+  {
+   "freq": 1,
+   "source": 115,
+   "target": 176
+  },
+  {
+   "freq": 5,
+   "source": 116,
+   "target": 117
+  },
+  {
+   "freq": 1,
+   "source": 116,
+   "target": 120
+  },
+  {
+   "freq": 1,
+   "source": 116,
+   "target": 121
+  },
+  {
+   "freq": 4,
+   "source": 116,
+   "target": 135
+  },
+  {
+   "freq": 2,
+   "source": 116,
+   "target": 146
+  },
+  {
+   "freq": 1,
+   "source": 116,
+   "target": 160
+  },
+  {
+   "freq": 1,
+   "source": 116,
+   "target": 185
+  },
+  {
+   "freq": 1,
+   "source": 116,
+   "target": 209
+  },
+  {
+   "freq": 2,
+   "source": 117,
+   "target": 125
+  },
+  {
+   "freq": 8,
+   "source": 117,
+   "target": 135
+  },
+  {
+   "freq": 4,
+   "source": 117,
+   "target": 136
+  },
+  {
+   "freq": 2,
+   "source": 117,
+   "target": 153
+  },
+  {
+   "freq": 3,
+   "source": 117,
+   "target": 176
+  },
+  {
+   "freq": 2,
+   "source": 117,
+   "target": 209
+  },
+  {
+   "freq": 2,
+   "source": 117,
+   "target": 212
+  },
+  {
+   "freq": 2,
+   "source": 118,
+   "target": 125
+  },
+  {
+   "freq": 1,
+   "source": 118,
+   "target": 161
+  },
+  {
+   "freq": 1,
+   "source": 119,
+   "target": 123
+  },
+  {
+   "freq": 1,
+   "source": 119,
+   "target": 161
+  },
+  {
+   "freq": 1,
+   "source": 119,
+   "target": 166
+  },
+  {
+   "freq": 1,
+   "source": 119,
+   "target": 196
+  },
+  {
+   "freq": 1,
+   "source": 119,
+   "target": 201
+  },
+  {
+   "freq": 1,
+   "source": 119,
+   "target": 206
+  },
+  {
+   "freq": 2,
+   "source": 121,
+   "target": 158
+  },
+  {
+   "freq": 3,
+   "source": 122,
+   "target": 161
+  },
+  {
+   "freq": 3,
+   "source": 122,
+   "target": 196
+  },
+  {
+   "freq": 1,
+   "source": 122,
+   "target": 201
+  },
+  {
+   "freq": 2,
+   "source": 123,
+   "target": 157
+  },
+  {
+   "freq": 1,
+   "source": 123,
+   "target": 161
+  },
+  {
+   "freq": 2,
+   "source": 123,
+   "target": 196
+  },
+  {
+   "freq": 2,
+   "source": 124,
+   "target": 135
+  },
+  {
+   "freq": 2,
+   "source": 124,
+   "target": 142
+  },
+  {
+   "freq": 1,
+   "source": 124,
+   "target": 158
+  },
+  {
+   "freq": 3,
+   "source": 124,
+   "target": 162
+  },
+  {
+   "freq": 4,
+   "source": 124,
+   "target": 169
+  },
+  {
+   "freq": 3,
+   "source": 124,
+   "target": 190
+  },
+  {
+   "freq": 2,
+   "source": 124,
+   "target": 206
+  },
+  {
+   "freq": 1,
+   "source": 125,
+   "target": 126
+  },
+  {
+   "freq": 2,
+   "source": 125,
+   "target": 135
+  },
+  {
+   "freq": 2,
+   "source": 125,
+   "target": 145
+  },
+  {
+   "freq": 2,
+   "source": 125,
+   "target": 172
+  },
+  {
+   "freq": 1,
+   "source": 125,
+   "target": 179
+  },
+  {
+   "freq": 1,
+   "source": 126,
+   "target": 131
+  },
+  {
+   "freq": 1,
+   "source": 126,
+   "target": 136
+  },
+  {
+   "freq": 1,
+   "source": 126,
+   "target": 158
+  },
+  {
+   "freq": 3,
+   "source": 126,
+   "target": 189
+  },
+  {
+   "freq": 1,
+   "source": 126,
+   "target": 190
+  },
+  {
+   "freq": 2,
+   "source": 126,
+   "target": 207
+  },
+  {
+   "freq": 15,
+   "source": 127,
+   "target": 204
+  },
+  {
+   "freq": 2,
+   "source": 129,
+   "target": 157
+  },
+  {
+   "freq": 1,
+   "source": 130,
+   "target": 137
+  },
+  {
+   "freq": 2,
+   "source": 131,
+   "target": 135
+  },
+  {
+   "freq": 1,
+   "source": 131,
+   "target": 177
+  },
+  {
+   "freq": 3,
+   "source": 131,
+   "target": 190
+  },
+  {
+   "freq": 2,
+   "source": 132,
+   "target": 196
+  },
+  {
+   "freq": 1,
+   "source": 132,
+   "target": 201
+  },
+  {
+   "freq": 1,
+   "source": 133,
+   "target": 208
+  },
+  {
+   "freq": 2,
+   "source": 135,
+   "target": 137
+  },
+  {
+   "freq": 2,
+   "source": 135,
+   "target": 148
+  },
+  {
+   "freq": 2,
+   "source": 135,
+   "target": 155
+  },
+  {
+   "freq": 6,
+   "source": 135,
+   "target": 158
+  },
+  {
+   "freq": 2,
+   "source": 135,
+   "target": 170
+  },
+  {
+   "freq": 3,
+   "source": 135,
+   "target": 177
+  },
+  {
+   "freq": 2,
+   "source": 135,
+   "target": 180
+  },
+  {
+   "freq": 4,
+   "source": 135,
+   "target": 181
+  },
+  {
+   "freq": 2,
+   "source": 135,
+   "target": 195
+  },
+  {
+   "freq": 2,
+   "source": 135,
+   "target": 197
+  },
+  {
+   "freq": 2,
+   "source": 135,
+   "target": 203
+  },
+  {
+   "freq": 1,
+   "source": 137,
+   "target": 165
+  },
+  {
+   "freq": 1,
+   "source": 137,
+   "target": 177
+  },
+  {
+   "freq": 1,
+   "source": 137,
+   "target": 179
+  },
+  {
+   "freq": 1,
+   "source": 137,
+   "target": 186
+  },
+  {
+   "freq": 3,
+   "source": 137,
+   "target": 190
+  },
+  {
+   "freq": 17,
+   "source": 137,
+   "target": 209
+  },
+  {
+   "freq": 2,
+   "source": 138,
+   "target": 171
+  },
+  {
+   "freq": 1,
+   "source": 138,
+   "target": 179
+  },
+  {
+   "freq": 1,
+   "source": 138,
+   "target": 184
+  },
+  {
+   "freq": 2,
+   "source": 138,
+   "target": 212
+  },
+  {
+   "freq": 1,
+   "source": 139,
+   "target": 143
+  },
+  {
+   "freq": 1,
+   "source": 139,
+   "target": 158
+  },
+  {
+   "freq": 2,
+   "source": 140,
+   "target": 154
+  },
+  {
+   "freq": 1,
+   "source": 141,
+   "target": 165
+  },
+  {
+   "freq": 1,
+   "source": 142,
+   "target": 157
+  },
+  {
+   "freq": 1,
+   "source": 143,
+   "target": 172
+  },
+  {
+   "freq": 1,
+   "source": 143,
+   "target": 187
+  },
+  {
+   "freq": 1,
+   "source": 143,
+   "target": 190
+  },
+  {
+   "freq": 2,
+   "source": 144,
+   "target": 198
+  },
+  {
+   "freq": 1,
+   "source": 144,
+   "target": 202
+  },
+  {
+   "freq": 1,
+   "source": 145,
+   "target": 196
+  },
+  {
+   "freq": 1,
+   "source": 148,
+   "target": 204
+  },
+  {
+   "freq": 1,
+   "source": 149,
+   "target": 176
+  },
+  {
+   "freq": 1,
+   "source": 149,
+   "target": 196
+  },
+  {
+   "freq": 2,
+   "source": 152,
+   "target": 196
+  },
+  {
+   "freq": 1,
+   "source": 153,
+   "target": 190
+  },
+  {
+   "freq": 2,
+   "source": 154,
+   "target": 191
+  },
+  {
+   "freq": 1,
+   "source": 154,
+   "target": 202
+  },
+  {
+   "freq": 1,
+   "source": 156,
+   "target": 160
+  },
+  {
+   "freq": 1,
+   "source": 156,
+   "target": 204
+  },
+  {
+   "freq": 2,
+   "source": 157,
+   "target": 187
+  },
+  {
+   "freq": 4,
+   "source": 157,
+   "target": 196
+  },
+  {
+   "freq": 1,
+   "source": 157,
+   "target": 205
+  },
+  {
+   "freq": 1,
+   "source": 158,
+   "target": 162
+  },
+  {
+   "freq": 1,
+   "source": 159,
+   "target": 164
+  },
+  {
+   "freq": 1,
+   "source": 159,
+   "target": 193
+  },
+  {
+   "freq": 1,
+   "source": 159,
+   "target": 213
+  },
+  {
+   "freq": 3,
+   "source": 161,
+   "target": 196
+  },
+  {
+   "freq": 3,
+   "source": 161,
+   "target": 201
+  },
+  {
+   "freq": 1,
+   "source": 162,
+   "target": 167
+  },
+  {
+   "freq": 1,
+   "source": 162,
+   "target": 196
+  },
+  {
+   "freq": 1,
+   "source": 163,
+   "target": 173
+  },
+  {
+   "freq": 2,
+   "source": 165,
+   "target": 190
+  },
+  {
+   "freq": 1,
+   "source": 173,
+   "target": 184
+  },
+  {
+   "freq": 1,
+   "source": 174,
+   "target": 201
+  },
+  {
+   "freq": 1,
+   "source": 176,
+   "target": 196
+  },
+  {
+   "freq": 1,
+   "source": 177,
+   "target": 207
+  },
+  {
+   "freq": 5,
+   "source": 179,
+   "target": 190
+  },
+  {
+   "freq": 1,
+   "source": 179,
+   "target": 205
+  },
+  {
+   "freq": 1,
+   "source": 192,
+   "target": 202
+  },
+  {
+   "freq": 1,
+   "source": 196,
+   "target": 199
+  },
+  {
+   "freq": 1,
+   "source": 196,
+   "target": 200
+  },
+  {
+   "freq": 4,
+   "source": 196,
+   "target": 201
+  },
+  {
+   "freq": 1,
+   "source": 196,
+   "target": 211
+  }
+ ]
+}

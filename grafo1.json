@@ -1,0 +1,722 @@
+{
+ "directed": false,
+ "multigraph": false,
+ "graph": {
+  "name": "Analisis Artistas Spotify"
+ },
+ "nodes": [
+  {
+   "name": "DJ Zinc",
+   "popularity": 50,
+   "image_url": "https://i.scdn.co/image/2196efaff68bde0a931732c7f6908e770b7367f2",
+   "degree_weight": 1,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.2608695652173913,
+   "betweenness": 0.0,
+   "pagerank": 0.013078164251408305,
+   "id": "spotify:artist:1cwlYsgHBYvLzT4C24AliQ"
+  },
+  {
+   "name": "Tete Novoa",
+   "popularity": 31,
+   "image_url": "https://i.scdn.co/image/c29a9f022a56529b8bc779a674bfc029bc086b08",
+   "visitado": true,
+   "degree_weight": 1,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.34710743801652894,
+   "betweenness": 0.0,
+   "pagerank": 0.012649609701451346,
+   "id": "spotify:artist:6fUXmsqnTEB6BsWT2rpkNy"
+  },
+  {
+   "name": "Teebone",
+   "popularity": 25,
+   "image_url": "https://i.scdn.co/image/8dbe16d95934b9d6c9bdb2dfc55af03809e3320c",
+   "degree_weight": 2,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.2608695652173913,
+   "betweenness": 0.0,
+   "pagerank": 0.013078164251408305,
+   "id": "spotify:artist:7EKEWaFEoX9rnWtCchWER9"
+  },
+  {
+   "name": "Joaquin Padilla",
+   "popularity": 23,
+   "image_url": "https://developer.spotify.com/wp-content/uploads/2016/07/icon1@2x.png",
+   "visitado": true,
+   "degree_weight": 2,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.31343283582089554,
+   "betweenness": 0.0,
+   "pagerank": 0.012828879446925772,
+   "id": "spotify:artist:3Io9uxXd1YHYA0AFjlUg5m"
+  },
+  {
+   "name": "Jape",
+   "popularity": 34,
+   "image_url": "https://i.scdn.co/image/74c570ee2d4f835f0d04165ad705a30269a0977e",
+   "visitado": true,
+   "degree_weight": 2,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.34710743801652894,
+   "betweenness": 0.0,
+   "pagerank": 0.012649609701451346,
+   "id": "spotify:artist:0B8PsrzBwDT5sBAJq60HZg"
+  },
+  {
+   "name": "Ralph Scheepers",
+   "popularity": 17,
+   "image_url": "https://developer.spotify.com/wp-content/uploads/2016/07/icon1@2x.png",
+   "visitado": true,
+   "degree_weight": 2,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.34710743801652894,
+   "betweenness": 0.0,
+   "pagerank": 0.012649609701451346,
+   "id": "spotify:artist:0mZAt9S0vczNbGofWtK4NX"
+  },
+  {
+   "name": "Molly",
+   "popularity": 21,
+   "image_url": "https://i.scdn.co/image/c5d8d209c029664bf8fbb89fd1e14b4b3433fca5",
+   "visitado": true,
+   "degree_weight": 1,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.2625,
+   "betweenness": 0.0,
+   "pagerank": 0.013878175239133608,
+   "id": "spotify:artist:0EFo9YwQJV9tuMtuBplNbQ"
+  },
+  {
+   "name": "Leo Jim\u00e9nez",
+   "popularity": 40,
+   "image_url": "https://i.scdn.co/image/caa39afd2f973d213d21051a633cd68cc8ad571c",
+   "visitado": true,
+   "degree_weight": 2,
+   "degreeCent": 0.047619047619047616,
+   "closeness": 0.35294117647058826,
+   "betweenness": 0.047619047619047616,
+   "pagerank": 0.024445661769412652,
+   "id": "spotify:artist:1gNdZ0MJIRLU4utl34BdHi"
+  },
+  {
+   "name": "Paul Shortino",
+   "popularity": 22,
+   "image_url": "https://i.scdn.co/image/47aeb666d93264e0cc4a4d591d53f53df3319779",
+   "visitado": true,
+   "degree_weight": 2,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.34710743801652894,
+   "betweenness": 0.0,
+   "pagerank": 0.012649609701451346,
+   "id": "spotify:artist:2kzqD9K5B3MRbVB1YW0qTr"
+  },
+  {
+   "name": "Tony Solo",
+   "popularity": 18,
+   "image_url": "https://i.scdn.co/image/2a0d5972855e9fe7799ef48e4399a6b4320ab6bc",
+   "visitado": true,
+   "degree_weight": 25,
+   "degreeCent": 0.30952380952380953,
+   "closeness": 0.45161290322580644,
+   "betweenness": 0.5574912891986062,
+   "pagerank": 0.1428506248630307,
+   "id": "spotify:artist:3MdEVKEbQ4fjkdxg63Oj1s"
+  },
+  {
+   "name": "Julio Rubio",
+   "popularity": 0,
+   "image_url": "https://developer.spotify.com/wp-content/uploads/2016/07/icon1@2x.png",
+   "visitado": true,
+   "degree_weight": 2,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.31343283582089554,
+   "betweenness": 0.0,
+   "pagerank": 0.012828879446925772,
+   "id": "spotify:artist:2uM7eC88u5TX0eKlWSJr0w"
+  },
+  {
+   "name": "Sherpa",
+   "popularity": 14,
+   "image_url": "https://i.scdn.co/image/8d973c86c920f0bbc327b0cb82e1aa073a5b345b",
+   "degree_weight": 1,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.31343283582089554,
+   "betweenness": 0.0,
+   "pagerank": 0.012828879446925772,
+   "id": "spotify:artist:4oz8CM9bkX0Cr0wIjpoC7k"
+  },
+  {
+   "name": "True2Life",
+   "popularity": 5,
+   "image_url": "https://i.scdn.co/image/a3304af04f541d3ff3c9d4821b9af901ece6c1e9",
+   "degree_weight": 1,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.2608695652173913,
+   "betweenness": 0.0,
+   "pagerank": 0.013078164251408305,
+   "id": "spotify:artist:4DiQJVWcSPYrcdkeXqIeUw"
+  },
+  {
+   "name": "MC Creed",
+   "popularity": 11,
+   "image_url": "https://developer.spotify.com/wp-content/uploads/2016/07/icon1@2x.png",
+   "degree_weight": 1,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.2608695652173913,
+   "betweenness": 0.0,
+   "pagerank": 0.013078164251408305,
+   "id": "spotify:artist:6abMSOfq8xfhJXV9WRblCd"
+  },
+  {
+   "name": "Paris Cesvette",
+   "popularity": 9,
+   "image_url": "https://i.scdn.co/image/0bb86f5321d5effa86ed51834ddc5c1af069b00f",
+   "degree_weight": 4,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.2608695652173913,
+   "betweenness": 0.0,
+   "pagerank": 0.013078164251408305,
+   "id": "spotify:artist:4IdMXczlYROUsf7rvIOTyg"
+  },
+  {
+   "name": "Mark Radford",
+   "popularity": 8,
+   "image_url": "https://i.scdn.co/image/5fefd8a446b2a5d44df28ec82c10d4346181ad00",
+   "degree_weight": 3,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.2608695652173913,
+   "betweenness": 0.0,
+   "pagerank": 0.013078164251408305,
+   "id": "spotify:artist:26ZHikcy6I1xD7dSZr8z88"
+  },
+  {
+   "name": "Los Cometas",
+   "popularity": 14,
+   "image_url": "https://i.scdn.co/image/5b4e20cf8b1c6c5e454e49c301ff97d216132ddf",
+   "degree_weight": 1,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.24561403508771928,
+   "betweenness": 0.0,
+   "pagerank": 0.013742334854129493,
+   "id": "spotify:artist:5GtIIwln3cMw9i43ePPYqA"
+  },
+  {
+   "name": "Carlos Raya",
+   "popularity": 30,
+   "image_url": "https://developer.spotify.com/wp-content/uploads/2016/07/icon1@2x.png",
+   "visitado": true,
+   "degree_weight": 1,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.31343283582089554,
+   "betweenness": 0.0,
+   "pagerank": 0.012828879446925772,
+   "id": "spotify:artist:075bZiMJq3sBTsL8BgLUEr"
+  },
+  {
+   "name": "G\u00f6ran Edman",
+   "popularity": 19,
+   "image_url": "https://developer.spotify.com/wp-content/uploads/2016/07/icon1@2x.png",
+   "visitado": true,
+   "degree_weight": 2,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.34710743801652894,
+   "betweenness": 0.0,
+   "pagerank": 0.012649609701451346,
+   "id": "spotify:artist:6D6dxVY0ooHhTOJ8YD6UMa"
+  },
+  {
+   "name": "Jose Luis Campuzano",
+   "popularity": 0,
+   "image_url": "https://developer.spotify.com/wp-content/uploads/2016/07/icon1@2x.png",
+   "degree_weight": 1,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.31343283582089554,
+   "betweenness": 0.0,
+   "pagerank": 0.012828879446925772,
+   "id": "spotify:artist:5nk301dB2DvM90jc0QKBJZ"
+  },
+  {
+   "name": "V\u00edctor Garc\u00eda",
+   "popularity": 28,
+   "image_url": "https://i.scdn.co/image/b52c4300c5a8869ae001e5c57e015f21b2751176",
+   "visitado": true,
+   "degree_weight": 1,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.34710743801652894,
+   "betweenness": 0.0,
+   "pagerank": 0.012649609701451346,
+   "id": "spotify:artist:078M0vNpNlDO8WxHEkXYwz"
+  },
+  {
+   "name": "Elvenking",
+   "popularity": 47,
+   "image_url": "https://i.scdn.co/image/269e471cb6aedd56c04144a0bec572c1b76c26e1",
+   "visitado": true,
+   "degree_weight": 2,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.34710743801652894,
+   "betweenness": 0.0,
+   "pagerank": 0.012649609701451346,
+   "id": "spotify:artist:09b5OcuIELTdD7FfzQzcdB"
+  },
+  {
+   "name": "Darren Warthon",
+   "popularity": 13,
+   "image_url": "https://developer.spotify.com/wp-content/uploads/2016/07/icon1@2x.png",
+   "visitado": true,
+   "degree_weight": 2,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.34710743801652894,
+   "betweenness": 0.0,
+   "pagerank": 0.012649609701451346,
+   "id": "spotify:artist:1TVLHjY23BC5Ms50qtDNDA"
+  },
+  {
+   "name": "Jonne",
+   "popularity": 21,
+   "image_url": "https://i.scdn.co/image/ffb803cd35f597aa2acedf8965f69419f6cdee74",
+   "visitado": true,
+   "degree_weight": 2,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.34710743801652894,
+   "betweenness": 0.0,
+   "pagerank": 0.012649609701451346,
+   "id": "spotify:artist:714oNRAMXuVWRw7v9zaqQa"
+  },
+  {
+   "name": "Augusto Hern\u00e1ndez",
+   "popularity": 7,
+   "image_url": "https://i.scdn.co/image/a62f2c29aedcb917131e0e40aa7c3a45e9a1cd2c",
+   "visitado": true,
+   "degree_weight": 7,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.31343283582089554,
+   "betweenness": 0.0,
+   "pagerank": 0.012828879446925772,
+   "id": "spotify:artist:0sDNpLHev6UWPwJJXwcDiY"
+  },
+  {
+   "name": "Carlos Escobedo",
+   "popularity": 15,
+   "image_url": "https://developer.spotify.com/wp-content/uploads/2016/07/icon1@2x.png",
+   "visitado": true,
+   "degree_weight": 1,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.34710743801652894,
+   "betweenness": 0.0,
+   "pagerank": 0.012649609701451346,
+   "id": "spotify:artist:3LmN82uIHO6C9StywUF0CA"
+  },
+  {
+   "name": "Christian Bertoncelli",
+   "popularity": 12,
+   "image_url": "https://developer.spotify.com/wp-content/uploads/2016/07/icon1@2x.png",
+   "visitado": true,
+   "degree_weight": 1,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.34710743801652894,
+   "betweenness": 0.0,
+   "pagerank": 0.012649609701451346,
+   "id": "spotify:artist:6KG6QmqafaGfaL5xSZHZeh"
+  },
+  {
+   "name": "M\u00e4go de Oz",
+   "popularity": 67,
+   "visitado": true,
+   "degree_weight": 25,
+   "degreeCent": 0.38095238095238093,
+   "closeness": 0.525,
+   "betweenness": 0.8002322880371661,
+   "pagerank": 0.17245430192880876,
+   "id": "spotify:artist:5ZNxiPcbKgaNcBrERMpqeu"
+  },
+  {
+   "name": "Juanjo Melero",
+   "popularity": 11,
+   "image_url": "https://i.scdn.co/image/c36262624ae9f7d62e3acee6667f7065a25da5fc",
+   "visitado": true,
+   "degree_weight": 1,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.31343283582089554,
+   "betweenness": 0.0,
+   "pagerank": 0.012828879446925772,
+   "id": "spotify:artist:1yXuTrua3oLM1emr6fJck8"
+  },
+  {
+   "name": "Patricia Tapia",
+   "popularity": 19,
+   "image_url": "https://developer.spotify.com/wp-content/uploads/2016/07/icon1@2x.png",
+   "visitado": true,
+   "degree_weight": 1,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.34710743801652894,
+   "betweenness": 0.0,
+   "pagerank": 0.012649609701451346,
+   "id": "spotify:artist:6I0TaINSGbImcvr2jNRsqI"
+  },
+  {
+   "name": "Josito Chico",
+   "popularity": 0,
+   "image_url": "https://developer.spotify.com/wp-content/uploads/2016/07/icon1@2x.png",
+   "visitado": true,
+   "degree_weight": 1,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.31343283582089554,
+   "betweenness": 0.0,
+   "pagerank": 0.012828879446925772,
+   "id": "spotify:artist:3VjpASoht1OZoohIYztZkD"
+  },
+  {
+   "name": "Julio D\u00edaz",
+   "popularity": 0,
+   "image_url": "https://i.scdn.co/image/a1de00222cd476088287a969b7f2839dcfcfd1ec",
+   "visitado": true,
+   "degree_weight": 3,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.31343283582089554,
+   "betweenness": 0.0,
+   "pagerank": 0.012828879446925772,
+   "id": "spotify:artist:74tltpfGfEx3zX8H2kbYoq"
+  },
+  {
+   "name": "Circle of Funk",
+   "popularity": 2,
+   "image_url": "https://i.scdn.co/image/e72e79fa60ed320a742b226ef3b6445e0efc985d",
+   "degree_weight": 6,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.2608695652173913,
+   "betweenness": 0.0,
+   "pagerank": 0.013078164251408305,
+   "id": "spotify:artist:3ZIF3BSyY5NqHyUSGAayOv"
+  },
+  {
+   "name": "Danny Vaughn",
+   "popularity": 16,
+   "image_url": "https://i.scdn.co/image/af7be8f973554bdad00769e31597d2302095e812",
+   "visitado": true,
+   "degree_weight": 2,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.34710743801652894,
+   "betweenness": 0.0,
+   "pagerank": 0.012649609701451346,
+   "id": "spotify:artist:5vkbv6Py2Tr6nL0gl21DM1"
+  },
+  {
+   "name": "Luka",
+   "popularity": 38,
+   "image_url": "https://i.scdn.co/image/9377999f227975adffed2895c6dfcc9f4cd8e4ea",
+   "degree_weight": 1,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.2608695652173913,
+   "betweenness": 0.0,
+   "pagerank": 0.013078164251408305,
+   "id": "spotify:artist:4zsL84VX58gwFW07dWQGer"
+  },
+  {
+   "name": "Alejandro D\u00edaz",
+   "popularity": 9,
+   "image_url": "https://i.scdn.co/image/c32895cf8b5f283ae4836b434f388b5c92fb2a09",
+   "visitado": true,
+   "degree_weight": 5,
+   "degreeCent": 0.07142857142857142,
+   "closeness": 0.3230769230769231,
+   "betweenness": 0.09407665505226481,
+   "pagerank": 0.03619133801346372,
+   "id": "spotify:artist:2nQwnmF87ZQgC3XFOQXocj"
+  },
+  {
+   "name": "Luis Santurde",
+   "popularity": 0,
+   "image_url": "https://developer.spotify.com/wp-content/uploads/2016/07/icon1@2x.png",
+   "visitado": true,
+   "degree_weight": 1,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.31343283582089554,
+   "betweenness": 0.0,
+   "pagerank": 0.012828879446925772,
+   "id": "spotify:artist:6rQj0xA0W6BKOYMNIQfhNy"
+  },
+  {
+   "name": "Lifford",
+   "popularity": 40,
+   "image_url": "https://i.scdn.co/image/da8680b3efb7c53963453abbff49067153a07601",
+   "visitado": true,
+   "degree_weight": 35,
+   "degreeCent": 0.26190476190476186,
+   "closeness": 0.35,
+   "betweenness": 0.42392566782810687,
+   "pagerank": 0.12411158406892095,
+   "id": "spotify:artist:3SqJIylKcqd9nzSuXeguer"
+  },
+  {
+   "name": "Thomas Sanchez",
+   "popularity": 0,
+   "image_url": "https://developer.spotify.com/wp-content/uploads/2016/07/icon1@2x.png",
+   "degree_weight": 1,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.24561403508771928,
+   "betweenness": 0.0,
+   "pagerank": 0.013742334854129493,
+   "id": "spotify:artist:1MBPGsPve9YyONFKQZKytR"
+  },
+  {
+   "name": "Eric Martin",
+   "popularity": 27,
+   "image_url": "https://i.scdn.co/image/6c012611726025365da452dee6e81900d5d70c5c",
+   "visitado": true,
+   "degree_weight": 6,
+   "degreeCent": 0.047619047619047616,
+   "closeness": 0.42424242424242425,
+   "betweenness": 0.39605110336817656,
+   "pagerank": 0.022239401859836395,
+   "id": "spotify:artist:6WCm2GGhHPv9hNDbirGHKZ"
+  },
+  {
+   "name": "Beat Rivals",
+   "popularity": 10,
+   "image_url": "https://i.scdn.co/image/bce8c56d80448f88932ca587ed5d3104e3d8214a",
+   "degree_weight": 11,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.2608695652173913,
+   "betweenness": 0.0,
+   "pagerank": 0.013078164251408305,
+   "id": "spotify:artist:6rj1ryOJp67Uvj6q1oVPdv"
+  },
+  {
+   "name": "Danny Kane",
+   "popularity": 2,
+   "image_url": "https://i.scdn.co/image/21a92fcf81d155e13c24cd0c21834f138957d6d0",
+   "degree_weight": 1,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.2608695652173913,
+   "betweenness": 0.0,
+   "pagerank": 0.013078164251408305,
+   "id": "spotify:artist:3LWEf3x2v5RLYslnwzdZIB"
+  },
+  {
+   "name": "Alberto Fernandez",
+   "popularity": 21,
+   "image_url": "https://i.scdn.co/image/14cfa2ea4b587daaf123355adaf4d6cffa3f90ff",
+   "visitado": true,
+   "degree_weight": 1,
+   "degreeCent": 0.023809523809523808,
+   "closeness": 0.31343283582089554,
+   "betweenness": 0.0,
+   "pagerank": 0.012828879446925772,
+   "id": "spotify:artist:3Pp4UuZvKfW8dfnwYeQeic"
+  }
+ ],
+ "links": [
+  {
+   "freq": 1,
+   "source": 0,
+   "target": 37
+  },
+  {
+   "freq": 1,
+   "source": 1,
+   "target": 27
+  },
+  {
+   "freq": 2,
+   "source": 2,
+   "target": 37
+  },
+  {
+   "freq": 2,
+   "source": 3,
+   "target": 9
+  },
+  {
+   "freq": 2,
+   "source": 4,
+   "target": 27
+  },
+  {
+   "freq": 2,
+   "source": 5,
+   "target": 27
+  },
+  {
+   "freq": 1,
+   "source": 6,
+   "target": 7
+  },
+  {
+   "freq": 1,
+   "source": 7,
+   "target": 27
+  },
+  {
+   "freq": 2,
+   "source": 8,
+   "target": 27
+  },
+  {
+   "freq": 2,
+   "source": 9,
+   "target": 10
+  },
+  {
+   "freq": 1,
+   "source": 9,
+   "target": 11
+  },
+  {
+   "freq": 1,
+   "source": 9,
+   "target": 17
+  },
+  {
+   "freq": 1,
+   "source": 9,
+   "target": 19
+  },
+  {
+   "freq": 7,
+   "source": 9,
+   "target": 24
+  },
+  {
+   "freq": 1,
+   "source": 9,
+   "target": 27
+  },
+  {
+   "freq": 1,
+   "source": 9,
+   "target": 28
+  },
+  {
+   "freq": 1,
+   "source": 9,
+   "target": 30
+  },
+  {
+   "freq": 3,
+   "source": 9,
+   "target": 31
+  },
+  {
+   "freq": 3,
+   "source": 9,
+   "target": 35
+  },
+  {
+   "freq": 1,
+   "source": 9,
+   "target": 36
+  },
+  {
+   "freq": 1,
+   "source": 9,
+   "target": 42
+  },
+  {
+   "freq": 1,
+   "source": 12,
+   "target": 37
+  },
+  {
+   "freq": 1,
+   "source": 13,
+   "target": 37
+  },
+  {
+   "freq": 4,
+   "source": 14,
+   "target": 37
+  },
+  {
+   "freq": 3,
+   "source": 15,
+   "target": 37
+  },
+  {
+   "freq": 1,
+   "source": 16,
+   "target": 35
+  },
+  {
+   "freq": 2,
+   "source": 18,
+   "target": 27
+  },
+  {
+   "freq": 1,
+   "source": 20,
+   "target": 27
+  },
+  {
+   "freq": 2,
+   "source": 21,
+   "target": 27
+  },
+  {
+   "freq": 2,
+   "source": 22,
+   "target": 27
+  },
+  {
+   "freq": 2,
+   "source": 23,
+   "target": 27
+  },
+  {
+   "freq": 1,
+   "source": 25,
+   "target": 27
+  },
+  {
+   "freq": 1,
+   "source": 26,
+   "target": 27
+  },
+  {
+   "freq": 1,
+   "source": 27,
+   "target": 29
+  },
+  {
+   "freq": 2,
+   "source": 27,
+   "target": 33
+  },
+  {
+   "freq": 2,
+   "source": 27,
+   "target": 39
+  },
+  {
+   "freq": 6,
+   "source": 32,
+   "target": 37
+  },
+  {
+   "freq": 1,
+   "source": 34,
+   "target": 37
+  },
+  {
+   "freq": 1,
+   "source": 35,
+   "target": 38
+  },
+  {
+   "freq": 4,
+   "source": 37,
+   "target": 39
+  },
+  {
+   "freq": 11,
+   "source": 37,
+   "target": 40
+  },
+  {
+   "freq": 1,
+   "source": 37,
+   "target": 41
+  }
+ ]
+}
