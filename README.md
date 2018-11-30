@@ -97,4 +97,11 @@ programs included:
  
  *Mineria_main.Rmd: R file that joins two previous files.
  
+8) Subject: Graph analysis. Work developed with David Cordoba Ruiz.
 
+We took data from Spotify and created a graph, we performed a detailed analysis of the graph and obtained some conclusions. We also plot the graph. We used two sets of data, one downloaded with certain USA singers/groups and other with Spanish ones.
+See details in the Memoria_final.pdf file.
+
+ *Memoria_final.pdf: Memory with all information and description of the files and the process, etc. 
+
+ *programs included:  AccesoAPI.py, AnalisisGrafo.py, VisComponente2.html, Vis_USA.html, g_json.json, g_json_USA.json, grafo1.json, grafo2.json, leyenda.css.
