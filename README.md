@@ -1,7 +1,9 @@
 # master Data Science
 Projects from the Data Science Master course 17-18. The memories and comments inside programs are in Spanish.
 
-1) Subject: Distributed system I : mapper and reducer to read tweeter json file and, with a positive and negative word dictionary file, (AFINN-111.txt), explore the "happiness" of USA different states.
+1) Subject: Distributed system I. 
+
+Mapper and reducer to read tweeter json file and, with a positive and negative word dictionary file, (AFINN-111.txt), explore the "happiness" of USA different states.
 All project with D. Córdoba Ruiz, using a MRjob program and a set of mapper and reducer programs.
 
 mapper= tweetsent_mapper.py
@@ -35,11 +37,27 @@ s3://practicasd1/AFINN-111.txt#AFINN-111.txt
 Take the default confing of Software that includes Hadoop 2.7.3 with the
  m3xlarge hardware: 1 master and 2 nodes. Execute the Cluster.
 
-2) Subject: Data analytics and business intelligence I.
+2) Subject: Distributed system II. 
+
+Jupyter notebook to solve some question about a dataset using pyspark with DataFrames or spark.sql.
+
+ *SD2_galvezortiz.ipynb: Notebook 
+ 
+ *DATASET-Twitter-23-26-Mar-2014-MotoGP-Qatar.csv: Dataset
+
+3) Subject: Distributed system III. 
+
+Jupyter notebook to solve some question about a dataset using Spark streaming with KAFKA.
+
+ *SD3_mcgalvezortiz.ipynb: Notebook 
+ 
+ *DATASET-Twitter-23-26-Mar-2014-MotoGP-Qatar.csv: Dataset 
+ 
+4) Subject: Data analytics and business intelligence I.
 
  practicaIAN_galvezortiz.Rmd : analysis in R of a business case, candy-data.csv data.
 
-3) Subject: Data Bases. All project with D. Córdoba Ruiz
+5) Subject: Data Bases. All project with D. Córdoba Ruiz
 
 MDS_Memoria_CordovaRuizDavidGalvezortizMCruz.pdf is the memory with all information and description of the files, etc. 
 
@@ -55,7 +73,7 @@ programs included:
  
  Also a README.tex file with procedure explanation.
 
-4) Subject: Information recovery, ELK environment.
+6) Subject: Information recovery, ELK environment.
 
 memoriaELK.pdf is the memory with all information and description of the files, etc.
 
@@ -69,7 +87,7 @@ programs included:
  
  *outputconsulta1_movies.sh, outputconsulta2_movies.sh, outputconsulta3_movies.sh, outputconsulta4_movies.sh and outputconsulta5_movies.sh: Files with results of the queries. 
  
- 5) Subject: Data Mining I and II. Work developed with David Cordoba Ruiz, Laura Lopez Parrilla, and Victor Valero Fernandez.
+ 7) Subject: Data Mining I and II. Work developed with David Cordoba Ruiz, Laura Lopez Parrilla, and Victor Valero Fernandez.
 
  
  Mineria_main.pdf: complete memory. 
