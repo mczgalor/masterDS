@@ -39,7 +39,7 @@ Take the default confing of Software that includes Hadoop 2.7.3 with the
 
 2) Subject: Distributed system II. 
 
-Jupyter notebook to solve some question about a dataset using pyspark with DataFrames or spark.sql.
+Jupyter notebook to solve some questions about a dataset using pyspark with DataFrames or spark.sql.
 
  *SD2_galvezortiz.ipynb: Notebook 
  
@@ -47,7 +47,7 @@ Jupyter notebook to solve some question about a dataset using pyspark with DataF
 
 3) Subject: Distributed system III. 
 
-Jupyter notebook to solve some question about a dataset using Spark streaming with KAFKA.
+Jupyter notebook to solve some questions about a dataset using Spark streaming with KAFKA.
 
  *SD3_mcgalvezortiz.ipynb: Notebook 
  
