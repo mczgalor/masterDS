@@ -55,7 +55,9 @@ Jupyter notebook to solve some questions about a dataset using Spark streaming w
  
 4) Subject: Data analytics and business intelligence I.
 
- practicaIAN_galvezortiz.Rmd : analysis in R of a business case, candy-data.csv data.
+ *practicaIAN_galvezortiz.Rmd : analysis in R of a business case.
+ 
+ *candy-data.csv: Data file.
 
 5) Subject: Data Bases. All project with D. Córdoba Ruiz
 
@@ -89,11 +91,10 @@ programs included:
  
  7) Subject: Data Mining I and II. Work developed with David Cordoba Ruiz, Laura Lopez Parrilla, and Victor Valero Fernandez.
 
+ *Mineria_main.pdf: complete memory. 
  
- Mineria_main.pdf: complete memory. 
+ *mineriaDatos.rmd and mineriaDatos2.rmd: R files used. The work was dividid in two parts.
  
- mineriaDatos.rmd and mineriaDatos2.rmd: R files used. The work was dividid in two parts.
- 
- Mineria_main.Rmd: R file that joins two previous files.
+ *Mineria_main.Rmd: R file that joins two previous files.
  
 
