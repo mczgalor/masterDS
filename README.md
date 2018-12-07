@@ -79,7 +79,7 @@ programs included:
 
 memoriaELK.pdf is the memory with all information and description of the files, etc.
 
-programs included:
+Included programs:
 
  *practica.elk_mov.conf: Logstash configuration file.
  
@@ -104,4 +104,4 @@ See details in the Memoria_final.pdf file.
 
  *Memoria_final.pdf: Memory with all information and description of the files and the process, etc. 
 
- *programs included:  AccesoAPI.py, AnalisisGrafo.py, VisComponente2.html, Vis_USA.html, g_json.json, g_json_USA.json, grafo1.json, grafo2.json, leyenda.css.
+ *Included programs:  AccesoAPI.py, AnalisisGrafo.py, VisComponente2.html, Vis_USA.html, g_json.json, g_json_USA.json, grafo1.json, grafo2.json, leyenda.css.
