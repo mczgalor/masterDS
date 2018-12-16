@@ -57,7 +57,7 @@ Jupyter notebook to solve some questions about a dataset using Spark streaming w
  
 4) Subject: Data analytics and business intelligence I.
 
- *practicaIAN_galvezortiz.Rmd : analysis in R of a business case.
+ *practicaIAN_galvezortiz.Rmd: Analysis in R of a business case.
  
  *candy-data.csv: Data file.
 
@@ -67,13 +67,13 @@ MDS_Memoria_CordovaRuizDavidGalvezortizMCruz.pdf is the memory with all informat
 
 Programs included:
 
- *transform_to_json.py: takes the xml file and moves it into few json files each of them corresponding to each collection we want to create. 
+ *transform_to_json.py: Takes the xml file and moves it into few json files each of them corresponding to each collection we want to create. 
  
- *enter_data_in_Mongodb.py: connects to MongoDB database, creates a database called "dblp" and writes the json files into the  collections of the database.
+ *enter_data_in_Mongodb.py: Connects to MongoDB database, creates a database called "dblp" and writes the json files into the  collections of the database.
  
  *queries.py: Makes the queries, 10 questions (part I) of the project. 
  
- *transform_csv.py: transforms the json files to csv adapting the structure to use it in Neo4j.
+ *transform_csv.py: Transforms the json files to csv adapting the structure to use it in Neo4j.
  
  Also a README.tex file with procedure explanation.
  
