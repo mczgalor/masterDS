@@ -4,7 +4,7 @@ Projects (assessment tasks) from the Data Science Master course 17-18. The task 
 1) Subject: Distributed system I. 
 
 Mapper and reducer program in python to read tweeter json file and, with a positive and negative word dictionary file, (AFINN-111.txt), explore the "happiness" of USA different states.
-This project done with D. Córdoba Ruiz, using a MRjob program and a set of mapper and reducer programs.
+This project was done with D. Córdoba Ruiz, using a MRjob program and a set of mapper and reducer programs.
 
 mapper= tweetsent_mapper.py
 
